@@ -26,7 +26,7 @@ subtitle: 'Sr. Software Architect, Author & Trainer'
 baseurl: ''
 og_image: '/assets/images/bio-photo.jpg'
 search: true
-repository: 'rupeshtiwari/rupeshtiwari.github.io'
+repository: 'rupeshtiwari/future-blogs'
 # Build settings
 markdown: kramdown
 remote_theme: 'mmistakes/minimal-mistakes@4.22.0'
