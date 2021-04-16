@@ -1,0 +1,17 @@
+main:
+  - title: "blog"
+    url: /posts/
+  - title: "about"
+    url: /about/
+  - title: "youtube"
+    url: https://youtube.com/fullstackmaster
+  - title: "tags"
+    url: /tags/
+  - title: "consulting"
+    url: /consulting/
+  - title: "angular training"
+    url: https://www.fullstackmaster.net/pro
+  - title: "sign in"
+    url: https://fullstackmaster.net/login
+
+

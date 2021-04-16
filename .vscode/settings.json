@@ -1,0 +1,4 @@
+{
+    "restructuredtext.languageServer.disabled": true,
+    "jupyter.jupyterServerType": "local"
+}
