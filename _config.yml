@@ -192,7 +192,7 @@ jekyll_compose:
         - test
 
 # DEV
-# future: true
+future: true
 
 # PROD
-future: false
+#future: false
