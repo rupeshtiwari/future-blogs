@@ -116,6 +116,10 @@ $tags = @{"Dept"="Sales"; "Status"="High"}
 Update-AzTag -ResourceId $resource.id -Tag $tags -Operation Replace
 ```
 
+{: .notice--info}
+<i class="fab fa-youtube" color="primary"></i> \
+Watch the entire videos on [**Full Stack Master YouTube Channel** related to Managing Tags in Azure Resources](https://www.youtube.com/playlist?list=PLZed_adPqIJrUamBBcr9rYC6GFqbWK1mG)
+
 ---
 
 _Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._

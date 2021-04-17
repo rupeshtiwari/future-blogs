@@ -27,6 +27,6 @@ Log Analytics Workspace is actually a **Azure Data Lake**.
 # VM Scale Set
 ![](https://imgur.com/uGhua33.png)
 - VM scale set is an Azure service allows you to run  
-- It contains multiple VMs  with the same image and contents. 
+- It contains multiple VMs with the same image and contents. 
 - It has instances, which are the VMs. 
 - You can create more VMs by scaling it up from Azure Portal or Enable auto scale.
