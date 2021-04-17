@@ -94,8 +94,6 @@ Investigate network by capturing the network packets. You can choose the Remote 
 {: .notice--info}
 👨‍🏫 In Exam remember: **Most network diagnostics issues can be detected and analyzed with Azure Network Watcher**
 
-
-
 ---
 
 _Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
@@ -109,7 +107,7 @@ I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to b
 - Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
 
 {: .notice--warning}
-Your future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+Your bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
 
 <div class="notice--success">
 <strong>💖 Say 👋 to me!</strong>
