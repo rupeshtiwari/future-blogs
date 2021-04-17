@@ -40,7 +40,7 @@ Get-AzResource # To fetch  all resources
 
 ## Apply tags to Azure Resource
 
-{% include video id="0GJ27K3CWXA" provider="youtube" %}
+{% include video id="QTDDL8_0N3c" provider="youtube" %}
 
 Use `New-AzTag` to apply tag on resource in **Azure**.
 
@@ -55,7 +55,7 @@ New-AzTag -ResourceId $resource.id -Tag $tags
 
 ## View Tag on Azure Resource
 
-{% include video id="8vtnn1ZacNg" provider="youtube" %}
+{% include video id="QTDDL8_0N3c" provider="youtube" %}
 Use `Get-AzTag` cmdlet to view tag on Azure resource. You have to pass the resource Id though. You can also use `Get-AzResource` cmdlet to view the tags directly under a perticular resource.
 
 ```powershell
