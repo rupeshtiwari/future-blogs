@@ -28,7 +28,7 @@ tags:
 
 Before even failover to Azure VM from on-premises machine make sure you have setup your replication to Azure VM.
 
-{% include video id="KQJCOCWLGeU" provider="youtube" %}
+{% include video id="zU1glIxnPnM" provider="youtube" %}
 
 ![](https://imgur.com/CEHLtIe.png){: .full}
 
@@ -38,7 +38,7 @@ Before even failover to Azure VM from on-premises machine make sure you have set
 
 After replication is setup to Azure VM follow this workflow to accomplish Site Recovery in 4 steps.
 
-{% include video id="jDKthSwRqR4" provider="youtube" %}
+{% include video id="rb7mRDol2hs" provider="youtube" %}
 
 ## Failover and failback in Site Recovery has four stages
 
