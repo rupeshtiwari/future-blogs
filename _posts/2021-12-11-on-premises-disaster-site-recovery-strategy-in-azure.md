@@ -32,7 +32,7 @@ Before even failover to Azure VM from on-premises machine make sure you have set
 
 ![](https://imgur.com/CEHLtIe.png){: .full}
 
-## Workflow for Site Recovery
+## Stages for On-Premises Disaster Recovery
 
 ![](https://imgur.com/TO8eYHW.png){: .full}
 
@@ -40,7 +40,7 @@ After replication is setup to Azure VM follow this workflow to accomplish Site R
 
 {% include video id="rb7mRDol2hs" provider="youtube" %}
 
-## Failover and failback in Site Recovery has four stages
+##  On-Premises Failover and failback four stages
 
 Let's learn all the 4 steps required for site recovery.
 
