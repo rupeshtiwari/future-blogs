@@ -7,10 +7,11 @@ th {
   color: #000;
 }
 tr:nth-child(even) {
-  background-color: #e6e6e6;
+  background-color: #fafafa;
 }
 tr:hover {
-  cursor:text;
+  background-color: #f7fff7;
+  cursor: text;
 }
 table {
   border-collapse: collapse;
