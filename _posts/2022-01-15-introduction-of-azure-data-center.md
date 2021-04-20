@@ -71,7 +71,7 @@ By grouping servers in multiple Racks or Fault domains we are eliminating single
 
 ## Why group servers in Update Domains?
 
-Similar to Fault Domain your servers will be also grouped logically to an Update Domain. Very often planned maintenance requires server patches and software updates need to be applied on the Azure Hypervisor which is actually hosting your VMs. So your VM on that Azure Hypervisor can go down while patch is being uplied. And we don't all the servers to be rebooted at the same time.
+Similar to Fault Domain your servers will be also grouped logically to an Update Domain. Very often planned maintenance requires server patches and software updates need to be applied on the Azure Hypervisor which is actually hosting your VMs. So your VM on that Azure Hypervisor can go down while patch is being applied. And we don't all the servers to be rebooted at the same time.
 Therefore, all the servers within same update domain gets rebooted at one time and they take 30 minutes time to recover back. Meanwhile the machines which are in different update domain can serve the client requests. Therefore, update domain is a group of servers that can be updated and rebooted at the same time.
 
 ## What is Availability Set in Data-Center?
@@ -112,7 +112,7 @@ With Availability Zone Microsoft offers industries best SLA 99.99% up time.
 | Single VM                                    | Availability Sets                                                            | Availability Zones                     | Region Pairs                        |
 | -------------------------------------------- | :--------------------------------------------------------------------------- | :------------------------------------- | :---------------------------------- |
 | 99.9% with Premium Storage only              | 99.95% up time( 4:50 down time)                                              | 99.99% up time (0:53 down time)        | -                                   |
-| Single VM easier for lift and shift scenario | Protecting against hardware failures, network outages or power interruptions | Protecting against Data Center Failure | Protecting against regioin disaster |
+| Single VM easier for lift and shift scenario | Protecting against hardware failures, network outages or power interruptions | Protecting against Data Center Failure | Protecting against region disaster |
 | Single VM                                    | 2 or More VMs                                                                | 2 or more VMs                          | 2 or more VMs                       |
 | ![](https://imgur.com/vKlJkWt.png)           | ![](https://imgur.com/YS2YNDx.png)                                           | ![](https://imgur.com/qPsYLLC.png)     | ![](https://imgur.com/bJlTzJr.png)  |
 
