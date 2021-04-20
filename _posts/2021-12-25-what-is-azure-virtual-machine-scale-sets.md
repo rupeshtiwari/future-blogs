@@ -24,15 +24,36 @@ tags:
 
 > Now a days distributed architecture is common. We deploy our services into many different servers to scale them up and meet our demand. However, managing all servers for **load-balancing, scaling, make application highly available** is super challenging on cloud. **Azure Virtual Machine Scale sets** is the great tool which does all of these automatically with **no extra cost** for you. Lets learn more about Scale sets in this article.
 
-### Why Distributed Architecture?
+For Black Friday sell you want your services to be running in 50 instances and on regular day you want 5 instances. So in cloud Virtual machine scale set you get automatic scale up and down of your VM instances.
 
-- To provide **redundancy and improved performance**, applications are typically **distributed across multiple instances**.
-- In order to give your customer faster speed and low latency you may need **load balancer** that **distributes requests** to one of the application **instances**.
+## Scalability vs Elasticity
+
+Scalability means to increase from 5 to 50 instances. Elasticity is to reduce 50 instances to 5. With VMSS scalability and elasticity is possible automatically.
+
+## Vertical vs Horizontal Scaling
+
+![](https://imgur.com/EkHkAX3.png){: .full}
+
+Two types of scaling vertical and horizontal.
+
+### Vertical Scaling or Scale Up/Down
+
+In Vertical scaling if you have 1 core CPU and 4GB memory and if you can upgrade this configuration to 2 core CPU and 8 GB memory. This is called as Scale UP. You can reduce the configuration back to baseline which is called as Scale Down.
+
+### Horizontal Scaling or Scale Out/In
+
+Horizontal Scaling is you start with one VM and you keep adding more VM with same configuration is also called as Scale Out. You can also reduce back to 1 VM once your Sale or Business demand is over this process is called as Scale In.
+
+## Distributed Architecture with Scale Sets
+
+You must need **Distributed Architecture** to provide **redundancy and improved performance**, applications are typically **distributed across multiple instances**. In order to give your customer faster speed and low latency you may need **load balancer** that **distributes requests** to one of the application **instances**.
 
 ## What is Azure Virtual Machine Scale Sets?
 
-- Virtual Machine scale set let you **Create** and **Manage** a **group of load balanced VMs**.
-- The number of VM instances can **automatically increase or decrease** in response to demand or a defined schedule.
+![](https://imgur.com/3qqKpF8.png){: .full}
+
+Virtual Machine Scale Set (VMSS) let you **Create** and **Manage** a **group of load balanced VMs**. The number of VM instances can **automatically increase or decrease** in response to demand or a defined schedule.
+
 - With virtual machine scale sets, you can build **large-scale services for areas such as compute, big data, and container workloads**.
 - Scale sets provide **high availability to your applications**, and allow you to **centrally manage**, **configure**, and **update** a large number of VMs.
 - **Consistent Configuration**: Virtual Machine scale sets are the objects that are used to run multiple instances of your application and maintain a consistent configuration across your environment.
@@ -40,7 +61,70 @@ tags:
 {: .notice--info}
 VMs in a scale set are identical, so you can create them from the same base operating system image.
 
-### Why use Virtual Machine Scale Sets?
+## How Virtual Machine Scale Set (VMSS) works
+
+VMSS uses [minimum instance](#minimum-instance) to start with and you can set the [maximum instance](#maximum-instance) of your virtual machine. You can setup rules based on [Time](#time-based-scaling), [Metrics](#metrics) based to increase or decrease VM instances. VMSS has in build load balancers. Public load balancer works with internet traffic to your VMs. Which looks upon the CPU metrics and if CPU utilization is more than 75% then wait for some time and add another VM instance without any manual steps required. 
+
+### Minimum Instance
+
+This defines how much instance of VM minimum you need. You can set it to 1.
+
+### Maximum Instance
+
+You can go up to 1000 VM instances. For example for your business you can start with 1 VM and scale out up to 3 instances. Therefore, you set Maximum instance value to 3. Therefore, even though the demand is high Azure will not spin up 4th instance. It will stay up to 3 instance only and you save budget.
+
+### Metrics Based Scaling
+
+If you don't know where you are going to get the maximum business, it may be today, next day or any 5 continuous days then you must go for Metrics based scaling. You can set rule like If my VM CPU utilization is > 75% then add one more VM if it is less than ( < ) 25% then remove the VM.
+
+**Manually increasing instances**: If you know tomorrow only you want to increase your VM instance to 4 instances. So you do that manually and revert it on the day after tomorrow.
+
+### Time Based Scaling
+
+**Custom** : You can do **Time Based** increment or decrement Here you can schedule your VMs to scale out and scale in. For example every Saturday increase the VM instance to 4 and on Sunday reduce it back to 1. You can schedule these rules.
+
+### Load Balancer in Scale Set
+![](https://imgur.com/Q4737c1.png){: .full}
+
+Load Balancers are 2 types one for Public IP address and another for Private IP address. A **[public load balancer](https://docs.microsoft.com/en-us/azure/load-balancer/components#frontend-ip-configurations)** can provide outbound connections for virtual machines (VMs) inside your virtual network. Public Load Balancers are used to load balance internet traffic to your VMs.
+
+
+An **[internal (or private) load balancer](https://docs.microsoft.com/en-us/azure/load-balancer/components#frontend-ip-configurations)** is used where private IPs are needed at the frontend only. Internal load balancers are used to load balance traffic inside a virtual network.
+
+
+## Virtual Machine Scale Set (VMSS) ARCHITECTURE and Components
+
+Virtual Machine Scale Set (VMSS) deploys Virtual Machines in a single subnet of a Virtual Network. Figure below shows Architecture of Virtual Machine Scale Set (VMSS) deployed in single subnet with Single Placement group.
+
+## Azure Load Balancer
+
+An **Azure load balancer** is a Layer-4 (TCP, UDP) **load balancer** that provides high availability by distributing incoming traffic among healthy VMs.
+
+## Build Azure VM using Image Builder
+
+![](https://imgur.com/Ut26mIt.png){: .full}
+
+Using [AZURE VM IMAGE BUILDER SERVICE](https://docs.microsoft.com/azure/virtual-machines/linux/image-builder-overview), you can quickly start building standardized images without needing to set up your own imaging pipeline. Just provide a simple configuration describing your image, submit it to the Image Builder service, and the image is built and distributed. You will incur some compute, networking and storage costs when creating, building and storing images with Azure Image Builder. These costs are similar to the costs incurred in manually creating custom images.
+
+## Distribute your images
+
+![](https://imgur.com/2diOKki.png){: .full}
+
+[SHARED IMAGE GALLERY](https://docs.microsoft.com/en-us/azure/virtual-machines/shared-image-galleries) enables image distribution to different users, service principals, or AD groups, across multiple subscriptions within your organization and regions through a centralized image management platform.
+
+Run below command for creating shared image gallery:
+
+```powershell
+`New-AzGallery -GalleryName “azdemoGallery” -ResourceGroupName “Azure-demo” -Location “West US”`
+```
+
+Next, we need to create Gallery definition for storing windows images:
+
+```powershell
+New-AzGalleryImageDefinition -GalleryName “azdemogallery” -ResourceGroupName “Azure-demo” -location “West US” -Name “winserverimages” -OsState generalized -Ostype windows -Publisher demo -offer windows -sku ‘win2016’
+```
+
+## Why use Virtual Machine Scale Sets?
 
 - **Maintenance Mode Support**: If you need to perform maintenance or update an application instance, your customers must be distributed to another available application instance.
 - **Automatically increase VM instances**: To keep up with additional customer demand, you may need to increase the number of application instances that run your application.
