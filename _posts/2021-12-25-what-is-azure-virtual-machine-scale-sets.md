@@ -63,7 +63,7 @@ VMs in a scale set are identical, so you can create them from the same base oper
 
 ## How Virtual Machine Scale Set (VMSS) works
 
-VMSS uses [minimum instance](#minimum-instance) to start with and you can set the [maximum instance](#maximum-instance) of your virtual machine. You can setup rules based on [Time](#time-based-scaling), [Metrics](#metrics) based to increase or decrease VM instances. VMSS has in build load balancers. Public load balancer works with internet traffic to your VMs. Which looks upon the CPU metrics and if CPU utilization is more than 75% then wait for some time and add another VM instance without any manual steps required. 
+VMSS uses [minimum instance](#minimum-instance) to start with and you can set the [maximum instance](#maximum-instance) of your virtual machine. You can setup rules based on [Time](#time-based-scaling), [Metrics](#metrics) based to increase or decrease VM instances. VMSS has in build [load balancers](#load-balancer-in-scale-set). Public load balancer works with internet traffic to your VMs. Which looks upon the CPU metrics and if CPU utilization is more than 75% then wait for some time and add another VM instance without any manual steps required. 
 
 ### Minimum Instance
 
@@ -84,29 +84,60 @@ If you don't know where you are going to get the maximum business, it may be tod
 **Custom** : You can do **Time Based** increment or decrement Here you can schedule your VMs to scale out and scale in. For example every Saturday increase the VM instance to 4 and on Sunday reduce it back to 1. You can schedule these rules.
 
 ### Load Balancer in Scale Set
-![](https://imgur.com/Q4737c1.png){: .full}
+![](https://imgur.com/8H6dwMy.png){: .full}
 
-Load Balancers are 2 types one for Public IP address and another for Private IP address. A **[public load balancer](https://docs.microsoft.com/en-us/azure/load-balancer/components#frontend-ip-configurations)** can provide outbound connections for virtual machines (VMs) inside your virtual network. Public Load Balancers are used to load balance internet traffic to your VMs.
+An **Azure load balancer** is a Layer-4 (TCP, UDP) **load balancer** that provides high availability by distributing incoming traffic among healthy VMs. A **[public load balancer](https://docs.microsoft.com/en-us/azure/load-balancer/components#frontend-ip-configurations)** can provide outbound connections for virtual machines (VMs) inside your virtual network. Public Load Balancers are used to load balance internet traffic to your VMs. An **[internal (or private) load balancer](https://docs.microsoft.com/en-us/azure/load-balancer/components#frontend-ip-configurations)** is used where private IPs are needed at the frontend only. Internal load balancers are used to load balance traffic inside a virtual network.
 
-
-An **[internal (or private) load balancer](https://docs.microsoft.com/en-us/azure/load-balancer/components#frontend-ip-configurations)** is used where private IPs are needed at the frontend only. Internal load balancers are used to load balance traffic inside a virtual network.
-
-
-## Virtual Machine Scale Set (VMSS) ARCHITECTURE and Components
+## Virtual Machine Scale Set Architecture
 
 Virtual Machine Scale Set (VMSS) deploys Virtual Machines in a single subnet of a Virtual Network. Figure below shows Architecture of Virtual Machine Scale Set (VMSS) deployed in single subnet with Single Placement group.
 
-## Azure Load Balancer
+![](https://imgur.com/XUk0AFB.png){: .full}
 
-An **Azure load balancer** is a Layer-4 (TCP, UDP) **load balancer** that provides high availability by distributing incoming traffic among healthy VMs.
+**Virtual Network** with Single Subnet is automatically created during VMSS deployment. All virtual machines specified in create VMSS blade are deployed in the Single Subnet.
 
-## Build Azure VM using Image Builder
+**Azure Load Balancer** is automatically created during VMSS deployment.
+
+**Placement group** is availability set with five fault domains and five update domains and support up to 100 VMs. Placement group is automatically created by VMSS. Additional Placement groups will be automatically created by VMSS if you are deploying more than 100 instances.
+
+**Storage**: VMSS can use managed disks or unmanaged disks for Virtual Machine storage. Managed disks are required to create more than 100 Virtual Machines. Unmanaged disks are limited to 100 VMs and single Placement Group.
+
+**VM Diagnostic Logs** are guest OS performance counters and are streamed to Azure storage Account. VMSS uses this data for making Auto-scaling decisions.
+
+
+
+## Why use Virtual Machine Scale Sets?
+
+- **Maintenance Mode Support**: If you need to perform maintenance or update an application instance, your customers must be distributed to another available application instance.
+- **Automatically increase VM instances**: To keep up with additional customer demand, you may need to increase the number of application instances that run your application.
+  - Auto scale based on metrics.
+  - Auto scale based on a defined schedule. Suppose starting next week you are going to have a heavy peak, for next 3 days. You can define a set schedule. For example, at 9 am on Jan 2nd 2021, increase the VM instance count to 50. And at 9PM on Jan 5th when your peak ends, bring the instance count back to your baseline configuration.
+- **Easy to create and manage multiple VMs** : It maintains a consistent configuration (VM size, disk configuration) across your environment. All VM instances are created from the same base OS image and configuration. This approach lets you easily manage hundreds of VMs without additional configuration tasks or network management. For basic layer-4 traffic distribution it uses Azure Load Balancer. And for advanced layer-7 it uses Azure Application Gateway.
+- **Provides high availability and application resiliency**: If one of these VM instances has a problem, customers continue to access your application through one of the other VM instances with minimal interruption.
+- **Allows your application to automatically scale as resource demand changes**: Like it auto increase VM instances. It can also minimizes the number of unnecessary VM instances that run your application when demand is low, while customers continue to receive an acceptable level of performance
+- **Works at large-scale** : Up to **1000** Azure VM, and custom VM images up to **600** VM.
+
+### Scale set saves money 💰
+
+The **management** and **automation** features, such as auto-scale and redundancy, incur **no additional charges** over the use of VMs. You only pay for the underlying compute resources such as the VM instances, load balancer, or Managed Disk storage.
+
+### Benefits of Scale Set
+
+| scenario                         | Manage VMs manually                                                                    |                                                                      Use VM Scale Set |
+| :------------------------------- | :------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------: |
+| Adding extra VM                  | Manually create, configure and ensure compliance                                       |                                       Automatically create from central configuration |
+| Traffic Balancing & distribution | Manually                                                                               |         Automatically create and integrate Azure load balancer or Application Gateway |
+| High availability and redundancy | Manually create Availability set or distribute and track VMs across Availability Zones | Automatic distribution of VM instances across Availability Zones or Availability Sets |
+| Scaling of VMs                   | Manual monitoring and Azure Automation                                                 | Auto scale based on host metrics, in-guest metrics, Application Insights, or schedule |
+
+Using scale set is a wiser decision with zero additional cost! 
+## Building Azure VM using Azure VM Image Builder
 
 ![](https://imgur.com/Ut26mIt.png){: .full}
 
 Using [AZURE VM IMAGE BUILDER SERVICE](https://docs.microsoft.com/azure/virtual-machines/linux/image-builder-overview), you can quickly start building standardized images without needing to set up your own imaging pipeline. Just provide a simple configuration describing your image, submit it to the Image Builder service, and the image is built and distributed. You will incur some compute, networking and storage costs when creating, building and storing images with Azure Image Builder. These costs are similar to the costs incurred in manually creating custom images.
 
-## Distribute your images
+## Distribute your VM images
 
 ![](https://imgur.com/2diOKki.png){: .full}
 
@@ -124,29 +155,6 @@ Next, we need to create Gallery definition for storing windows images:
 New-AzGalleryImageDefinition -GalleryName “azdemogallery” -ResourceGroupName “Azure-demo” -location “West US” -Name “winserverimages” -OsState generalized -Ostype windows -Publisher demo -offer windows -sku ‘win2016’
 ```
 
-## Why use Virtual Machine Scale Sets?
-
-- **Maintenance Mode Support**: If you need to perform maintenance or update an application instance, your customers must be distributed to another available application instance.
-- **Automatically increase VM instances**: To keep up with additional customer demand, you may need to increase the number of application instances that run your application.
-  - Auto scale based on metrics.
-  - Auto scale based on a defined schedule. Suppose starting next week you are going to have a heavy peak, for next 3 days. You can define a set schedule. For example, at 9 am on Jan 2nd 2021, increase the VM instance count to 50. And at 9PM on Jan 5th when your peak ends, bring the instance count back to your baseline configuration.
-- **Easy to create and manage multiple VMs** : It maintains a consistent configuration (VM size, disk configuration) across your environment. All VM instances are created from the same base OS image and configuration. This approach lets you easily manage hundreds of VMs without additional configuration tasks or network management. For basic layer-4 traffic distribution it uses Azure Load Balancer. And for advanced layer-7 it uses Azure Application Gateway.
-- **Provides high availability and application resiliency**: If one of these VM instances has a problem, customers continue to access your application through one of the other VM instances with minimal interruption.
-- **Allows your application to automatically scale as resource demand changes**: Like it auto increase VM instances. It can also minimizes the number of unnecessary VM instances that run your application when demand is low, while customers continue to receive an acceptable level of performance
-- **Works at large-scale** : Up to **1000** Azure VM, and custom VM images up to **600** VM.
-
-## Scale set saves money 💰
-
-The **management** and **automation** features, such as auto-scale and redundancy, incur **no additional charges** over the use of VMs. You only pay for the underlying compute resources such as the VM instances, load balancer, or Managed Disk storage.
-
-## Benefits of Scale Set
-
-| scenario                         | Manage VMs manually                                                                    |                                                                      Use VM Scale Set |
-| :------------------------------- | :------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------: |
-| Adding extra VM                  | Manually create, configure and ensure compliance                                       |                                       Automatically create from central configuration |
-| Traffic Balancing & distribution | Manually                                                                               |         Automatically create and integrate Azure load balancer or Application Gateway |
-| High availability and redundancy | Manually create Availability set or distribute and track VMs across Availability Zones | Automatic distribution of VM instances across Availability Zones or Availability Sets |
-| Scaling of VMs                   | Manual monitoring and Azure Automation                                                 | Auto scale based on host metrics, in-guest metrics, Application Insights, or schedule |
 
 ## How to monitor scale sets
 

@@ -41,7 +41,7 @@ By default, Azure VMs are assigned drive D to use as temporary storage
 - For example, if your on-premises installation uses a data disk that is assigned to drive D for application installations, the assignment for this drive increments to drive E after you migrate the VM to Azure.
 - To prevent this automatic assignment, and to ensure that Azure assigns the next free drive letter to its temporary volume, set the storage area network (SAN) policy to **OnlineAll**:
 
-## What is ARR in Azure?
+## ARR
 
 **Application Request Routing (ARR)** is a feature where when a client (or browser) request to any Azure based website, a cookie will be created and stick to the first time request received web site instance.
 
@@ -53,11 +53,11 @@ A virtual machine running in Azure can now be associated with a direct and publi
 
 A **network security group (NSG)** contains a list of security rules that allow or deny network traffic to resources connected to Azure Virtual Networks (VNet). NSGs can be associated to subnets or individual network interfaces (NIC) attached to VMs.
 
-## What is NIC ?
+## NIC
 A [Network Interface (NIC)](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface) enables an Azure Virtual Machine to communicate with internet, Azure, and on-premises resources. When creating a virtual machine using the Azure portal, the portal creates one network interface with default settings for you. 
 
-## What is Rack?
+## Rack
 
 A Rack has servers (Virtual Machines) in a data-center.
 
-## What is domain? update domain ? fault domain ?
+ 
