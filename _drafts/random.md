@@ -56,6 +56,10 @@ A **network security group (NSG)** contains a list of security rules that allow 
 ## NIC
 A [Network Interface (NIC)](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface) enables an Azure Virtual Machine to communicate with internet, Azure, and on-premises resources. When creating a virtual machine using the Azure portal, the portal creates one network interface with default settings for you. 
 
+## RBAC
+
+**Role-based access control (RBAC)** is a policy-neutral access-control mechanism defined around roles and privileges. The components of RBAC such as role-permissions, user-role and role-role relationships make it simple to perform user assignments.
+
 ## Rack
 
 A Rack has servers (Virtual Machines) in a data-center.

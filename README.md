@@ -2,7 +2,7 @@
 
 ## Writing New Blog command
 
-`bundle exec jekyll compose "Importing WordPress or Blogger Blogs to Jekyll Blog" --date 2021-03-20`
+`bundle exec jekyll compose "Microsoft Azure Architect Design Random Question Flashcards" --date 2022-02-19`
 
 ## Writing new draft
 
@@ -15,6 +15,7 @@
 
 
 ## Serve in dev
+
 `bundle exec jekyll serve`
 
 `bundle exec jekyll serve --limit_posts=5`

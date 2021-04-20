@@ -1,6 +1,6 @@
 ---
-title: How to Codifying Infrastructure in Configuration
-date: 2022-02-12 00:00 +0000
+title: Microsoft Azure Architect Design Random Question Flashcards
+date: 2022-02-19 00:00 +0000
 description:
 author_profile: true
 published: true
@@ -22,33 +22,54 @@ tags:
   - tutorial
 ---
 
-> Did you know you can write a script and run from your machine to create and destroy multiple cloud infrastructures? Well yes I am not joking this is possible. Read this article to learn more about codifying cloud APIs into declarative configuration files.
+> Do you want to refresh AZ 304 Microsoft Azure Architect Design related random questions? This article will give you great random flashcards to remember Azure concepts.
 
-## Write Plan and Apply Infrastructure.
+## Which tool is an open-source tool for provisioning and managing cloud infrastructure that codifies infrastructure in configuration files that describe the topology of cloud resources?
 
-<video width="480" height="320">
-  <source src="https://imgur.com/I9CL0ic.mp4" type="video/mp4">
-</video>
+[HashiCorp Terraform](https://www.terraform.io/)
 
-Suppose you have Google Cloud (GCS), Amazon Web Services (AWS) or Azure and you wan to write a configuration file to manage the workflow of each cloud infrastructure. It is possible via [HashiCorp Terraform](https://www.terraform.io/). 
+## Which log categories are included in the information level of application logging?
 
-## HashiCorp Terraform
+`Critical, Error, Warning and Info` level logs you will get if you set information level of application logging. Below are the complete list of levels and
 
-Terraform is an open-source infrastructure as code software tool that provides a consistent CLI workflow to manage hundreds of cloud services. Terraform codifies cloud APIs into declarative configuration files. It is an open-source tool for provisioning and managing cloud infrastructure that codifies infrastructure in configuration files that describe the topology of cloud resources
+- Critical
+- Error
+- Warning
+- Info
+- Debug
+- Trace
 
-## You can Write Infrastructure Code
+## Which stage in the failover and failback in Site Recovery enables replication of the on-premises machines to Azure after failing back?
 
-Write infrastructure as code using declarative configuration files. HashiCorp Configuration Language (HCL) allows for concise descriptions of resources using blocks, arguments, and expressions.
+Stage 4: Reprotect on-premises machines. Learn more about [On-Premises Disaster Site Recovery Strategy with Azure VM](https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure/) 
 
-## Plan before execution
 
-Run terraform plan to check whether the execution plan for a configuration matches your expectations before provisioning or changing infrastructure.
+## Which cmdlet is used to view the tag of a resource?
 
-## Apply Multiple Cloud Services
+`Get-AzResource`.  Learn more about [Create, Update and Delete tags in Azure using Powershell CLI](https://www.rupeshtiwari.com/create-update-and-delete-tags-on-azure-resource/)
 
-![](https://imgur.com/xLIYt4E.png){: .full}
 
-All major cloud services are supported like AWS, Google, Microsoft Azure etc.
+## What objects are used to run multiple instances of your application and maintain a consistent configuration across your environment?
+
+Azure Virtual Machine Scale Sets
+
+
+## Which Azure service manages your hosted Kubernetes environment, making it quick and easy to deploy and manage containerized applications without container orchestration expertise? 
+
+Azure Kubernetes Services (AKS)
+
+## How many custom RBAC (Role Based Azure )
+
+5000 for Germany and China 21Vianet, it is 2000 Learn more about [Azure Custom Roles](https://docs.microsoft.com/en-us/azure/role-based-access-control/custom-roles)
+
+## Which type of API Management policy is used for actions such as enforcing the existence of an HTTP header, limiting the call rate, restricting caller IPs, and setting quotas?
+
+Access Restriction Policies. Learn more about [Access Restriction Policies](https://docs.microsoft.com/en-us/azure/api-management/api-management-access-restriction-policies)
+
+
+
+
+
 
 ---
 
