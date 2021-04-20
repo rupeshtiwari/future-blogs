@@ -38,6 +38,9 @@ By default, Azure VMs are assigned drive D to use as temporary storage
 -   For example, if your on-premises installation uses a data disk that is assigned to drive D for application installations, the assignment for this drive increments to drive E after you migrate the VM to Azure.
 -   To prevent this automatic assignment, and to ensure that Azure assigns the next free drive letter to its temporary volume, set the storage area network (SAN) policy to **OnlineAll**:
 
+## What is ARR in Azure?
+
+**Application Request Routing (ARR)** is a feature where when a client (or browser) request to any Azure based website, a cookie will be created and stick to the first time request received web site instance.
 
 ## What is Rack?
 
