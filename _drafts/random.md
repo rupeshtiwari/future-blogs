@@ -60,8 +60,13 @@ A [Network Interface (NIC)](https://docs.microsoft.com/en-us/azure/virtual-netwo
 
 **Role-based access control (RBAC)** is a policy-neutral access-control mechanism defined around roles and privileges. The components of RBAC such as role-permissions, user-role and role-role relationships make it simple to perform user assignments.
 
+## CMDB
+ Configuration Management Database 
+
 ## Rack
 
 A Rack has servers (Virtual Machines) in a data-center.
 
+ ## SKU
+ Stock Keeping Unit (SKU) Learn more about [SKU types in Azure](https://docs.microsoft.com/en-us/rest/api/compute/resourceskus/list)
  
