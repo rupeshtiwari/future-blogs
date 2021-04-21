@@ -25,10 +25,7 @@ tags:
 > Did you know you can write a script and run from your machine to create and destroy multiple cloud infrastructures? Well yes I am not joking this is possible. Read this article to learn more about codifying cloud APIs into declarative configuration files.
 
 ## Write Plan and Apply Infrastructure.
-
-<video width="480" height="320">
-  <source src="https://imgur.com/I9CL0ic.mp4" type="video/mp4">
-</video>
+![](https://imgur.com/d7uPRXv.gif){: .full}
 
 Suppose you have Google Cloud (GCS), Amazon Web Services (AWS) or Azure and you wan to write a configuration file to manage the workflow of each cloud infrastructure. It is possible via [HashiCorp Terraform](https://www.terraform.io/). 
 
