@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Design Azure Governance for Microsoft Azure Solutions Architect
 date: 2022-02-26 00:00 +0000
 description:
