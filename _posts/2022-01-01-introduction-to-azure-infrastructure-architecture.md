@@ -45,11 +45,15 @@ tags:
 
 [Azure Geography](https://azure.microsoft.com/en-us/global-infrastructure/geographies/#geographies) contains most of the countries in the world.
 
+An Azure geography is a discrete market, typically containing at least one or more regions, that preserves data residency and compliance boundaries. Geographies allow customers with specific data-residency and compliance needs to keep their data and applications close. Geographies are fault-tolerant to withstand complete region failure through their connection to the dedicated high-capacity networking infrastructure of Azure.
+
 ## What is Azure Regions?
 
 ![](https://imgur.com/EP9XhI7.png){: .full}
 
 Each Geography has multiple Regions. Example The United States has regions like Center US, East US, East US2, East US3, North Central US, South Central US, West Central US, West US, West US 2, West US 3.
+
+An Azure region is a set of datacenters, deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network.
 
 ## What is Availability Zone in Azure?
 
@@ -58,6 +62,15 @@ Each Geography has multiple Regions. Example The United States has regions like 
 Azure Availability Zones are **physically and logically separated datacenters** with their own **independent power source, network, and cooling**. Connected with an extremely low-latency network, they become a building block to delivering high availability applications. Availability Zones ensure that if there's an event impacting a datacenter site—for example, if someone cuts the power, or there are issues with cooling—your data will be protected.
 
 Running a VM with one or more replicated copies on different **Availability Zones**, providing resiliency against data center failure.
+
+{: .notice--success}
+🍹 **Tip** \
+Azure Availability Zones are unique physical locations within an Azure region and offer high availability to protect your applications and data from datacenter failures. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking. The physical separation of availability zones within a region protects apps and data from facility-level issues. Zone-redundant services replicate your apps and data across Azure Availability Zones to protect from single points of failure.
+
+## What is the  Azure global network?
+
+The Azure global network refers to all of the components in networking and is comprised of the Microsoft global wide-area network (WAN), points of presence (PoPs), fiber, and others.
+
 
 ## Azure Data-Center
 
