@@ -22,7 +22,7 @@ tags:
   - tutorial
 ---
 
-> Did you know you can create and deploy Azure resources using JSON template? Did you also know that you can enforce business compliances on your resources? All of this can be done using Azure Resource Manager (ARM). Read this article to learn everything important about ARM.
+> Did you know you can create and deploy Azure resources using JSON template? Did you also know that you can enforce business compliances on your resources? All of this can be done using Azure Resource Manager (ARM). Read this article to learn everything important about ARM. You can write code to deploy infrastructure using ARM template called Infrastructure-as-Code.
 
 ## What is ARM?
 
@@ -37,7 +37,8 @@ The following image shows the role Azure Resource Manager plays in handling Azur
 ![](https://imgur.com/fisyo54.png){: .full}
 
 {: .notice--success}
-🍹 **Tip** \
+🏆 **ProTip** \
+\
  ARM new functionality initially released through **APIs** will be represented in the **portal** within **180** days of initial release.
 
 ## What is Resource in Azure?
@@ -46,6 +47,7 @@ A manageable item that is available through Azure. `Virtual machines, storage ac
 
 {: .notice--info}
 <i class="fa fa-info-circle"></i> **Note** \
+\
 **What do you mean by Azure Management and when we say Azure manages resources etc.?**
 You use Azure Management Features, like **access control**, **locks**, and **tags**, to secure and organize your resources after deployment. If you create Resource group then you can manage all of the resources that shares the same compliances.
 Check my [Azure Governance article](https://rupeshtiwari.com/design-azure-governance-for-microsoft-azure-solutions-architect/) to learn more about it.
@@ -61,6 +63,7 @@ All the resources in your resource group should share the same **lifecycle**. Yo
 
 {: .notice--info}
 <i class="fa fa-info-circle"></i> **Note** \
+\
  If one resource, such as a server, needs to exist on a different deployment cycle it should be in another resource group.
 
 ### Resource can exist in only one group.
@@ -80,12 +83,14 @@ You can move a resource from one resource group to another group.
 When creating a resource group, you need to provide a location.
 
 {: .notice--success}
-🍹 **Tip** \
+🏆 **ProTip** \
+\
 **"Why does a resource group need a location?"** And, if the resources can have different locations than the resource group, why does the resource group location matter at all?" The resource group stores metadata about the resources. When you specify a location for the resource group, you're specifying where that metadata is stored. For compliance reasons, you may need to ensure that your data is stored in a particular region.
 See [Resource groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview#resource-groups).
 
 {: .notice--warning}
 <i class="fas fa-exclamation-triangle"></i> **Warning** \
+\
  If the resource group's region is temporarily unavailable, you can't update resources in the resource group because the metadata is unavailable. The resources in other regions will still function as expected, but you can't update them.
 
 ### Resource group is good boundary for security and compliances
@@ -98,6 +103,7 @@ You can [apply tags](https://docs.microsoft.com/en-us/azure/azure-resource-manag
 
 {: .notice--info}
 <i class="fa fa-info-circle"></i> **Note** \
+\
  The resources in the resource group don't inherit those tags.
 
 ### Resources can communication across groups
@@ -105,7 +111,8 @@ You can [apply tags](https://docs.microsoft.com/en-us/azure/azure-resource-manag
 A resource can connect to resources in other resource groups.
 
 {: .notice--success}
-🍹 **Tip** \
+🏆 **ProTip** \
+\
  You can have a web app that connects to a database in a different resource group. These two resources are related but don't share the same lifecycle however they can connect to each other.
 
 ### Resource is composed in group
@@ -120,9 +127,15 @@ You can deploy up to 800 instances of a resource type in each resource group.
 
 Some resources can exist outside of a resource group. These resources are deployed to the [subscription](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-subscription), [management group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-management-group), or [tenant](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-tenant). Only specific resource types are supported at these scopes.
 
+{: .notice--success}
+🏆 **ProTip** \
+\
+ARM **Never taken down for maintenance** activities. ARM REST API are distributed across region and Availability Zones/regions.
+
 ## References
 
 1. Microsoft ARM [Learn More](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview#understand-scope)
+2. ARM Template [Infrastructure-as-Code Demo](https://azure.microsoft.com/en-us/resources/videos/build-2019-what-s-new-with-azure-resource-manager-arm/)
 
 ---
 

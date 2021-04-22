@@ -9,7 +9,7 @@ comments: true
 share: true
 related: true
 toc: true
-toc_sticky: true
+toc_sticky: false
 image: https://i.imgur.com/7I0NoBe.png
 header:
   image: https://i.imgur.com/vce9zzl.png
@@ -30,12 +30,16 @@ Azure provides four levels of scope: [management groups](https://docs.microsoft.
 
 ![](https://imgur.com/fisyo54.png){: .full}
 
+Standard Enterprise Governance Example:
+![](https://imgur.com/b368NAc.png){: .full}
+
 ## Azure Policy
 
 Azure Policy is defined in JSON. Azure policy uses attributes of the resources to define the rules and effects. Azure policy has Rule, Rule has condition and Effect. The effect could be to modify resource, deny creation of resource, audit resource metadata, delete resource etc. While creating policy make sure you make the policy name and description good so that user can understand what exactly is this Policy. When Policy fails it show the name and description. Therefore, follow[ Microsoft naming conventions](https://docs.microsoft.com/en-us/system-center/scsm/sm-parts?view=sc-sm-2019) also recommended.
 
 {: .notice--info}
 <i class="fa fa-info-circle"></i> **Note** \
+\
 Policy has one **Rule** & Rule has **Combination of Conditions** and **Single Effect**. When conditions are met the effect will be executed.
 
 Below are some examples of Azure Policy
@@ -52,6 +56,7 @@ Below are some examples of Azure Policy
 
 {: .notice--info}
 <i class="fa fa-info-circle"></i> **Note** \
+\
 Policy can help you to control the **costs** 💰 and easily manage your resources. For example, in dev policy can deny creating high configuration VMs.
 
 ### Policy Rule
@@ -133,6 +138,7 @@ Policy is one rule. However, Group of Policies are called Initiatives.
 
 {: .notice--info}
 <i class="fa fa-info-circle"></i> **Note** \
+\
 Initiatives help us to group related policies together to make easier for tracking compliances and for assignments.
 
 ## Azure Policy Definition in JSON
@@ -149,7 +155,8 @@ Azure policy JSON contains below elements
   - effect
 
 {: .notice--success}
-🍹 **Tip** \
+🏆 **ProTip** \
+\
 Check [Microsoft Built-In Policies](https://docs.microsoft.com/en-us/azure/governance/policy/samples/)
 
 ### Restrict creating resource if not have certain SKU name Rule.
@@ -204,6 +211,7 @@ Policy Definition for Audit
 
 {: .notice--info}
 <i class="fa fa-info-circle"></i> **Note** \
+\
 The Policy Definition location must be a **management group** or a **subscription**.
 
 ![](https://i.imgur.com/RsMNXIC.png){: .full}
@@ -248,6 +256,7 @@ scope is resource group
 
 {: .notice--info}
 <i class="fa fa-info-circle"></i> **Note** \
+\
 Policy assignments are inherited by child resources. If you assign Policy at Subscription level then all of the resource groups will inherit the same policy and so on. If you want to assign policy in different subscription then put the definition location to management group level.
 
 Step 1: Select the scope where to assign policy. I will select at subscription
@@ -274,6 +283,8 @@ Next give permission and location of the policy
 ![](https://imgur.com/7EzFxLW.png){: .full}
 
 {: .notice--success}
+🏆 **ProTip** \
+\
 [**Remediation**](https://docs.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources) is accomplished by instructing **Azure Policy** to run the deployIfNotExists effect or the modify operations of the assigned **policy** on your existing resources and subscriptions, whether that assignment is to a management group, a subscription, a resource group, or an individual resource.
 
 ## Testing Policy
@@ -296,6 +307,7 @@ Error by Azure Policy
 
 {: .notice--warning}
 <i class="fas fa-exclamation-triangle"></i> **Warning** \
+\
 A failed evaluation of Policy is an implicit **deny**.
 
 ## Viewing Policy Compliance
@@ -322,7 +334,9 @@ Everything in Azure is defined by JSOn. Best way to define a resource is to by t
 ![](https://i.imgur.com/nudE9V8.png){: .full}
 
 {: .notice--success}
-🍹 **Tip**: You must follow [Microsoft Naming and Tagging Resources Best Practice](https://docs.microsoft.com/en-us/system-center/scsm/sm-parts?view=sc-sm-2019) \
+🏆 **ProTip** \
+\
+You must follow [Microsoft Naming and Tagging Resources Best Practice](https://docs.microsoft.com/en-us/system-center/scsm/sm-parts?view=sc-sm-2019) \
 \
 ![](https://i.imgur.com/LdZ3hXK.png){: .full}
 
@@ -330,7 +344,9 @@ Everything in Azure is defined by JSOn. Best way to define a resource is to by t
 
 RBAC helps you to grant actions, permissions to the Security Principles. RBAC can be applied to Management Groups, Subscriptions and Resource Groups. You should not apply at Resource Level not a good practice. RBAC is built around **Roles** only.
 
-{: .notice--info} <i class="fa fa-info-circle"></i> **Note** \
+{: .notice--info}
+<i class="fa fa-info-circle"></i> **Note** \
+\
 Both Policy and RBAC can be applied to various Azure Resources Levels.
 
 Access Control
@@ -352,12 +368,61 @@ Role is combinations of approved actions that can be performed.
 
 I can have ARM template, role assignment, i.e. RBAC and policy all as artifacts within a blueprint and all assigned at different level in the various resource groups, I create or may be already exists as part of blueprint. I can assign the blueprint at subscription level. And blueprint is going to stamp down that configuration. Once blueprint is published then only it can be assigned. Blueprint are saved in subscription or management group.
 
-### Blueprint are locked in three types
+### Azure Blueprint can lock resources in three types
 
 Blueprint can be assigned in 3 different flavors:
 **Don't Lock**: Subscription owner can modify or delete the resources that are stamped down.
 **Read Only**: I can not modify or delete the resources that are stamped down.
 **Do Not Delete**: I can modify but can't delete various resources.
+
+## Creating Azure Blueprint
+
+### Viewing Built-In Azure Blueprint
+
+There is ready made blueprint for `ISO 27001:ASE/SQL workload` that deploys resource groups for azure app service and SQL DB and extends ISO standard.
+
+![](https://imgur.com/2cwf9dX.png){: .full}
+
+![](https://imgur.com/pNHkGrN.gif){: .full}
+
+This is only using ARM template and Resource Group.
+
+### Creating Azure Blueprint
+
+`FedRAMP High` is for Assigning Policies.
+![](https://imgur.com/qfWCyfB.png){: .full}
+
+**Step 1: Add Resource Group**
+You can add Policy, Role, ARM Template and Resource group.
+![](https://imgur.com/1IKoh7L.png){: .full}
+You can Resource Group put name `rg-networking`
+Location is hardcoded
+**Step 2: Next add Artifacts**
+You can not nest resource group you can choose only ARM Template, Role and Policy
+![](https://imgur.com/IzV71SJ.png){: .full}
+**Step 3: Assign Role**
+![](https://imgur.com/rnF3u2W.png){: .full}
+
+![](https://imgur.com/0tzWK8p.png){: .full}
+Virtual Machine Contributor Role
+And Assign to Some Admin Group
+
+
+In this example I will go ahead and create brand new blueprint which will have one Policy at subscription level. Next I will create a Resource Group for networking. Inside Resource group I will add Role as contributer to resource group and finally I will add ARM Template to create New Network.
+![](https://imgur.com/BOGk4E6.gif){: .full}
+
+### Assigning Azure Blueprint
+
+![](https://imgur.com/9aabgj4.gif){: .full}
+
+{: .notice--success}
+🏆 **ProTip** \
+\
+When you delete Azure Blueprint it does not delete the resources that it deployed. when you wan to assign a blueprint across the subscriptions under your enterprise then Assign it at Management Group level. 
+
+
+
+
 
 ## References
 
