@@ -52,7 +52,7 @@ Check my [Azure Governance article](https://rupeshtiwari.com/design-azure-govern
 
 ## What is Resource Group in Azure?
 
-A container that holds related resources for an Azure solution. The resource group includes those resources that you want to manage as a group. You decide which resources belong in a resource group based on what makes the most sense for your organization.
+A `container` that holds related `resources` for an Azure solution. The resource group includes those resources that you want to manage as a group. You decide which resources belong in a resource group based on what makes the most sense for your organization.
 Important factors to put resource in Resource Group:
 
 1. All the resources in your resource group should share the same **lifecycle**. You deploy, update, and delete them together.
