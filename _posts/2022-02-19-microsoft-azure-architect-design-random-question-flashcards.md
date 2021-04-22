@@ -1,5 +1,5 @@
 ---
-title: Microsoft Azure Architect Design Random Question Flashcards
+title: Random Flashcards for Microsoft Azure Architect Design
 date: 2022-02-19 00:00 +0000
 description:
 author_profile: true
@@ -19,7 +19,7 @@ tags:
   - azure
   - webdev
   - beginners
-  - tutorial
+  - az304
 ---
 
 > Do you want to refresh AZ 304 Microsoft Azure Architect Design related random questions? This article will give you great random flashcards to remember Azure concepts.

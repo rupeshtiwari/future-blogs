@@ -19,7 +19,7 @@ tags:
   - azure
   - webdev
   - beginners
-  - tutorial
+  - az304
 ---
 
 > Are you wondering how to enforce business compliance to the deployed resources over Azure? Did you know you can write configuration file to deploy resources and enforce the policies in your organization? Read this article to learn about the core Azure Governance with [Azure Policy Microsoft Documentation](https://docs.microsoft.com/en-us/azure/governance/policy/) that enables all of these out of the box for you.
@@ -375,7 +375,7 @@ Blueprint can be assigned in 3 different flavors:
 **Read Only**: I can not modify or delete the resources that are stamped down.
 **Do Not Delete**: I can modify but can't delete various resources.
 
-## Creating Azure Blueprint
+## Viewing & Creating Azure Blueprint
 
 ### Viewing Built-In Azure Blueprint
 
@@ -385,44 +385,53 @@ There is ready made blueprint for `ISO 27001:ASE/SQL workload` that deploys reso
 
 ![](https://imgur.com/pNHkGrN.gif){: .full}
 
-This is only using ARM template and Resource Group.
+This is only using ARM template and Resource Group only.
+
+`FedRAMP High` built-in template is for Assigning Policies.
 
 ### Creating Azure Blueprint
 
-`FedRAMP High` is for Assigning Policies.
+In Azure blueprint you can add Policy, Role, ARM Template and Resource group.
+
 ![](https://imgur.com/qfWCyfB.png){: .full}
 
-**Step 1: Add Resource Group**
-You can add Policy, Role, ARM Template and Resource group.
+
+#### Step 1: Add Resource Group
+
 ![](https://imgur.com/1IKoh7L.png){: .full}
-You can Resource Group put name `rg-networking`
-Location is hardcoded
-**Step 2: Next add Artifacts**
+
+You can add Resource Group put name `rg-networking`
+
+Location is hardcoded.
+
+#### Step 2: Next add Artifacts
+
 You can not nest resource group you can choose only ARM Template, Role and Policy
+
 ![](https://imgur.com/IzV71SJ.png){: .full}
-**Step 3: Assign Role**
+
+#### Step 3: Assign Role
+
 ![](https://imgur.com/rnF3u2W.png){: .full}
 
 ![](https://imgur.com/0tzWK8p.png){: .full}
+
 Virtual Machine Contributor Role
 And Assign to Some Admin Group
 
+In this example, I will go ahead and create brand new blueprint which will have one Policy at subscription level. Next I will create a Resource Group for networking. Inside Resource group I will add Role as contributer to resource group and finally I will add ARM Template to create New Network.
 
-In this example I will go ahead and create brand new blueprint which will have one Policy at subscription level. Next I will create a Resource Group for networking. Inside Resource group I will add Role as contributer to resource group and finally I will add ARM Template to create New Network.
 ![](https://imgur.com/BOGk4E6.gif){: .full}
 
 ### Assigning Azure Blueprint
+When you publish your blueprint you have to give some version like `v1.0`. Next you can assign blueprint. Once you assign it will execute steps and create resources, add policies, deploy network etc. You can deploy as many 5000 resources through one Azure blueprint. 
 
 ![](https://imgur.com/9aabgj4.gif){: .full}
 
 {: .notice--success}
 🏆 **ProTip** \
 \
-When you delete Azure Blueprint it does not delete the resources that it deployed. when you wan to assign a blueprint across the subscriptions under your enterprise then Assign it at Management Group level. 
-
-
-
-
+When you **delete** Azure Blueprint it does **not delete the resources** that it deployed. when you wan to assign a blueprint across the subscriptions under your enterprise then Assign it at Management Group level.
 
 ## References
 
