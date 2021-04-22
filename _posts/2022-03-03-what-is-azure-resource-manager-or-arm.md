@@ -19,7 +19,7 @@ tags:
   - azure
   - webdev
   - beginners
-  - tutorial
+  - az304
 ---
 
 > Did you know you can create and deploy Azure resources using JSON template? Did you also know that you can enforce business compliances on your resources? All of this can be done using Azure Resource Manager (ARM). Read this article to learn everything important about ARM. You can write code to deploy infrastructure using ARM template called Infrastructure-as-Code.
