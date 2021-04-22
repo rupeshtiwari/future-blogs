@@ -55,42 +55,70 @@ Check my [Azure Governance article](https://rupeshtiwari.com/design-azure-govern
 A `container` that holds related `resources` for an Azure solution. The resource group includes those resources that you want to manage as a group. You decide which resources belong in a resource group based on what makes the most sense for your organization.
 Important factors to put resource in Resource Group:
 
-1. All the resources in your resource group should share the same **lifecycle**. You deploy, update, and delete them together.
+### Group resources by lifecycle
 
-   {: .notice--info}
-   <i class="fa fa-info-circle"></i> **Note** \
-   If one resource, such as a server, needs to exist on a different deployment cycle it should be in another resource group.
+All the resources in your resource group should share the same **lifecycle**. You deploy, update, and delete them together.
 
-2. Each resource can exist in only one resource group.
-3. However, the resources in a resource group can be located in different regions than the resource group.
-4. You can move a resource from one resource group to another group.
-5. When creating a resource group, you need to provide a location.
+{: .notice--info}
+<i class="fa fa-info-circle"></i> **Note** \
+ If one resource, such as a server, needs to exist on a different deployment cycle it should be in another resource group.
 
-   {: .notice--warning}
-   <i class="fas fa-exclamation-triangle"></i> **Warning** \
-   If the resource group's region is temporarily unavailable, you can't update resources in the resource group because the metadata is unavailable. The resources in other regions will still function as expected, but you can't update them.
+### Resource can exist in only one group.
 
-6. A resource group can be used to scope access control for administrative actions. To manage a resource group, you can assign [Azure Policies](https://docs.microsoft.com/en-us/azure/governance/policy/overview), [Azure roles](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal), or [resource locks](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources).
-7. You can [apply tags](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources) to a resource group. The resources in the resource group don't inherit those tags.
+Each resource can exist in only one resource group. Same resource instance can not belong to multiple resource groups. 
 
-   {: .notice--info}
-   <i class="fa fa-info-circle"></i> **Note** \
-   The resources in the resource group don't inherit those tags.
+### Resource locations can be different
 
-8. A resource can connect to resources in other resource groups.
+However, the resources in a resource group can be located in different regions than the resource group.
 
-   {: .notice--info}
-   <i class="fa fa-info-circle"></i> **Note** \
-   You can have a web app that connects to a database in a different resource group. These two resources are related but don't share the same lifecycle however they can connect to each other.
+### Resource can change groups
 
-9. When you delete a resource group, all resources in the resource group are also deleted.
-10. You can deploy up to 800 instances of a resource type in each resource group.
-11. Some resources can exist outside of a resource group. These resources are deployed to the [subscription](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-subscription), [management group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-management-group), or [tenant](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-tenant). Only specific resource types are supported at these scopes.
+You can move a resource from one resource group to another group.
+
+### Resource group must have location
+
+When creating a resource group, you need to provide a location.
 
 {: .notice--success}
 🍹 **Tip** \
-"Why does a resource group need a location? And, if the resources can have different locations than the resource group, why does the resource group location matter at all?" The resource group stores metadata about the resources. When you specify a location for the resource group, you're specifying where that metadata is stored. For compliance reasons, you may need to ensure that your data is stored in a particular region.
+**"Why does a resource group need a location?"** And, if the resources can have different locations than the resource group, why does the resource group location matter at all?" The resource group stores metadata about the resources. When you specify a location for the resource group, you're specifying where that metadata is stored. For compliance reasons, you may need to ensure that your data is stored in a particular region.
 See [Resource groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview#resource-groups).
+
+{: .notice--warning}
+<i class="fas fa-exclamation-triangle"></i> **Warning** \
+ If the resource group's region is temporarily unavailable, you can't update resources in the resource group because the metadata is unavailable. The resources in other regions will still function as expected, but you can't update them.
+
+### Resource group is good boundary for security and compliances
+
+A resource group can be used to scope access control for administrative actions. To manage a resource group, you can assign [Azure Policies](https://docs.microsoft.com/en-us/azure/governance/policy/overview), [Azure roles](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal), or [resource locks](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources). 7. You can [apply tags](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources) to a resource group. The resources in the resource group don't inherit those tags.
+
+### Resource group can be Tagged
+
+You can [apply tags](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources) to a resource group.
+
+{: .notice--info}
+<i class="fa fa-info-circle"></i> **Note** \
+ The resources in the resource group don't inherit those tags.
+
+### Resources can communication across groups
+
+A resource can connect to resources in other resource groups.
+
+{: .notice--success}
+🍹 **Tip** \
+ You can have a web app that connects to a database in a different resource group. These two resources are related but don't share the same lifecycle however they can connect to each other.
+
+### Resource is composed in group
+
+When you delete a resource group, all resources in the resource group are also deleted.
+
+### 800 Resources in a group
+
+You can deploy up to 800 instances of a resource type in each resource group.
+
+### Resource can exist outside of group
+
+Some resources can exist outside of a resource group. These resources are deployed to the [subscription](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-subscription), [management group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-management-group), or [tenant](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-tenant). Only specific resource types are supported at these scopes.
 
 ## References
 
