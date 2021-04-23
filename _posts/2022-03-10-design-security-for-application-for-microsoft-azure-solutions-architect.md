@@ -42,7 +42,18 @@ tags:
 - Your application authenticate using certificate, secrete or password
 - Your Resources under process has to store the certificate, secrete or password
 
-## Using Managed Identities
+## What are the options
+
+**Option 1: Using Role Based Access Control**
+
+Azure has resources that supports Role Based Access Controls (RBAC) like Key Vault. Azure has resources which also supports Managed Identity like Function App, Virtual Machines. You can enable managed identity for resource like Function App. Next you can create Key Vault with Azure Role Based Access Control permission model. In key vault, Access control (IAM), assign Role to this function app to GET, SET etc.
+
+{: .notice--warning}
+<i class="fas fa-exclamation-triangle"></i> **Warning** \
+\
+Not every resources in Azure supports Role Based Access Control. So this above solution may not work for all resources in Azure.
+
+## Using Azure Managed Identities
 
 Managed identities provide an `identity` for `applications` to use when `connecting` to `resources` that support `Azure Active Directory (Azure AD) authentication`. Applications may use the managed identity to obtain Azure AD tokens from a special Azure endpoint `http://169.254.169.254/metadata/`.
 
@@ -105,16 +116,25 @@ I have System-Managed Identity to my VM.
 
 ![](https://imgur.com/3aj0sm0.png){: .full}
 
-Now I can go to Storage Account, Access Control (IAM) and select Role Assignments. I added VM to Storage Blob data as contributer. So with this VM Identity I can access any container of this Blob Storage Account.
+Now I can go to Storage Account, Access Control (IAM) and select Role Assignments. I already added VM to Storage Blob data as contributer.
 
 ![](https://imgur.com/lBTXv3J.png){: .full}
 
+### Copying Images using VM System Managed Identity
 
+So with this VM Identity, I can access any container of this Blob Storage Account. Like using Powershell script I can copy images from blob storage to my VM directory.
 
+![](https://imgur.com/5DzxE66.png){: .full}
 
+![](https://imgur.com/zhJedxl.png){: .full}
 
+### Reading Secretes from KeyVault using Azure Token from VM
 
+I can get Azure Token from special endpoint Azure REST API. Next using token as managed identity I can integrate with Key Vault and read the secrete.
 
+Before you read the key vault secrete from VM. You must go to Key Vault and assign VM managed identity to give access. Settings group Access Policies and
+
+![](https://imgur.com/PO3S3TL.png){: .full}
 
 ## References
 

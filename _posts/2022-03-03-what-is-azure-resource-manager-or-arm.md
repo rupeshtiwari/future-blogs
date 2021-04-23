@@ -34,7 +34,7 @@ When a user sends a request from any of the Azure tools, APIs, or SDKs, Resource
 
 The following image shows the role Azure Resource Manager plays in handling Azure requests.
 
-![](https://imgur.com/fisyo54.png){: .full}
+![](https://imgur.com/H2jU5kP.png){: .full}
 
 {: .notice--success}
 🏆 **ProTip** \

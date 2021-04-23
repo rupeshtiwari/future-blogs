@@ -371,8 +371,11 @@ I can have ARM template, role assignment, i.e. RBAC and policy all as artifacts 
 ### Azure Blueprint can lock resources in three types
 
 Blueprint can be assigned in 3 different flavors:
+
 **Don't Lock**: Subscription owner can modify or delete the resources that are stamped down.
+
 **Read Only**: I can not modify or delete the resources that are stamped down.
+
 **Do Not Delete**: I can modify but can't delete various resources.
 
 ## Viewing & Creating Azure Blueprint
@@ -394,7 +397,6 @@ This is only using ARM template and Resource Group only.
 In Azure blueprint you can add Policy, Role, ARM Template and Resource group.
 
 ![](https://imgur.com/qfWCyfB.png){: .full}
-
 
 #### Step 1: Add Resource Group
 
@@ -424,16 +426,41 @@ In this example, I will go ahead and create brand new blueprint which will have 
 ![](https://imgur.com/BOGk4E6.gif){: .full}
 
 ### Assigning Azure Blueprint
-When you publish your blueprint you have to give some version like `v1.0`. Next you can assign blueprint. Once you assign it will execute steps and create resources, add policies, deploy network etc. You can deploy as many 5000 resources through one Azure blueprint. 
+
+When you publish your blueprint you have to give some version like `v1.0`. Next you can assign blueprint. Once you assign it will execute steps and create resources, add policies, deploy network etc. You can deploy as many 5000 resources through one Azure blueprint.
 
 ![](https://imgur.com/9aabgj4.gif){: .full}
 
 {: .notice--success}
 🏆 **ProTip** \
 \
-When you **delete** Azure Blueprint it does **not delete the resources** that it deployed. when you wan to assign a blueprint across the subscriptions under your enterprise then Assign it at Management Group level.
+When you **delete** Azure Blueprint it does **not delete the resources** that it deployed. when you want to assign a blueprint across the subscriptions under your enterprise then Assign it at Management Group level.
 
 ## References
 
 1. [Azure Policy Microsoft Documentation](https://docs.microsoft.com/en-us/azure/governance/policy/)
 2. [Microsoft Policy Concepts & Definition Structure](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure)
+
+---
+
+_Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
+
+## Become full stack developer 💻
+
+{: .notice--info}
+I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to become **Software Developer** and grow your carrier as new **Software Engineer** or **Lead Developer/Architect**. Consider subscribing to our full stack development training programs. You will learn **Angular, RxJS, JavaScript, System Architecture** and much more with lots of **hands on coding**. We have All-Access Monthly membership plans and you will get unlimited access to all of our **video** courses, **slides**, **download source code** & **Monthly video calls**.
+
+- Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access _current_ and _future_ **angular, node.js** and related courses.
+- Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
+
+{: .notice--warning}
+Your bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+
+<div class="notice--success">
+<strong>💖 Say 👋 to me!</strong>
+<br>Rupesh Tiwari
+<br>Founder of <a href="https://www.fullstackmaster.net">Fullstack Master </a>
+<br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
+<br>Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
+</div>
+![](https://imgur.com/a32nUcu.png)
