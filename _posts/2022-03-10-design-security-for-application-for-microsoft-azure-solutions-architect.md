@@ -42,16 +42,32 @@ tags:
 - Your application authenticate using certificate, secrete or password
 - Your Resources under process has to store the certificate, secrete or password
 
-## What are the options
+However, this is also not advisable. Let's explore what else you can do?
 
-**Option 1: Using Role Based Access Control**
+## What are the options for managing identities for applications?
 
-Azure has resources that supports Role Based Access Controls (RBAC) like Key Vault. Azure has resources which also supports Managed Identity like Function App, Virtual Machines. You can enable managed identity for resource like Function App. Next you can create Key Vault with Azure Role Based Access Control permission model. In key vault, Access control (IAM), assign Role to this function app to GET, SET etc.
+### Option 1: Using Managed Identity as Role Based Access Control (RBAC)
+
+Azure has many resources that supports `Role Based Access Controls (RBAC)` like: `Key Vault`, `Storage Accounts`. Azure also has resources that supports `Managed Identity` like `Function App`, `Virtual Machines`.
+Therefore, you can enable managed identity for a desired application. And go to the desired target resource which you want to access from application and assign role for that application managed identity. 
+
+For example, enable managed identity Function App. Next you can create Key Vault with `Azure Role Based Access Control` permission model. In the key vault, `Access control (IAM)`, assign Role to this function app for GET, SET etc. permissions. With this setup your Function App can read and write secretes to your newly created Key Vault.
 
 {: .notice--warning}
 <i class="fas fa-exclamation-triangle"></i> **Warning** \
 \
 Not every resources in Azure supports Role Based Access Control. So this above solution may not work for all resources in Azure.
+
+
+### Option 2: Using Key Vault to store Secretes and Certificates
+
+Like I said, not all resources in Azure supports RBAC Managed Identity authentication & authorization. Since these resources don't support Azure AD. For those resources you must need a secrete or certificates. 
+
+Suppose you have an application to encrypt a file and you need a secrete to encrypt. Where do you store the secrete? How you application read the secrete at run time? Well the answer for all these questions is **Key Vault**. 
+
+Since Key Vault supports Azure AD authentication. It can easily connect with resources with their Managed Identities as RBAC. I can also integrate Key Vault with Azure Policies and adhere to compliances. 
+
+For example, you can grant permission to a Function App with their Managed Identity. Now your function app can read the secrete and do the business like encrypt a file etc. 
 
 ## Using Azure Managed Identities
 
@@ -60,7 +76,7 @@ Managed identities provide an `identity` for `applications` to use when `connect
 {: .notice--success}
 🏆 **ProTip** \
 \
-Only resources that support **Azure Active Directory (Azure AD) authentication** & has a authorization form can allow to connect themselves to other resources using Managed Identities.
+Only resources that support **Azure Active Directory (Azure AD) authentication** & has a authorization form can allow to connect themselves to other resources using `Managed Identities`.
 
 For example, an application may use a managed identity to access resources like [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/overview) where developers can store credentials in a secure manner. You can request different token for Azure Storage Accounts. Or you can read secrete from Azure Key Vault and access to Azure blob storage if you have read permission.
 
@@ -130,11 +146,25 @@ So with this VM Identity, I can access any container of this Blob Storage Accoun
 
 ### Reading Secretes from KeyVault using Azure Token from VM
 
-I can get Azure Token from special endpoint Azure REST API. Next using token as managed identity I can integrate with Key Vault and read the secrete.
+I can get Azure Token from special endpoint Azure REST API. Next using token as managed identity I can integrate with Key Vault and read the secretes.
 
-Before you read the key vault secrete from VM. You must go to Key Vault and assign VM managed identity to give access. Settings group Access Policies and
+Before you read the key vault secrete from VM. You must go to Key Vault and assign VM managed identity to give access. 
+
+![](https://imgur.com/PgT8Qrc.png){: .full}
+
+
+Settings group Access Policies and confirm the VM has permissions.
+
+![](https://imgur.com/sCI19fS.png){: .full}
+
+I can get Azure Token from special endpoint Azure REST API. 
 
 ![](https://imgur.com/PO3S3TL.png){: .full}
+
+Next I can read the secrets from my key vault by making REST API call to key vault and passing `Authorization="Bearer $AzureToken"` as request header. 
+
+![](https://imgur.com/ayhdVUD.png){: .full}
+
 
 ## References
 
