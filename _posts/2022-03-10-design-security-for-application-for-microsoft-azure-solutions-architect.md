@@ -56,29 +56,44 @@ For example, an application may use a managed identity to access resources like 
 {: .notice--success}
 🏆 **ProTip** \
 \
-Managed Identities is **free of cost** 💰 no additional charges to use.
+Managed Identities is **free of cost** 💰 no additional charges to use. Microsoft will create a Security Principle in Azure AD when you create Managed Identity. 
 
 ![](https://imgur.com/6kH5Py7.png){: .full}
 
-There are two types of managed identities:
+There are two types of managed Identities:
 
 ### 1. System-Assigned Identity
 
-System-Assigned Identity is one-to-one relationship between identity and service. When you enable a system-assigned managed identity an identity is created in Azure AD that is tied to the lifecycle of that service instance. So when the resource is deleted, Azure automatically deletes the identity for you. For example, an application that runs on a single virtual machine.
+System-Assigned Identity is **one-to-one** relationship between identity and resource. When you enable a system-assigned managed identity an identity is created in Azure AD that is tied to the **lifecycle** of that service instance. So when the resource is deleted, Azure automatically deletes the identity for you. For example, an application that runs on a single virtual machine. You can not use or share system-assigned identity with different resources than it created. You can always create the
 
 {: .notice--success}
 🏆 **ProTip** \
 \
-When you have VM you give system-assigned when you delete the VM your identity from Azure AD gets deleted.
+When you have VM you give **system-assigned** when you delete the VM your identity from Azure AD gets deleted. It **shares the lifecycle of the resource**. You **can not share** identity with different resources.
 
 ### 2. User-assigned Identity
 
-User-assigned is one-to-many relationship between identity and services. You can [create a user-assigned managed identity](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/how-to-manage-ua-identity-portal) and assign it to one or more instances of an Azure service. For example, a workload where multiple virtual machines need to access the same resource
+User-assigned is **one-to-many** relationship between identity and resources. It has standalone its own lifecycle. You can [create a user-assigned managed identity](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/how-to-manage-ua-identity-portal) and assign it to one or more instances of an Azure service. For example, a workload where multiple virtual machines need to access the same resource
 
 {: .notice--success}
 🏆 **ProTip** \
 \
-When you create user-assigned identity then you can use them in many Function Apps, many Virtual Machines, and as many resources as you want.
+When you create **user-assigned identity** then you can use them in many Function Apps, many Virtual Machines, and as many resources as you want. It is **sharable** identity across resources.
+If you delete the resource then user-assigned identity never deletes automatically. You must manually delete them explicitly. 
+
+#### Creating User Assigned Managed Identity at Resource Group Level
+
+![](https://imgur.com/ffGMlFQ.gif){: .full}
+
+When you create Managed Identity behind the scene Microsoft will create a security principle in Azure AD. 
+
+![](https://imgur.com/Tq8p5sH.png){: .full}
+
+#### Assigning Managed Identity to a Function App
+
+![](https://imgur.com/9U5ay1w.png){: .full}
+
+When you go to Function App or any resource then you will have `Identity` under `Settings` section. There you have choice to either assign System-Assigned Managed Identity or User-Assigned Managed Identity.
 
 ### Assigning System Managed Identity Roles
 
@@ -87,7 +102,6 @@ When you create user-assigned identity then you can use them in many Function Ap
 ## References
 
 1. [Managed Identities Azure Resource](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview)
-
 
 ---
 
