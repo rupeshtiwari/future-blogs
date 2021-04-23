@@ -46,7 +46,7 @@ However, this is also not advisable. Let's explore what else you can do?
 
 ## What are the options for managing identities for applications?
 
-### Option 1: Using Managed Identity as Role Based Access Control (RBAC)
+### Option 1: Using Azure Managed Identity as Role Based Access Control (RBAC)
 
 Azure has many resources that supports `Role Based Access Controls (RBAC)` like: `Key Vault`, `Storage Accounts`. Azure also has resources that supports `Managed Identity` like `Function App`, `Virtual Machines`.
 Therefore, you can enable managed identity for a desired application. And go to the desired target resource which you want to access from application and assign role for that application managed identity. 
@@ -59,7 +59,7 @@ For example, enable managed identity Function App. Next you can create Key Vault
 Not every resources in Azure supports Role Based Access Control. So this above solution may not work for all resources in Azure.
 
 
-### Option 2: Using Key Vault to store Secretes and Certificates
+### Option 2: Using Azure Key Vault to store Secretes and Certificates
 
 Like I said, not all resources in Azure supports RBAC Managed Identity authentication & authorization. Since these resources don't support Azure AD. For those resources you must need a secrete or certificates. 
 
