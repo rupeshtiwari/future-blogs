@@ -44,7 +44,7 @@ tags:
 
 ## Using Managed Identities
 
-Managed identities provide an `identity` for `applications` to use when `connecting` to `resources` that support `Azure Active Directory (Azure AD) authentication`. Applications may use the managed identity to obtain Azure AD tokens.
+Managed identities provide an `identity` for `applications` to use when `connecting` to `resources` that support `Azure Active Directory (Azure AD) authentication`. Applications may use the managed identity to obtain Azure AD tokens from a special Azure endpoint `http://169.254.169.254/metadata/`.
 
 {: .notice--success}
 🏆 **ProTip** \
@@ -56,7 +56,7 @@ For example, an application may use a managed identity to access resources like 
 {: .notice--success}
 🏆 **ProTip** \
 \
-Managed Identities is **free of cost** 💰 no additional charges to use. Microsoft will create a Security Principle in Azure AD when you create Managed Identity. 
+Managed Identities is **free of cost** 💰 no additional charges to use. Microsoft will create a **Security Principle in Azure AD** when you create Managed Identity.
 
 ![](https://imgur.com/6kH5Py7.png){: .full}
 
@@ -79,13 +79,13 @@ User-assigned is **one-to-many** relationship between identity and resources. It
 🏆 **ProTip** \
 \
 When you create **user-assigned identity** then you can use them in many Function Apps, many Virtual Machines, and as many resources as you want. It is **sharable** identity across resources.
-If you delete the resource then user-assigned identity never deletes automatically. You must manually delete them explicitly. 
+If you delete the resource then user-assigned identity never deletes automatically. You must manually delete them explicitly.
 
 #### Creating User Assigned Managed Identity at Resource Group Level
 
 ![](https://imgur.com/ffGMlFQ.gif){: .full}
 
-When you create Managed Identity behind the scene Microsoft will create a security principle in Azure AD. 
+When you create Managed Identity behind the scene Microsoft will create a security principle in Azure AD.
 
 ![](https://imgur.com/Tq8p5sH.png){: .full}
 
@@ -98,6 +98,23 @@ When you go to Function App or any resource then you will have `Identity` under 
 ### Assigning System Managed Identity Roles
 
 ![](https://imgur.com/W6ULtIM.png){: .full}
+
+## Demo: Managed Identity with VM
+
+I have System-Managed Identity to my VM.
+
+![](https://imgur.com/3aj0sm0.png){: .full}
+
+Now I can go to Storage Account, Access Control (IAM) and select Role Assignments. I added VM to Storage Blob data as contributer. So with this VM Identity I can access any container of this Blob Storage Account.
+
+![](https://imgur.com/lBTXv3J.png){: .full}
+
+
+
+
+
+
+
 
 ## References
 
