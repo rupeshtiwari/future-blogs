@@ -54,19 +54,41 @@ A virtual machine running in Azure can now be associated with a direct and publi
 A **network security group (NSG)** contains a list of security rules that allow or deny network traffic to resources connected to Azure Virtual Networks (VNet). NSGs can be associated to subnets or individual network interfaces (NIC) attached to VMs.
 
 ## NIC
-A [Network Interface (NIC)](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface) enables an Azure Virtual Machine to communicate with internet, Azure, and on-premises resources. When creating a virtual machine using the Azure portal, the portal creates one network interface with default settings for you. 
+
+A [Network Interface (NIC)](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface) enables an Azure Virtual Machine to communicate with internet, Azure, and on-premises resources. When creating a virtual machine using the Azure portal, the portal creates one network interface with default settings for you.
 
 ## RBAC
 
 **Role-based access control (RBAC)** is a policy-neutral access-control mechanism defined around roles and privileges. The components of RBAC such as role-permissions, user-role and role-role relationships make it simple to perform user assignments.
 
 ## CMDB
- Configuration Management Database 
+
+Configuration Management Database
 
 ## Rack
 
 A Rack has servers (Virtual Machines) in a data-center.
 
- ## SKU
- Stock Keeping Unit (SKU) Learn more about [SKU types in Azure](https://docs.microsoft.com/en-us/rest/api/compute/resourceskus/list)
- 
+## SKU
+
+Stock Keeping Unit (SKU) Learn more about [SKU types in Azure](https://docs.microsoft.com/en-us/rest/api/compute/resourceskus/list)
+
+## VPN
+
+Virtual Private Network (VPN). In Azure VPN is a type of Virtual Network Gateway.
+
+## VIP
+
+Virtual IP address. VIP is an IP address that doesn't correspond to an actual physical network interface.
+
+## BGP
+
+“Border Gateway Protocol (BGP)" is a standardized exterior gateway protocol designed to exchange routing and reachability information between autonomous systems (AS) on the Internet.
+
+## IKE
+
+Internet Key Exchange
+
+## IPV
+
+Internet Protocol Version (IPV). **IPv6** is more advanced and has better features compared to **IPv4**.
