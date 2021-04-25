@@ -96,3 +96,8 @@ Internet Protocol Version (IPV). **IPv6** is more advanced and has better featur
 ## LNG
 
 The Local Network Gateway (LNG) typically refers to your on-premises location. [Learn...](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-create-site-to-site-rm-powershell)
+
+
+## CIDR
+
+Classless Inter-Domain Routing (CIDR).  
