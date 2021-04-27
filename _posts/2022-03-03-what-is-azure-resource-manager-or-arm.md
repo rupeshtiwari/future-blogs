@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/7I0NoBe.png
+image: https://i.imgur.com/rFW3EiY.png
 header:
-  image: https://i.imgur.com/vce9zzl.png
-  teaser: https://i.imgur.com/7I0NoBe.png
-  og_image: https://i.imgur.com/7I0NoBe.png
+  image: https://i.imgur.com/v8iEpyg.png
+  teaser: https://i.imgur.com/rFW3EiY.png
+  og_image: https://i.imgur.com/rFW3EiY.png
 tags:
   - azure
   - webdev
@@ -68,7 +68,7 @@ All the resources in your resource group should share the same **lifecycle**. Yo
 
 ### Resource can exist in only one group.
 
-Each resource can exist in only one resource group. Same resource instance can not belong to multiple resource groups. 
+Each resource can exist in only one resource group. Same resource instance can not belong to multiple resource groups.
 
 ### Resource locations can be different
 

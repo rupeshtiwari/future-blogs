@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/7I0NoBe.png
+image: https://i.imgur.com/rFW3EiY.png
 header:
-  image: https://i.imgur.com/vce9zzl.png
-  teaser: https://i.imgur.com/7I0NoBe.png
-  og_image: https://i.imgur.com/7I0NoBe.png
+  image: https://i.imgur.com/v8iEpyg.png
+  teaser: https://i.imgur.com/rFW3EiY.png
+  og_image: https://i.imgur.com/rFW3EiY.png
 tags:
   - azure
   - webdev
@@ -67,10 +67,9 @@ Running a VM with one or more replicated copies on different **Availability Zone
 🍹 **Tip** \
 Azure Availability Zones are unique physical locations within an Azure region and offer high availability to protect your applications and data from datacenter failures. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking. The physical separation of availability zones within a region protects apps and data from facility-level issues. Zone-redundant services replicate your apps and data across Azure Availability Zones to protect from single points of failure.
 
-## What is the  Azure global network?
+## What is the Azure global network?
 
 The Azure global network refers to all of the components in networking and is comprised of the Microsoft global wide-area network (WAN), points of presence (PoPs), fiber, and others.
-
 
 ## Azure Data-Center
 
@@ -85,8 +84,8 @@ In the Data Center the servers are divided into multiple physical and logical gr
 An [availability set](https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview) is a logical grouping of VMs that allows Azure to understand how your application is built to provide for redundancy and availability.
 
 ## What is azure fault domain?
-![](https://imgur.com/8nolkCg.png){: .full}
 
+![](https://imgur.com/8nolkCg.png){: .full}
 
 The physical grouping of servers (virtual machines) is called Fault Domain. It is Each server share a common power source and network switch within a Fault Domain. A fault domain is a set of hardware components that share a single point of failure.
 
