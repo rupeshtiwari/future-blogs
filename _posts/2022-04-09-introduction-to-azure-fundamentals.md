@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: Introduction to Azure Fundamentals
 date: 2022-04-09 00:00 +0000
 description:
