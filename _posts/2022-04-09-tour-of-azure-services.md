@@ -1,5 +1,5 @@
 ---
-title: Tour of Azure Services
+title: Everything you should know about Azure Services!
 date: 2022-04-09 00:00 +0000
 description: Learn what are the service Azure offers to your business in this article.
 author_profile: true
@@ -205,7 +205,7 @@ Remember this sentence:
 
 [Learn Azure Mobile Services Definitions from Microsoft Document...](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services)
 
-## Databases
+## Databases 🗄️
 
 Azure provides multiple database services to store a wide variety of data types and volumes.
 
@@ -220,3 +220,20 @@ Azure provides multiple database services to store a wide variety of data types 
 - Synapse Analytics
 
 [Learn Azure Databases Services Definitions from Microsoft Document...](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services)
+
+## Web 🕸️
+
+Azure includes `first-class` support to build and host `web apps` and HTTP-based `web services`. The following Azure services are focused on web hosting.
+
+{: .notice--success}
+🏆 **ProTip** \
+\
+Remember this sentence "**C**alm **ASANA**".
+
+- **A** = **A**pp Service
+- **S** = **S**ignalR Service
+- **A** = **A**pps feature of Azure App Service
+- **N** = **N**otification Hubs
+- **A** = **A**PI Management
+- **C** = **C**ognitive Search
+
