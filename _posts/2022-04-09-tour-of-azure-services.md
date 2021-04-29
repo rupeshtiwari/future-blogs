@@ -48,7 +48,7 @@ Remember this sentence "_I can_ **DISBAND [CWM](https://wordunscrambler.me/dicti
 - **W** = **W**eb
 - **M** = **M**obile
 
-### Databases
+### Databases 💠
 
 ![](https://i.imgur.com/8FUIKST.png)
 
@@ -56,19 +56,19 @@ Remember this sentence "_I can_ **DISBAND [CWM](https://wordunscrambler.me/dicti
 
 ![](https://i.imgur.com/JGCCorr.png)
 
-### Internet of Thing
+### Internet of Thing (IoT) 🧮
 
 ![](https://i.imgur.com/SOyLVnr.png)
 
 Connect to large set of your IOT assets to monitor and manage. Analyze their data as well when it arrives from sensors.
 
-### Storage
+### Storage 🏪
 
 ![](https://i.imgur.com/8PMKffl.png)
 
 ![](https://i.imgur.com/Of6L8Up.png)
 
-### Big Data
+### Big Data 🥊
 
 ![](https://i.imgur.com/bHD4dG7.png)
 
@@ -76,35 +76,35 @@ Run analytics on massive scale for Large volume of data using open source cluste
 
 ![](https://i.imgur.com/NFOx4zv.png)
 
-### Artificial Intelligence
+### Artificial Intelligence 🅰️
 
 ![](https://i.imgur.com/ORIQHIA.png)
 
 Use existing data to focus future behaviors using AI. Use Machine learning to build train and deploy model to cloud.
 
-### Networking
+### Networking 🥅 
 
 ![](https://i.imgur.com/SUWVl2i.png)
 
-### DevOps
+### DevOps 🕵️
 
 ![](https://i.imgur.com/I5oneaj.png)
 
 Create build and release pipe line for CI/CD
 
-### Compute
+### Compute 🖥️
 
 ![](https://i.imgur.com/fqNKbfg.png)
 
 Learn more about [Azure Computer Services offerings](#azure-compute-services).
 
-### Web
+### Web 🕸️
 
 ![](https://i.imgur.com/RNcyNzi.png)
 
 ![](https://i.imgur.com/EE22HsT.png)
 
-### Mobile
+### Mobile 📴
 
 ![](https://i.imgur.com/a1MNofY.png)
 
@@ -188,7 +188,7 @@ Remember this sentence "**D**ouble **MASS**".
 
 [Learn Azure Storage Services Definitions from Microsoft Document...](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services)
 
-## Mobile
+## Mobile 📴
 
 With Azure, developers can create mobile back-end services for iOS, Android, and Windows apps quickly and easily.
 
@@ -236,4 +236,14 @@ Remember this sentence "**C**alm **ASANA**".
 - **N** = **N**otification Hubs
 - **A** = **A**PI Management
 - **C** = **C**ognitive Search
+
+[Learn Azure Web hosting options definitions from Microsoft Document...](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services)
+
+## IoT 🧮
+
+- IoT Central ( SaaS to connect, monitor and manage)
+- Azure IoT Hub ( to connect and communication )
+- IoT Edge ( built-in models to be pushed to IoT devices )
+  
+[Learn IoT options definitions from Microsoft Document...](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services)
 
