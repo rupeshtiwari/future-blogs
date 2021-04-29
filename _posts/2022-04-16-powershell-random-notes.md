@@ -1,5 +1,5 @@
 ---
-title: PowerShell Random Notes
+title: PowerShell Random Notes for You!
 date: 2022-04-16 00:00 +0000
 description:
 author_profile: true
