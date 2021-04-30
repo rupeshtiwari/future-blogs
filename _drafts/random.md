@@ -142,8 +142,8 @@ You will learn like:
 
 ### 2. Discuss Azure fundamental concepts
 
-**cloud concepts**
+Upon completion of this module, you'll be able to:
 
-☑️ **Advantages** of cloud computing services
-
-☑️ **Categories and types** of cloud computing
+- Identify the **benefits** and considerations of using **cloud services**.
+- Describe the differences between **categories** of **cloud services**.
+- Describe the differences between **types of cloud computing**.

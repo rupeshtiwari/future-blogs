@@ -114,8 +114,10 @@ Remember this word for advantages of Azure cloud computing **GRADES**
 
 For example in your company if you have IT team and Software Development team. And IT specialist deploys hardware and software developers create website. So you must try Azure and see:
 
-- How Azure improves the site's availability and scalability.
-- How cloud computing can make your hardware deployment processes faster.
+- Site Team can learn how Azure improves the site's availability and scalability.
+- IT Team can learn how cloud computing can make your hardware deployment processes faster.
+- Software Team can learn what are the different options available to them as they are designing new applications.
+  - For example, is there a way to run their applications in a hybrid configuration, where part of their application runs on-premises and the rest of the application runs in the cloud?
 
 ## Cloud Service Models
 
