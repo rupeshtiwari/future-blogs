@@ -19,7 +19,7 @@ tags:
   - webdev
   - azure
   - tutorial
-  - az900
+  - az 900
 ---
 
 > Learn what is Azure? How Azure works? and what are the hardware and software components that helps Azure to work. In this article I will try to give you some notes about Azure Basics. This article is part of **Core Azure Concepts**
@@ -89,8 +89,6 @@ The Azure portal is a web-based, unified console that provides an alternative to
 
 ![](https://i.imgur.com/3Vabs2f.png)
 
-
-
 ## What is Cloud computing?
 
 It's the delivery of computing services over the internet, which is otherwise known as the cloud. These services include servers, storage, databases, networking, software, analytics, and intelligence. Cloud computing offers faster innovation, flexible resources, and economies of scale.
@@ -99,7 +97,6 @@ It's the delivery of computing services over the internet, which is otherwise kn
 🏆 **ProTip** \
 \
 Save your company money 💰 "You'll only need to pay for **the resources and computing time that you use**".
-
 
 ## Advantages of Cloud Computing
 
@@ -136,16 +133,12 @@ Public, Private and Hybrid
 
 ![](https://i.imgur.com/2aB3fq3.png){: .full}
 
-
-
 ## Azure Facts to remember
 
 - Three cloud computing deployment models are public cloud, private cloud, and hybrid cloud.
 - Cloud computing typically decreases your operating expenses.
 - IaaS, PaaS, and SaaS are examples of cloud computing service models.
 - Cloud computing resources are **NOT** usually limited to specific geographic regions.
-
-
 
 ---
 

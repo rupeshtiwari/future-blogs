@@ -19,7 +19,7 @@ tags:
   - webdev
   - azure
   - tutorial
-  - az900
+  - az 900
 ---
 
 > What is Azure accounts? Why do we need Azure accounts to be created? How resources and subscriptions are attached to Azure accounts? Learn everything about Azure accounts in this article. This article is part of **Core Azure Concepts**
@@ -36,7 +36,6 @@ To create and use Azure services, you need an Azure subscription. When you creat
 🏆 **ProTip** \
 \
 You **don't need to purchase an Azure account** before you can use any Azure resources. Because, You can use a free Azure account or a Microsoft Learn sandbox to create resources.
-
 
 ![](https://imgur.com/fV0lcsb.png){: .full}
 

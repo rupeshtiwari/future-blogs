@@ -19,7 +19,7 @@ tags:
   - webdev
   - azure
   - tutorial
-  - az900
+  - az 900
 ---
 
 > Learn what are the service Azure offers to your business in this article. This article is part of **Core Azure Concepts**
