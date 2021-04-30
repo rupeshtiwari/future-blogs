@@ -22,17 +22,7 @@ tags:
   - az900
 ---
 
-> Learn everything you should know about Azure Services and their concepts as a beginner. This article is part of **Core Azure Concepts**. 
-
-
-Azure Fundamentals certification needs 6 part to be finished. 
-1. Part 1: Describe core Azure concepts
-   1. 
-2. Part 2: Describe core Azure services
-3. Part 3: Describe core solutions and management tools on Azure
-4. Part 4: Describe general security and network security features
-5. Part 5: Describe identity, governance, privacy, and compliance features
-6. Part 6: Describe Azure cost management and service level agreements
+> Learn everything you should know about Azure Services and their concepts as a beginner. 
 
 ## Azure Infrastructure and Management
 

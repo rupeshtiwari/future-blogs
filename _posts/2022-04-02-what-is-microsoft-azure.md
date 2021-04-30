@@ -109,9 +109,9 @@ Remember this word for advantages of Azure cloud computing **GRADES**
 - PaaS
 - SaaS
 
-![](https://i.imgur.com/mXfV7EH.png): .full}
+![](https://i.imgur.com/mXfV7EH.png){: .full}
 
-![](https://i.imgur.com/N2PeaDj.png): .full}
+![](https://i.imgur.com/N2PeaDj.png){: .full}
 
 {: .notice--success}
 🏆 **ProTip** \

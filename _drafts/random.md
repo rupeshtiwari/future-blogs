@@ -97,7 +97,39 @@ Internet Protocol Version (IPV). **IPv6** is more advanced and has better featur
 
 The Local Network Gateway (LNG) typically refers to your on-premises location. [Learn...](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-create-site-to-site-rm-powershell)
 
-
 ## CIDR
 
-Classless Inter-Domain Routing (CIDR).  
+Classless Inter-Domain Routing (CIDR).
+
+## Azure Fundamentals Certification (AZ 900)
+
+**Azure Fundamentals** certification needs 6 part to be finished.
+
+1. Part 1: Describe core Azure concepts
+   1. Introduction to Azure fundamentals
+   2. Discuss Azure fundamental concepts
+   3. Describe core Azure architecture components
+2. Part 2: Describe core Azure services
+3. Part 3: Describe core solutions and management tools on Azure
+4. Part 4: Describe general security and network security features
+5. Part 5: Describe identity, governance, privacy, and compliance features
+6. Part 6: Describe Azure cost management and service level agreements
+
+## Part 1: Describe core Azure concepts
+
+You will learn below things:
+
+- Understand the benefits of cloud computing in Azure and how it can save you time and money
+- Explain **cloud concepts** such as high availability, scalability, elasticity, agility, and disaster recovery
+- Describe **core Azure architecture components** such as subscriptions, management groups, resources and resource groups
+- Summarize geographic distribution concepts such as Azure regions, region pairs, and availability zones
+
+### 1. Introduction to Azure fundamentals
+
+You will learn what is cloud computing and Azure, and how to get started with Azure's subscriptions and accounts.
+
+1. [What is Azure](http://www.rupeshtiwari.com/what-is-microsoft-azure/)
+2. [Azure Services](http://www.rupeshtiwari.com/tour-of-azure-services/)
+3. [Azure accounts](http://www.rupeshtiwari.com/getting-started-with-azure-accounts/)
+
+### 2. Discuss Azure fundamental concepts
