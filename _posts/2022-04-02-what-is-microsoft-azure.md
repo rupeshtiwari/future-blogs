@@ -112,6 +112,11 @@ Remember this word for advantages of Azure cloud computing **GRADES**
 **E** = Elasticity
 **S** = Scalability
 
+For example in your company if you have IT team and Software Development team. And IT specialist deploys hardware and software developers create website. So you must try Azure and see:
+
+- How Azure improves the site's availability and scalability.
+- How cloud computing can make your hardware deployment processes faster.
+
 ## Cloud Service Models
 
 - IaaS
