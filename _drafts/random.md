@@ -119,17 +119,31 @@ Classless Inter-Domain Routing (CIDR).
 
 You will learn below things:
 
-- Understand the benefits of cloud computing in Azure and how it can save you time and money
+- Understand the **benefits of cloud computing** in Azure and how it can save you time and money
 - Explain **cloud concepts** such as high availability, scalability, elasticity, agility, and disaster recovery
 - Describe **core Azure architecture components** such as subscriptions, management groups, resources and resource groups
-- Summarize geographic distribution concepts such as Azure regions, region pairs, and availability zones
+- Summarize **geographic distribution concepts** such as Azure regions, region pairs, and availability zones
 
 ### 1. Introduction to Azure fundamentals
 
-You will learn what is cloud computing and Azure, and how to get started with Azure's subscriptions and accounts.
+**benefits of cloud computing**
+
+You will learn like:
+
+☑️ What is **cloud computing**
+
+☑️ What is **Azure**
+
+☑️ How to get started with Azure's subscriptions and **accounts**.
 
 1. [What is Azure](http://www.rupeshtiwari.com/what-is-microsoft-azure/)
 2. [Azure Services](http://www.rupeshtiwari.com/tour-of-azure-services/)
 3. [Azure accounts](http://www.rupeshtiwari.com/getting-started-with-azure-accounts/)
 
 ### 2. Discuss Azure fundamental concepts
+
+**cloud concepts**
+
+☑️ **Advantages** of cloud computing services
+
+☑️ **Categories and types** of cloud computing

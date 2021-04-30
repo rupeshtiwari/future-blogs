@@ -26,11 +26,11 @@ tags:
 
 ![](https://i.imgur.com/E80cISJ.gif)
 
-### What is Azure?
+## What is Azure?
 
 Azure is a continually expanding set of cloud services that help your organization meet your current and future business challenges. [Learn More about What is Microsoft Azure here...](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/what-is-microsoft-azure)
 
-### How Azure Works?
+## How Azure Works?
 
 ![](https://i.imgur.com/S2EB0iV.png){: .full}
 
@@ -88,6 +88,18 @@ The Azure portal is a web-based, unified console that provides an alternative to
 [Azure Marketplace](https://azuremarketplace.microsoft.com/) helps connect users with Microsoft partners, independent software vendors, and startups that are offering their solutions and services, which are optimized to run on Azure.
 
 ![](https://i.imgur.com/3Vabs2f.png)
+
+
+
+## What is Cloud computing?
+
+It's the delivery of computing services over the internet, which is otherwise known as the cloud. These services include servers, storage, databases, networking, software, analytics, and intelligence. Cloud computing offers faster innovation, flexible resources, and economies of scale.
+
+{: .notice--success}
+🏆 **ProTip** \
+\
+Save your company money 💰 "You'll only need to pay for **the resources and computing time that you use**".
+
 
 ## Advantages of Cloud Computing
 
