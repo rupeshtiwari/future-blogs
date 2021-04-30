@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/eFBcgKI.png
+image: https://i.imgur.com/8mRbgqg.png
 header:
   image: https://i.imgur.com/XMFI6bl.png
-  teaser: https://i.imgur.com/eFBcgKI.png
-  og_image: https://i.imgur.com/eFBcgKI.png
+  teaser: https://i.imgur.com/8mRbgqg.png
+  og_image: https://i.imgur.com/8mRbgqg.png
 tags:
   - webdev
   - azure
@@ -22,7 +22,17 @@ tags:
   - az900
 ---
 
-> Learn everything you should know about Azure Services and their concepts as a beginner.
+> Learn everything you should know about Azure Services and their concepts as a beginner. This article is part of **Core Azure Concepts**. 
+
+
+Azure Fundamentals certification needs 6 part to be finished. 
+1. Part 1: Describe core Azure concepts
+   1. 
+2. Part 2: Describe core Azure services
+3. Part 3: Describe core solutions and management tools on Azure
+4. Part 4: Describe general security and network security features
+5. Part 5: Describe identity, governance, privacy, and compliance features
+6. Part 6: Describe Azure cost management and service level agreements
 
 ## Azure Infrastructure and Management
 

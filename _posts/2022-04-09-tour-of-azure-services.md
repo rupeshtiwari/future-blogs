@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: false
-image: https://i.imgur.com/eFBcgKI.png
+image: https://i.imgur.com/8mRbgqg.png
 header:
   image: https://i.imgur.com/XMFI6bl.png
-  teaser: https://i.imgur.com/eFBcgKI.png
-  og_image: https://i.imgur.com/eFBcgKI.png
+  teaser: https://i.imgur.com/8mRbgqg.png
+  og_image: https://i.imgur.com/8mRbgqg.png
 tags:
   - webdev
   - azure
@@ -22,7 +22,7 @@ tags:
   - az900
 ---
 
-> Learn what are the service Azure offers to your business in this article.
+> Learn what are the service Azure offers to your business in this article. This article is part of **Core Azure Concepts**
 
 ## Azure Services
 

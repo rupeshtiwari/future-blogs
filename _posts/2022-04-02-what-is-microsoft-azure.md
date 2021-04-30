@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/eFBcgKI.png
+image: https://i.imgur.com/8mRbgqg.png
 header:
   image: https://i.imgur.com/XMFI6bl.png
-  teaser: https://i.imgur.com/eFBcgKI.png
-  og_image: https://i.imgur.com/eFBcgKI.png
+  teaser: https://i.imgur.com/8mRbgqg.png
+  og_image: https://i.imgur.com/8mRbgqg.png
 tags:
   - webdev
   - azure
@@ -22,7 +22,7 @@ tags:
   - az900
 ---
 
-> Learn what is Azure? How Azure works? and what are the hardware and software components that helps Azure to work. In this article I will try to give you some notes about Azure Basics.
+> Learn what is Azure? How Azure works? and what are the hardware and software components that helps Azure to work. In this article I will try to give you some notes about Azure Basics. This article is part of **Core Azure Concepts**
 
 ![](https://i.imgur.com/E80cISJ.gif)
 
@@ -88,6 +88,52 @@ The Azure portal is a web-based, unified console that provides an alternative to
 [Azure Marketplace](https://azuremarketplace.microsoft.com/) helps connect users with Microsoft partners, independent software vendors, and startups that are offering their solutions and services, which are optimized to run on Azure.
 
 ![](https://i.imgur.com/3Vabs2f.png)
+
+## Advantages of Cloud Computing
+
+{: .notice--success}
+🏆 **ProTip** \
+\
+Remember this word for advantages of Azure cloud computing **GRADES**
+
+**G** = Geo-distribution
+**R** = Reliability
+**A** = Agility
+**D** = Disaster Recovery
+**E** = Elasticity
+**S** = Scalability
+
+## Cloud Service Models
+
+- IaaS
+- PaaS
+- SaaS
+
+![](https://i.imgur.com/mXfV7EH.png): .full}
+
+![](https://i.imgur.com/N2PeaDj.png): .full}
+
+{: .notice--success}
+🏆 **ProTip** \
+\
+ In an IaaS environment, the cloud tenant is **NOT** responsible for routine hardware maintenance.
+
+## Cloud Deployment Models
+
+Public, Private and Hybrid
+
+![](https://i.imgur.com/2aB3fq3.png){: .full}
+
+
+
+## Azure Facts to remember
+
+- Three cloud computing deployment models are public cloud, private cloud, and hybrid cloud.
+- Cloud computing typically decreases your operating expenses.
+- IaaS, PaaS, and SaaS are examples of cloud computing service models.
+- Cloud computing resources are **NOT** usually limited to specific geographic regions.
+
+
 
 ---
 
