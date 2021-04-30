@@ -83,8 +83,8 @@ if(Boolean_expression) {
 }
 ```
 
-**-eq** to check **equality**.
-**-le** to check **less than**.
+- **-eq** to check **equality**.
+- **-le** to check **less than**.
 
 Example: Comparing Less than in Powershell
 
