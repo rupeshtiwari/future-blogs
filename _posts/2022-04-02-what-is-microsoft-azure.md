@@ -19,7 +19,7 @@ tags:
   - webdev
   - azure
   - tutorial
-  - az 900
+  - az-900
 ---
 
 > Learn what is Azure? How Azure works? and what are the hardware and software components that helps Azure to work. In this article I will try to give you some notes about Azure Basics. This article is part of **Core Azure Concepts**

@@ -1,7 +1,7 @@
 ---
 title: Getting started with Azure Accounts
 date: 2022-04-23 00:00 +0000
-description:
+description: What is Azure accounts? Why do we need Azure accounts to be created? How resources and subscriptions are attached to Azure accounts? Learn everything about Azure accounts in this article. This article is part of Core Azure Concepts
 author_profile: true
 published: true
 read_time: true
@@ -19,7 +19,7 @@ tags:
   - webdev
   - azure
   - tutorial
-  - az 900
+  - az-900
 ---
 
 > What is Azure accounts? Why do we need Azure accounts to be created? How resources and subscriptions are attached to Azure accounts? Learn everything about Azure accounts in this article. This article is part of **Core Azure Concepts**

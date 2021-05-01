@@ -19,7 +19,7 @@ tags:
   - webdev
   - azure
   - tutorial
-  - az 900
+  - az-900
 ---
 
 > Learn everything you should know about Azure Services and their concepts as a beginner.

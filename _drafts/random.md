@@ -25,7 +25,7 @@ Log Analytics Workspace is actually a **Azure Data Lake**.
 
 # VM Scale Set
 
-![](https://imgur.com/uGhua33.png)
+![](httpss://imgur.com/uGhua33.png)
 
 - VM scale set is an Azure service allows you to run
 - It contains multiple VMs with the same image and contents.
@@ -34,7 +34,7 @@ Log Analytics Workspace is actually a **Azure Data Lake**.
 
 ## SAN
 
-SAN: [storage area network (SAN) ](https://docs.microsoft.com/en-US/azure/migrate/prepare-for-migration#configure-san-policy)
+SAN: [storage area network (SAN) ](httpss://docs.microsoft.com/en-US/azure/migrate/prepare-for-migration#configure-san-policy)
 By default, Azure VMs are assigned drive D to use as temporary storage
 
 - This drive assignment causes all other attached storage drive assignments to increment by one letter.
@@ -55,7 +55,7 @@ A **network security group (NSG)** contains a list of security rules that allow 
 
 ## NIC
 
-A [Network Interface (NIC)](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface) enables an Azure Virtual Machine to communicate with internet, Azure, and on-premises resources. When creating a virtual machine using the Azure portal, the portal creates one network interface with default settings for you.
+A [Network Interface (NIC)](httpss://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface) enables an Azure Virtual Machine to communicate with internet, Azure, and on-premises resources. When creating a virtual machine using the Azure portal, the portal creates one network interface with default settings for you.
 
 ## RBAC
 
@@ -71,7 +71,7 @@ A Rack has servers (Virtual Machines) in a data-center.
 
 ## SKU
 
-Stock Keeping Unit (SKU) Learn more about [SKU types in Azure](https://docs.microsoft.com/en-us/rest/api/compute/resourceskus/list)
+Stock Keeping Unit (SKU) Learn more about [SKU types in Azure](httpss://docs.microsoft.com/en-us/rest/api/compute/resourceskus/list)
 
 ## VPN
 
@@ -95,7 +95,7 @@ Internet Protocol Version (IPV). **IPv6** is more advanced and has better featur
 
 ## LNG
 
-The Local Network Gateway (LNG) typically refers to your on-premises location. [Learn...](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-create-site-to-site-rm-powershell)
+The Local Network Gateway (LNG) typically refers to your on-premises location. [Learn...](httpss://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-create-site-to-site-rm-powershell)
 
 ## CIDR
 
@@ -126,24 +126,38 @@ You will learn below things:
 
 ### 1. Introduction to Azure fundamentals
 
-**benefits of cloud computing**
-
-You will learn like:
-
-☑️ What is **cloud computing**
-
-☑️ What is **Azure**
-
-☑️ How to get started with Azure's subscriptions and **accounts**.
-
-1. [What is Azure](http://www.rupeshtiwari.com/what-is-microsoft-azure/)
-2. [Azure Services](http://www.rupeshtiwari.com/tour-of-azure-services/)
-3. [Azure accounts](http://www.rupeshtiwari.com/getting-started-with-azure-accounts/)
-
-### 2. Discuss Azure fundamental concepts
+![](https://imgur.com/N5UL5ZV.png){: .full}
 
 Upon completion of this module, you'll be able to:
 
-- Identify the **benefits** and considerations of using **cloud services**.
-- Describe the differences between **categories** of **cloud services**.
-- Describe the differences between **types of cloud computing**.
+- What is **cloud computing**
+- What is **Azure**, how it works.
+- How to get started with Azure's subscriptions and **accounts**.
+
+I have below 3 articles on Introduction to Azure fundamentals:
+
+- [What is Azure](https://www.rupeshtiwari.com/what-is-microsoft-azure/)
+- [Azure Services](https://www.rupeshtiwari.com/tour-of-azure-services/)
+- [Azure accounts](https://www.rupeshtiwari.com/getting-started-with-azure-accounts/)
+
+### 2. Discuss Azure fundamental concepts
+
+![](https://imgur.com/71griXY.png){: .full}
+
+Upon completion of this module, you'll be able to:
+
+- Identify the **benefits**(Pay as you use, Scalability, Geo-distribution) and considerations of using **cloud services**.
+- Describe the differences between **categories**(IaaS,PaaS,SaaS) of **cloud services**.
+- Describe the differences between **types**(Public,Private,Hybrid) of cloud computing.
+
+I have below 1 article on [Discuss Azure fundamentals Concepts](https://www.rupeshtiwari.com/discuss-azure-fundamental-concepts/):
+
+### 3. Describe core Azure architectural components
+
+![](https://imgur.com/pPJkgAN.png){: .full}
+
+After completing this module, you'll be able to describe the benefits and usage of:
+
+-   Azure subscriptions and management groups.
+-   Azure resources, resource groups, and Azure Resource Manager.
+-   Azure regions, region pairs, and availability zones.
