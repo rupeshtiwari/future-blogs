@@ -1,7 +1,7 @@
 ---
 title: PowerShell Random Notes for You!
-date: 2022-04-16 00:00 +0000
-description:
+date: 2022-03-26 00:00 +0000
+description: Learn some important built-in very helpful methods in Powershell. It could be a quick note for you so don't forget to bookmark this article!
 author_profile: true
 published: true
 read_time: true

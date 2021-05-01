@@ -22,7 +22,7 @@ tags:
   - az-900
 ---
 
-> Did you know your company can take **advantage** of using many Azure cloud computing which will help your company to reduce its overall computing costs? Did you know the **benefits**(availability, scalability, and geographic distribution) of cloud computing? Did you know what are the **categories**(IaaS, PaaS, SaaS) of cloud computing? And, can you differences between **types**(public, private, and hybrid) of cloud computing? In this article we will summaries all of these! This topic belongs to "**Part 1: Describe core Azure concepts**"
+> Did you know your company can take **advantage** of using many Azure cloud computing which will help your company to reduce its overall computing costs? Did you know the **benefits**(availability, scalability, and geographic distribution) of cloud computing? Did you know what are the **categories**(IaaS, PaaS, SaaS) of cloud computing? And, can you differences between **types**(public, private, and hybrid) of cloud computing? In this article we will summaries all of these! This is 2nd article on "**Azure Fundamentals part 1: Describe core Azure concepts**".
 
 ## Describe the benefits of cloud computing
 
@@ -87,7 +87,13 @@ There are 3 Cloud Service Models:
 
 - **Software-as-a-Service(SaaS)** the cloud provider manages all aspects of the application environment, such as virtual machines, networking resources, data storage, and applications. The cloud tenant only needs to provide their data to the application managed by the cloud provider.
 
+The following illustration demonstrates the services that might run in each of the cloud service models.
+
 ![](https://imgur.com/Ia6D7IM.png){: .full}
+
+The following chart illustrates the various levels of responsibility between a cloud provider and a cloud tenant.
+
+![](https://imgur.com/tCJ0p7V.png){: .full}
 
 ### What is serverless computing?
 
