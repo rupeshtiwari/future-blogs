@@ -9,7 +9,7 @@ comments: true
 share: true
 related: true
 toc: true
-toc_sticky: true
+toc_sticky: false
 image: https://i.imgur.com/8mRbgqg.png
 header:
   image: https://i.imgur.com/XMFI6bl.png
@@ -36,7 +36,7 @@ Azure is a continually expanding set of cloud services that help your organizati
 
 ### What is Azure fundamentals?
 
-Azure fundamentals is a series of **six learning paths** or six knowledge domain areas.
+Azure fundamentals is a series of [**six learning paths**](#exam-az-900) or six knowledge domain areas.
 
 ### Why should I take Azure fundamentals?
 
@@ -49,11 +49,18 @@ Take Azure fundamentals if you:
 
 #### Exam AZ-900
 
-![](https://imgur.com/ysDJ0Sg.png){: .full}
+| AZ-900 Domain Area                                              | Weight |
+| :-------------------------------------------------------------- | :----- |
+| Describe cloud concepts                                         | 20-25% |
+| Describe core Azure services                                    | 15-20% |
+| Describe core solutions and management tools on Azure           | 10-15% |
+| Describe general security and network security features         | 10-15% |
+| Describe identity, governance, privacy, and compliance features | 20-25% |
+| Describe Azure cost management and Service Level Agreements     | 10-15% |
 
 ## What is cloud computing?
 
-It's the delivery of computing services over the internet, which is otherwise known as the cloud. These services include servers, storage, databases, networking, software, analytics, and intelligence. Cloud computing offers faster innovation, flexible resources, and economies of scale.
+It's the **delivery of computing services over the internet**, which is otherwise known as the cloud. These services include servers, storage, databases, networking, software, analytics, and intelligence. Cloud computing offers faster innovation, flexible resources, and economies of scale.
 
 {: .notice--success}
 🏆 **ProTip** \
@@ -142,11 +149,11 @@ The "serverless" name comes from the fact that the tasks associated with infrast
 
 There are three deployment models:
 
-- **Public cloud** is cloud resources, such as servers and storage, are owned and operated by a third-party cloud service provider, and delivered over the internet.
+- **Public cloud** is cloud resources, such as servers and storage, are `owned and operated by a third-party cloud service provider`, and delivered over the internet.
 
-- **Private cloud** consists of computing resources used exclusively by users from one business or organization. A private cloud can be physically located at your organization's on-site (on-premises) datacenter, or it can be hosted by a third-party service provider.
+- **Private cloud** consists of computing resources used exclusively by `users from one business or organization`. A private cloud can be physically located at your organization's on-site (on-premises) datacenter, or it can be hosted by a third-party service provider.
 
-- **Hybrid cloud** is a computing environment that combines a public cloud and a private cloud by allowing data and applications to be shared between them.
+- **Hybrid cloud** is a computing environment that combines a `public cloud and a private cloud` by allowing data and applications to be shared between them.
 
 ![](https://imgur.com/6DirYOj.png){: .full}
 
@@ -219,29 +226,20 @@ Let's take a quick tour of the high-level services Azure offers.
 🏆 **ProTip** \
 \
 Remember this sentence "_I can_ **DISBAND [CWM](https://wordunscrambler.me/dictionary/cwm)**"
-
-[Learn More about Azure Services...](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services)
-
-- **D** = **D**atabases
-- **I** = **I**nternet of Thing
-- **S** = **S**torage
-- **B** = **B**ig Data
-- **A** = **A**rtificial Intelligence
-- **N** = **N**etworking
-- **D** = **D**evOps
-- **C** = **C**ompute
-- **W** = **W**eb
-- **M** = **M**obile
+**D** = **D**atabases
+**I** = **I**nternet of Thing
+**S** = **S**torage
+**B** = **B**ig Data
+**A** = **A**rtificial Intelligence
+**N** = **N**etworking
+**D** = **D**evOps
+**C** = **C**ompute
+**W** = **W**eb
+**M** = **M**obile
 
 ![](https://imgur.com/cq2wt45){: .full}
 
 ### Databases
-
-![](https://i.imgur.com/8FUIKST.png){: .full}
-
-![](https://i.imgur.com/MpyM48M.png){: .full}
-
-![](https://i.imgur.com/JGCCorr.png){: .full}
 
 Azure provides multiple database services to store a wide variety of data types and volumes.
 
@@ -255,11 +253,15 @@ Azure provides multiple database services to store a wide variety of data types 
 - Database Migration Service
 - Synapse Analytics
 
+![](https://i.imgur.com/8FUIKST.png){: .full}
+
+![](https://i.imgur.com/MpyM48M.png){: .full}
+
+![](https://i.imgur.com/JGCCorr.png){: .full}
+
 [Learn Azure Databases Services Definitions from Microsoft Document...](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services)
 
 ### Internet of Thing (IoT)
-
-![](https://i.imgur.com/SOyLVnr.png)
 
 Connect to large set of your IOT assets to monitor and manage. Analyze their data as well when it arrives from sensors.
 
@@ -267,13 +269,11 @@ Connect to large set of your IOT assets to monitor and manage. Analyze their dat
 - Azure IoT **Hub** ( to connect and communication )
 - IoT **Edge** ( built-in models to be pushed to IoT devices )
 
+![](https://i.imgur.com/SOyLVnr.png)
+
 [Learn IoT options definitions from Microsoft Document...](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services)
 
 ### Storage
-
-![](https://i.imgur.com/8PMKffl.png){: .full}
-
-![](https://i.imgur.com/Of6L8Up.png){: .full}
 
 Azure provides four main types of storage services.
 
@@ -281,11 +281,14 @@ Azure provides four main types of storage services.
 🏆 **ProTip** \
 \
 Remember this sentence "**B**ig **Q**uality **T**ask **F**orce".
+**B** = **B**lob storage
+**Q** = **Q**ueue storage
+**T** = **T**able storage
+**F** = **F**ile storage
 
-- **B** = **B**lob storage
-- **Q** = **Q**ueue storage
-- **T** = **T**able storage
-- **F** = **F**ile storage
+![](https://i.imgur.com/8PMKffl.png){: .full}
+
+![](https://i.imgur.com/Of6L8Up.png){: .full}
 
 {: .notice--info}
 🏆 **ProTip** \
@@ -345,8 +348,6 @@ For example, when you shop online, machine learning helps recommend other produc
 
 ### Networking
 
-![](https://i.imgur.com/SUWVl2i.png)
-
 `Linking` compute resources and providing `access` to applications is the key function of Azure networking.
 
 Here are some examples of networking services in Azure.
@@ -355,34 +356,33 @@ Here are some examples of networking services in Azure.
 🏆 **ProTip** \
 \
 Remember this sentence "3 **V**irus **LANDED** **C**apture **T**he **F**lag".
+**V** = **V**irtual Network
+**V** = **V**PN Gateway
+**V** = **V**irtual WAN
+**L** = **L**oad Balancer
+**A** = **A**pplication Gateway
+**N** = **N**etwork Watcher
+**D** = **D**DoS Protection
+**E** = **E**xpressRoute
+**D** = **D**NS
+**C** = **C**ontent Delivery Network (CDN)
+**T** = **T**raffic Manager
+**F** = **F**irewall
 
-- **V** = **V**irtual Network
-- **V** = **V**PN Gateway
-- **V** = **V**irtual WAN
-- **L** = **L**oad Balancer
-- **A** = **A**pplication Gateway
-- **N** = **N**etwork Watcher
-- **D** = **D**DoS Protection
-- **E** = **E**xpressRoute
-- **D** = **D**NS
-- **C** = **C**ontent Delivery Network (CDN)
-- **T** = **T**raffic Manager
-- **F** = **F**irewall
+![](https://i.imgur.com/SUWVl2i.png){: .full}
 
 [Learn Azure Networking Services Definitions from Microsoft Document...](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services)
 
 ### DevOps
-
-![](https://i.imgur.com/I5oneaj.png)
 
 Create build and release pipe line for CI/CD
 
 - DevOps
 - DevTest Labs
 
-### Compute Services
+![](https://i.imgur.com/I5oneaj.png){: .full}
 
-![](https://i.imgur.com/fqNKbfg.png){: .full}
+### Compute Services
 
 Here are some examples of compute services in Azure.
 
@@ -390,22 +390,19 @@ Here are some examples of compute services in Azure.
 🏆 **ProTip** \
 \
 Remember this sentence "**V**ery **S**pecial **K**ids **C**an join **B**order **S**ecurity **F**orce".
+**V** = **V**irtual Machine
+**S** = **S**cale Sets ( Virtual Machine Scale Sets)
+**K** = **K**ubernetes Service
+**C** = **C**ontainer Instances
+**B** = **B**atch
+**S** = **S**ervice Fabric
+**F** = **F**unctions
 
-- **V** = **V**irtual Machine
-- **S** = **S**cale Sets ( Virtual Machine Scale Sets)
-- **K** = **K**ubernetes Service
-- **C** = **C**ontainer Instances
-- **B** = **B**atch
-- **S** = **S**ervice Fabric
-- **F** = **F**unctions
+![](https://i.imgur.com/fqNKbfg.png){: .full}
 
 [Learn Azure Compute Services Definitions from Microsoft Document...](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services)
 
 ### Web
-
-![](https://i.imgur.com/RNcyNzi.png){: .full}
-
-![](https://i.imgur.com/EE22HsT.png){: .full}
 
 Azure includes `first-class` support to build and host `web apps` and HTTP-based `web services`. The following Azure services are focused on web hosting.
 
@@ -413,19 +410,20 @@ Azure includes `first-class` support to build and host `web apps` and HTTP-based
 🏆 **ProTip** \
 \
 Remember this sentence "**C**alm **ASANA**".
+**C** = **C**ognitive Search
+**A** = **A**pp Service
+**S** = **S**ignalR Service
+**A** = **A**pps feature of Azure App Service
+**N** = **N**otification Hubs
+**A** = **A**PI Management
 
-- **C** = **C**ognitive Search
-- **A** = **A**pp Service
-- **S** = **S**ignalR Service
-- **A** = **A**pps feature of Azure App Service
-- **N** = **N**otification Hubs
-- **A** = **A**PI Management
+![](https://i.imgur.com/RNcyNzi.png){: .full}
+
+![](https://i.imgur.com/EE22HsT.png){: .full}
 
 [Learn Azure Web hosting options definitions from Microsoft Document...](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services)
 
 ### Mobile
-
-![](https://i.imgur.com/a1MNofY.png){: .full}
 
 With Azure, developers can create mobile back-end services for iOS, Android, and Windows apps quickly and easily.
 
@@ -434,11 +432,12 @@ With Azure, developers can create mobile back-end services for iOS, Android, and
 \
 Remember this sentence:
 **ABCO** "**A**ssociation of **B**usiness **C**onsulting **O**rganizations".
+**A** = **A**utoscaling to match business needs
+**B** = **B**roadcasting push notifications.
+**C** = **C**onnectivity to on-premises data.
+**O** = **O**ffline data synchronization.
 
-- **A** = **A**utoscaling to match business needs
-- **B** = **B**roadcasting push notifications.
-- **C** = **C**onnectivity to on-premises data.
-- **O** = **O**ffline data synchronization.
+![](https://i.imgur.com/a1MNofY.png){: .full}
 
 [Learn Azure Mobile Services Definitions from Microsoft Document...](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services)
 
@@ -477,6 +476,12 @@ Maximum **Learn** exercises use a technology called the **sandbox**, which creat
 - Cloud computing typically decreases your operating expenses.
 - IaaS, PaaS, and SaaS are examples of cloud computing service models.
 - Cloud computing resources are **NOT** usually limited to specific geographic regions.
+
+## References
+
+ 
+- [Introduction to azure fundamentals by Microsoft online free training](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/)
+
 
 ---
 

@@ -22,9 +22,13 @@ tags:
   - az-900
 ---
 
->  This is 3rd article on "**Azure Fundamentals part 1: Describe core Azure concepts**".
+> This is 3rd article on "**Azure Fundamentals part 1: Describe core Azure concepts**".
+
+![](https://i.imgur.com/bJhy0o9.png)
 
 ## Azure resources structure organization
+
+![](https://i.imgur.com/13XFueb.png)
 
 Azure organizes structure for resources in four levels: management groups, subscriptions, resource groups, and resources.
 
@@ -32,10 +36,21 @@ Azure organizes structure for resources in four levels: management groups, subsc
 
 ![](https://imgur.com/jEoLDBr.png){: .full}
 
-- **Resources**: Resources are `instances of services` that you create, like virtual machines(VMs), storage accounts, web apps, virtual networks or SQL databases. An Azure resource is a manageable item that's available through Azure.
-- **Resource groups**: Resources are combined into resource groups, which act as a `logical container` into which Azure resources like web apps, databases, and storage accounts are deployed and managed.
-- **Subscriptions**: A subscription `groups together user accounts and the resources` that have been created by those user accounts. For each subscription, there are limits or quotas on the amount of resources that you can create and use. Organizations can use subscriptions to manage costs and the resources that are created by users, teams, or projects.
-- **Management groups**: These groups help you `manage access, policy, and compliance` for multiple subscriptions. All subscriptions in a management group automatically inherit the conditions applied to the management group.
+### Resources
+
+**Resources**: Resources are `instances of services` that you create, like virtual machines(VMs), storage accounts, web apps, virtual networks or SQL databases. An Azure resource is a manageable item that's available through Azure.
+
+### Resource groups
+
+**Resource groups**: Resources are combined into resource groups, which act as a `logical container` into which Azure resources like web apps, databases, and storage accounts are deployed and managed.
+
+### Subscriptions
+
+**Subscriptions**: A subscription `groups together user accounts and the resources` that have been created by those user accounts. For each subscription, there are limits or quotas on the amount of resources that you can create and use. Organizations can use subscriptions to manage costs and the resources that are created by users, teams, or projects.
+
+### Management groups
+
+**Management groups**: These groups help you `manage access, policy, and compliance` for multiple subscriptions. All subscriptions in a management group automatically inherit the conditions applied to the management group.
 
 ## Azure subscriptions and management groups
 
@@ -75,7 +90,6 @@ The following diagram shows an overview of how billing is structured.
 
 ![](https://imgur.com/TceedRv.png){: .full}
 
-
 ### Azure management groups
 
 You organize subscriptions into containers called management groups and apply your **governance conditions** to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group and must trust the same Azure AD tenant.
@@ -87,3 +101,31 @@ For example, you can apply policies to a management group that limits the region
 The following diagram shows an example of creating a hierarchy for governance by using management groups.
 
 ![](https://imgur.com/8rz4kAp.png){: .full}
+
+## References
+
+- [Describe core Azure architectural components by Microsoft online free training](https://docs.microsoft.com/en-us/learn/modules/azure-architecture-fundamentals/)
+
+---
+
+_Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
+
+## Become full stack developer 💻
+
+{: .notice--info}
+I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to become **Software Developer** and grow your carrier as new **Software Engineer** or **Lead Developer/Architect**. Consider subscribing to our full stack development training programs. You will learn **Angular, RxJS, JavaScript, System Architecture** and much more with lots of **hands on coding**. We have All-Access Monthly membership plans and you will get unlimited access to all of our **video** courses, **slides**, **download source code** & **Monthly video calls**.
+
+- Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access _current_ and _future_ **angular, node.js** and related courses.
+- Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to a monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
+
+{: .notice--warning}
+Your bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+
+<div class="notice--success">
+<strong>💖 Say 👋 to me!</strong>
+<br>Rupesh Tiwari
+<br>Founder of <a href="https://www.fullstackmaster.net">Fullstack Master </a>
+<br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
+<br>Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
+</div>
+![](https://imgur.com/a32nUcu.png)

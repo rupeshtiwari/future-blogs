@@ -24,7 +24,11 @@ tags:
 
 > Did you know your company can take **advantage** of using many Azure cloud computing which will help your company to reduce its overall computing costs? Did you know the **benefits**(availability, scalability, and geographic distribution) of cloud computing? Did you know what are the **categories**(IaaS, PaaS, SaaS) of cloud computing? And, can you differences between **types**(public, private, and hybrid) of cloud computing? In this article we will summaries all of these! This is 2nd article on "**Azure Fundamentals part 1: Describe core Azure concepts**".
 
+![](https://i.imgur.com/bJhy0o9.png)
+
 ## Describe the benefits of cloud computing
+
+![](https://i.imgur.com/oT3G49m.png)
 
 ### What are some cloud computing advantages?
 
@@ -120,5 +124,28 @@ There are three deployment models:
 
 ## References
 
-- [Describe the different categories of cloud services](https://docs.microsoft.com/en-us/learn/modules/fundamental-azure-concepts/categories-of-cloud-services)
-- [Describe the different types of cloud computing](https://docs.microsoft.com/en-us/learn/modules/fundamental-azure-concepts/types-of-cloud-computing)
+- [Discuss Azure fundamental concepts by Microsoft free online training](https://docs.microsoft.com/en-us/learn/modules/fundamental-azure-concepts/)
+
+---
+
+_Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
+
+## Become full stack developer 💻
+
+{: .notice--info}
+I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to become **Software Developer** and grow your carrier as new **Software Engineer** or **Lead Developer/Architect**. Consider subscribing to our full stack development training programs. You will learn **Angular, RxJS, JavaScript, System Architecture** and much more with lots of **hands on coding**. We have All-Access Monthly membership plans and you will get unlimited access to all of our **video** courses, **slides**, **download source code** & **Monthly video calls**.
+
+- Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access _current_ and _future_ **angular, node.js** and related courses.
+- Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to a monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
+
+{: .notice--warning}
+Your bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+
+<div class="notice--success">
+<strong>💖 Say 👋 to me!</strong>
+<br>Rupesh Tiwari
+<br>Founder of <a href="https://www.fullstackmaster.net">Fullstack Master </a>
+<br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
+<br>Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
+</div>
+![](https://imgur.com/a32nUcu.png)
