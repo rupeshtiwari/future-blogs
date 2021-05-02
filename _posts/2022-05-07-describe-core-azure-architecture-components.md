@@ -1,7 +1,7 @@
 ---
 title: Describe core Azure architecture components
 date: 2022-05-07 00:00 +0000
-description:
+description: Can you explain concepts and terminology for the core Azure architecture components? Can you describe the benefits and usages of Azure subscriptions and management groups? Have you check the benefits of Azure resources, resource groups, and Azure Resource Manager(ARM)? Did you know how achieve high availability using Azure regions, region pairs, and availability zones? This is 3rd article on Azure Fundamentals part 1- Describe core Azure concepts.
 author_profile: true
 published: true
 read_time: true
@@ -22,7 +22,7 @@ tags:
   - az-900
 ---
 
-> This is 3rd article on "**Azure Fundamentals part 1: Describe core Azure concepts**".
+> Can you explain concepts and terminology for the **core Azure architecture components**? Can you describe the benefits and usages of Azure **subscriptions** and **management groups**? Have you check the benefits of Azure **resources**, **resource groups**, and **Azure Resource Manager**(ARM)? Did you know how achieve high availability using Azure **regions, region pairs, and availability zones**? This is 3rd article on "**Azure Fundamentals part 1: Describe core Azure concepts**".
 
 ![](https://i.imgur.com/bJhy0o9.png)
 
@@ -269,8 +269,6 @@ Having a broadly distributed set of datacenters allows Azure to provide a high g
 
 You can use Azure market place to create ready made applications like WordPress application etc.
 
-![](https://imgur.com/jUXOLF1.gif){: .full}
-
 - Create free Azure account
 - Subscription automatically created for you
 - Create a Resource Group
@@ -278,6 +276,8 @@ You can use Azure market place to create ready made applications like WordPress 
   - disks
   - network interface
 - Create Resource & choose location
+
+![](https://imgur.com/jUXOLF1.gif){: .full}
 
 Follow steps from this site to [create your first App in Azure](https://docs.microsoft.com/en-us/learn/modules/azure-architecture-fundamentals/exercise-create-website)
 
@@ -291,6 +291,8 @@ Follow steps from this site to [create your first App in Azure](https://docs.mic
 ![](https://imgur.com/gurEhKi.png){: .full}
 
 ![](https://imgur.com/eKUkafP.png){: .full}
+
+![](https://imgur.com/dAbWIWx.png){: .full}
 
 ## References
 
