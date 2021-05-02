@@ -139,7 +139,7 @@ Running code:
 ![](https://imgur.com/66PmFsy.png)
 
 Once it is expired where it goes?
-These meessages will be dissapared they will not be shown on the Service Bus Explorere also.
+These messages will be disappeared they will not be shown on the Service Bus Explorer also.
 
 ### One is on the Entity itself
 
@@ -224,8 +224,8 @@ Subscription is a virtual queue that holds messages.
 
 ### Filters
 
-boolean filter
-SQL filter : sql like sub set of filter conditions exists, is null, text pattern matching
+Boolean filter
+SQL filter : SQL like sub set of filter conditions exists, is null, text pattern matching
 correlation filter: exact case sensitive match
 application defined property like tenant id. example if tenant id = 43 then only send the copy to subscriber.
 
@@ -248,7 +248,7 @@ Sending message
 
 ![](https://imgur.com/blET47j.png)
 
-Correlation filter is faster than sql filter
+Correlation filter is faster than SQL filter
 
 subscriptions are virtual queue
 
@@ -281,7 +281,7 @@ Create Transaction flow and send
 
 ![](https://imgur.com/undefined.png)
 
-scope is complete then only message becom visible in destination queue.
+scope is complete then only message become visible in destination queue.
 
 ![](https://imgur.com/vd6yBlB.png)
 
@@ -289,12 +289,12 @@ scope is complete then only message becom visible in destination queue.
 
 latency optimization technique not cost
 ![](https://imgur.com/X36EfDY.png)
-send 10 messages to one single call to ASB so bandwidth will be heigher. But you get less latency
+send 10 messages to one single call to ASB so bandwidth will be higher. But you get less latency
 ![](https://imgur.com/HKlwwtz.png)
 standard 250 kb
-100 msg in single trnasation then sdk excpeiotn
+100 msg in single transition then SDK exception
 
-queue of sb message
+queue of SB message
 
 get single batch
 
@@ -311,7 +311,7 @@ This will throw
 
 Send more messages then upgrade to premium tier.
 
-Use `ServiceBus.AttachmentPlugin` with new sdk
+Use `ServiceBus.AttachmentPlugin` with new SDK
 
 ## Send Via
 
@@ -328,11 +328,11 @@ when incoming messsage is success
 
 then only outgoing message will go to the outgoing queues.
 ![](https://imgur.com/S3sXoWY.png)
-it cannot be done on multiple sb client it should be in same client.
+it cannot be done on multiple SB client it should be in same client.
 
 ![](https://imgur.com/HI4Ui3c.png)
 
-witout send via
+without send via
 
 ![](https://imgur.com/6mSMOkE.png)
 
@@ -353,11 +353,11 @@ ASB uses:
 - send via
 - Topologies
 - service pulse , service control
-  - all messages bring back to destination queue from deadlitter
+  - all messages bring back to destination queue from dead litter
 
 how move dead litter to original queue
 
-create a receiver from the deadlitter which sends the message to original receivers.
+create a receiver from the dead litter which sends the message to original receivers.
 
 batching
 put more messages in one single call
