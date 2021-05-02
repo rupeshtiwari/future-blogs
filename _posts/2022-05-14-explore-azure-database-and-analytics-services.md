@@ -22,7 +22,7 @@ tags:
   - az-900
 ---
 
-> Learn how to help your company to migrate its database workload to Microsoft Azure. How can you use Azure Cosmos DB to migrate your data to cloud and retain or enhance your developers' skillsets. Lear how you can use big data and analysis services like Azure Synapse Analytics, Azure HDInsight, Azure Databricks, and Azure Data Lake Analytics to analyze large volumes of data.  This is the 1st article on "**Azure Fundamentals Part 2: Describe core Azure services**".
+> Learn how to help your company to migrate its database workload to Microsoft Azure. How can you use Azure Cosmos DB to migrate your data to cloud and retain or enhance your developers' skillsets. Lear how you can use big data and analysis services like Azure Synapse Analytics, Azure HDInsight, Azure Databricks, and Azure Data Lake Analytics to analyze large volumes of data. This is the 1st article on "**Azure Fundamentals Part 2: Describe core Azure services**".
 
 ![](https://i.imgur.com/PkGHO9t.png){: .full}
 
@@ -148,7 +148,7 @@ Azure Database for MySQL delivers:
 
 You can migrate your existing MySQL databases with minimal downtime by using the Azure Database Migration Service.
 
-### Azure Database for PostgreSQL
+## Azure Database for PostgreSQL
 
 Azure Database for **PostgreSQL is a relational database** service in the cloud. T
 
@@ -164,7 +164,7 @@ Moreover, Azure Database for PostgreSQL delivers the following benefits:
 
 Azure Database for PostgreSQL is available in two deployment options: **Single Server** and **Hyperscale (Citus)**.
 
-#### Single Server
+### Single Server
 
 The Single Server deployment option delivers:
 
@@ -181,7 +181,7 @@ All those capabilities require almost no administration, and all are provided at
 The Single Server deployment option offers three pricing tiers: Basic, General Purpose, and Memory Optimized.
 You only pay for the resources you need, and only when you need them.
 
-#### Hyperscale (Citus)
+### Hyperscale (Citus)
 
 The Hyperscale (Citus) option horizontally scales queries across multiple machines by using sharding. Its query engine parallelizes incoming SQL queries across these servers for faster responses on large datasets. It serves applications that require greater scale and performance, generally workloads that are approaching, or already exceed, 100 GB of data.
 
@@ -228,6 +228,7 @@ You can set up your Apache Spark environment in minutes, and then autoscale and 
 The analytics service can handle jobs of any scale instantly by setting the dial for how much power you need. You only pay for your job when it's running, making it more cost-effective.
 
 ## Check your knowledge
+
 - Your development team is interested in writing Graph-based applications that take advantage of the Gremlin API. Which option would be ideal for that scenario? - Azure Cosmos DB
 - Tailwind Traders uses the LAMP stack for several of its websites. Which option would be ideal for migration? - Azure Database for MySQL
 - Tailwind Traders has millions of log entries that it wants to analyze. Which option would be ideal for analysis? - Azure Synapse Analytics
@@ -237,7 +238,6 @@ The analytics service can handle jobs of any scale instantly by setting the dial
 ![](https://imgur.com/DACPhYB.png){: .full}
 
 ![](https://imgur.com/**gnJIvtM.png){: .full}
-
 
 ## References
 
