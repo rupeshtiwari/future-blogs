@@ -186,12 +186,30 @@ Azure is made up of datacenters located around the globe. When you use a service
 
 ### Azure Regions
 
-A region is a geographical area on the planet that contains at least one but potentially multiple datacenters that are nearby and networked together with a low-latency network.
+A region is a geographical area on the planet that contains at least one but potentially multiple datacenters that are nearby and networked together with a low-latency network. A few examples of regions are West US, Canada Central, West Europe, Australia East, and Japan West.
 
 {: .notice--info}
 <i class="fa fa-info-circle"></i> **Important** \
 \
 Some services or VM features are only available in certain regions, such as specific VM sizes or storage types. There are also some global Azure services that don't require you to select a particular region, such as Azure Active Directory, Azure Traffic Manager, and Azure DNS.
+
+Here's a view of all the available regions as of June 2020.
+
+![](https://imgur.com/OSccfDf.png){: .full}
+
+
+#### Why are regions important?
+
+Azure has more global regions than any other cloud provider. These regions give you the flexibility to bring applications closer to your users no matter where they are. Global regions provide better scalability and redundancy. They also preserve data residency for your services.
+
+{: .notice--success}
+🏆 **ProTip** \
+\
+Regions are what you use to identify the location for your resources. 
+
+#### Special Azure regions
+
+
 
 ## References
 
