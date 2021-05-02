@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/DFJ8mfh.png
+image: https://i.imgur.com/OTHb1vM.png
 header:
   image: https://i.imgur.com/XMFI6bl.png
-  teaser: https://i.imgur.com/DFJ8mfh.png
-  og_image: https://i.imgur.com/DFJ8mfh.png
+  teaser: https://i.imgur.com/OTHb1vM.png
+  og_image: https://i.imgur.com/OTHb1vM.png
 tags:
   - webdev
   - azure
