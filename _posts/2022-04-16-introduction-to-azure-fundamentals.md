@@ -22,7 +22,7 @@ tags:
   - az-900
 ---
 
-> Can you describe **basic concepts** of cloud computing? Is Azure **right solution** for your business needs? How can you create your Azure **subscription** today? I will explain all in this article. This is 1st article on "**Azure Fundamentals part 1: Describe core Azure concepts**".
+> Can you describe **basic concepts** of cloud computing? Is Azure **right solution** for your business needs? How can you create your Azure **subscription** today? I will explain all in this article. This is the 1st article on "**Azure Fundamentals part 1: Describe core Azure concepts**".
 
 ![](https://i.imgur.com/bJhy0o9.png)
 

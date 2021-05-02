@@ -22,7 +22,7 @@ tags:
   - az-900
 ---
 
-> Did you know your company can take **advantage** of using many Azure cloud computing which will help your company to reduce its overall computing costs? Did you know the **benefits**(availability, scalability, and geographic distribution) of cloud computing? Did you know what are the **categories**(IaaS, PaaS, SaaS) of cloud computing? And, can you differences between **types**(public, private, and hybrid) of cloud computing? In this article we will summaries all of these! This is 2nd article on "**Azure Fundamentals part 1: Describe core Azure concepts**".
+> Did you know your company can take **advantage** of using many Azure cloud computing which will help your company to reduce its overall computing costs? Did you know the **benefits**(availability, scalability, and geographic distribution) of cloud computing? Did you know what are the **categories**(IaaS, PaaS, SaaS) of cloud computing? And, can you differences between **types**(public, private, and hybrid) of cloud computing? In this article we will summaries all of these! This is the 2nd article on "**Azure Fundamentals part 1: Describe core Azure concepts**".
 
 ![](https://i.imgur.com/bJhy0o9.png)
 

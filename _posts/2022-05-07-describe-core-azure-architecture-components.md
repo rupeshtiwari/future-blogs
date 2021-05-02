@@ -22,7 +22,7 @@ tags:
   - az-900
 ---
 
-> Can you explain concepts and terminology for the **core Azure architecture components**? Can you describe the benefits and usages of Azure **subscriptions** and **management groups**? Have you check the benefits of Azure **resources**, **resource groups**, and **Azure Resource Manager**(ARM)? Did you know how achieve high availability using Azure **regions, region pairs, and availability zones**? This is 3rd article on "**Azure Fundamentals part 1: Describe core Azure concepts**".
+> Can you explain concepts and terminology for the **core Azure architecture components**? Can you describe the benefits and usages of Azure **subscriptions** and **management groups**? Have you check the benefits of Azure **resources**, **resource groups**, and **Azure Resource Manager**(ARM)? Did you know how achieve high availability using Azure **regions, region pairs, and availability zones**? This is the 3rd article on "**Azure Fundamentals part 1: Describe core Azure concepts**".
 
 ![](https://i.imgur.com/bJhy0o9.png)
 
