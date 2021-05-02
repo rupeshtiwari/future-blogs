@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: false
-image: https://i.imgur.com/8mRbgqg.png
+image: https://i.imgur.com/Yzby3e4.png
 header:
   image: https://i.imgur.com/XMFI6bl.png
-  teaser: https://i.imgur.com/8mRbgqg.png
-  og_image: https://i.imgur.com/8mRbgqg.png
+  teaser: https://i.imgur.com/Yzby3e4.png
+  og_image: https://i.imgur.com/Yzby3e4.png
 tags:
   - webdev
   - azure
@@ -479,9 +479,7 @@ Maximum **Learn** exercises use a technology called the **sandbox**, which creat
 
 ## References
 
- 
 - [Introduction to azure fundamentals by Microsoft online free training](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/)
-
 
 ---
 

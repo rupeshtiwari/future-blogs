@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: false
-image: https://i.imgur.com/8mRbgqg.png
+image: https://i.imgur.com/Yzby3e4.png
 header:
   image: https://i.imgur.com/XMFI6bl.png
-  teaser: https://i.imgur.com/8mRbgqg.png
-  og_image: https://i.imgur.com/8mRbgqg.png
+  teaser: https://i.imgur.com/Yzby3e4.png
+  og_image: https://i.imgur.com/Yzby3e4.png
 tags:
   - webdev
   - azure
@@ -68,7 +68,7 @@ There are two types of subscription boundaries that you can use:
 
 - **Access control boundary**: Azure applies `access-management policies` at the subscription level, and you can create separate subscriptions to reflect different organizational structures. An example within a business, you have different departments to which you apply distinct Azure subscription `policies`.
 
-### Create additional Azure subscriptions
+#### Create additional Azure subscriptions
 
 You might want to create additional subscriptions for **resource** or **billing** management purposes. For example, you might choose to create additional subscriptions to separate:
 
@@ -80,7 +80,7 @@ You might want to create additional subscriptions for **resource** or **billing*
 
 - **Subscription limits:** Subscriptions are bound to some hard limitations. For example, the maximum number of Azure `ExpressRoute` circuits per subscription is `10`. If there's a need to go over those limits in particular scenarios, you might need additional subscriptions.
 
-### Customize billing to meet your needs
+#### Customize billing to meet your needs
 
 If you have multiple subscriptions, you can organize them into **invoice sections**. Each invoice section is a line item on the invoice that shows the charges incurred that month. For example, you might need a single invoice for your organization but want to organize charges by department, team, or project.
 
@@ -96,11 +96,102 @@ You organize subscriptions into containers called management groups and apply yo
 
 For example, you can apply policies to a management group that limits the regions available for VM creation. This policy would be applied to all management groups, subscriptions, and resources under that management group by only allowing VMs to be created in that region.
 
-### Hierarchy of management groups and subscriptions
+#### Hierarchy of management groups and subscriptions
 
-The following diagram shows an example of creating a hierarchy for governance by using management groups.
+Create structure of management groups and subscriptions to organize your resources into a hierarchy for unified policy and access management. The following diagram shows an example of creating a hierarchy for governance by using management groups.
+
+{: .notice--success}
+🏆 **ProTip** \
+\
+☑️ You can create a hierarchy that **applies a policy**.
+☑️ You can use management groups is to provide user **access to multiple subscriptions**.
 
 ![](https://imgur.com/8rz4kAp.png){: .full}
+
+You can create a hierarchy that applies a policy. For example, you could limit VM locations to the US West Region in a group called Production. This policy will inherit onto all the Enterprise Agreement subscriptions that are descendants of that management group and will apply to all VMs under those subscriptions. This security policy can't be altered by the resource or subscription owner, which allows for improved governance.
+
+Another scenario where you would use management groups is to provide user access to multiple subscriptions. By moving multiple subscriptions under that management group, you can create one role-based access control (RBAC) assignment on the management group, which will inherit that access to all the subscriptions. One assignment on the management group can enable users to have access to everything they need instead of scripting RBAC over different subscriptions.
+
+#### Important facts about management groups
+
+- **10,000** management groups can be supported in a single directory.
+- A management group tree can support up to **six levels of depth**. This limit doesn't include the root level or the subscription level.
+- Each management group and subscription can support only one parent.
+- Each management group can have many children.
+- All subscriptions and management groups are within a single hierarchy in each directory.
+
+## Azure resources and Azure Resource Manager
+
+After you've created a subscription for your company, you're ready to start creating resources and storing them in resource groups.
+
+- **Resource**: A manageable item that's available through Azure. Virtual machines (VMs), storage accounts, web apps, databases, and virtual networks are examples of resources.
+- **Resource group**: A container that holds related resources for an Azure solution. The resource group includes resources that you want to manage as a group. You decide which resources belong in a resource group based on what makes the most sense for your organization.
+
+### Azure resource groups
+
+Resource groups are a fundamental element of the Azure platform. A resource group is a logical container for resources deployed on Azure. These resources are anything you create in an Azure subscription like VMs, Azure Application Gateway instances, and Azure Cosmos DB instances. All resources must be in a resource group, and a resource can only be a member of a single resource group. Many resources can be moved between resource groups with some services having specific limitations or requirements to move. Resource groups can't be nested. Before any resource can be provisioned, you need a resource group for it to be placed in.
+
+![resource group is a container for resources](https://i.imgur.com/AEfN0eC.png){: .full}
+
+#### Logical grouping
+
+Resource groups exist to help manage and organize your Azure resources. By placing resources of similar usage, type, or location in a resource group, you can provide order and organization to resources you create in Azure. Logical grouping is the aspect that you're most interested in here, because there's a lot of disorder among our resources.
+
+![Conceptual image showing a resource group box with a function, VM, database, and app included.](https://i.imgur.com/ZRXeJOu.png)
+
+#### Life cycle
+
+If you delete a resource group, all resources contained within it are also deleted. Organizing resources by life cycle can be useful in nonproduction environments, where you might try an experiment and then dispose of it. Resource groups make it easy to remove a set of resources all at once.
+
+#### Authorization
+
+Resource groups are also a scope for applying role-based access control (RBAC) permissions. By applying RBAC permissions to a resource group, you can ease administration and limit access to allow only what's needed.
+
+![using RBAC to give required access to specific users](https://i.imgur.com/T0UyegM.png){: .full}
+
+### Azure Resource Manager
+
+Azure Resource Manager is the deployment and management service for Azure. It provides a management layer that enables you to create, update, and delete resources in your Azure account. You use management features like access control, locks, and tags to secure and organize your resources after deployment.
+
+When a user sends a request from any of the Azure tools, APIs, or SDKs, Resource Manager receives the request. It authenticates and authorizes the request. Resource Manager sends the request to the Azure service, which takes the requested action. Because all requests are handled through the same API, you see consistent results and capabilities in all the different tools.
+
+The following image shows the role Resource Manager plays in handling Azure requests.
+
+![Diagram showing a Resource Manager request model.](https://i.imgur.com/2Wjh42D.jpg){: .full}
+
+{: .notice--success}
+🏆 **ProTip** \
+\
+All capabilities that are available in the Azure portal are also available through **PowerShell, the Azure CLI, REST APIs, and client SDKs**. Functionality initially released through APIs will be represented in the portal **within 180 days** of initial release.
+
+#### The benefits of using Resource Manager
+
+With Resource Manager, you can:
+
+- Manage your infrastructure through declarative templates rather than scripts. A Resource Manager template is a JSON file that defines what you want to deploy to Azure.
+- Deploy, manage, and monitor all the resources for your solution as a group, rather than handling these resources individually.
+- Redeploy your solution throughout the development life cycle and have confidence your resources are deployed in a consistent state.
+- Define the dependencies between resources so they're deployed in the correct order.
+- Apply access control to all services because RBAC is natively integrated into the management platform.
+- Apply tags to resources to logically organize all the resources in your subscription.
+- Clarify your organization's billing by viewing costs for a group of resources that share the same tag.
+
+## Azure regions, availability zones, and region pairs
+
+Resources are created in regions, which are different geographical locations around the globe that contain Azure datacenters.
+
+Azure is made up of datacenters located around the globe. When you use a service or create a resource such as a SQL database or virtual machine (VM), you're using physical equipment in one or more of these locations. Some of these regions offer **availability zones**, which are _different Azure datacenters within that region_.
+
+![](https://i.imgur.com/5yn9L3w.png){: .full}
+
+### Azure Regions
+
+A region is a geographical area on the planet that contains at least one but potentially multiple datacenters that are nearby and networked together with a low-latency network.
+
+{: .notice--info}
+<i class="fa fa-info-circle"></i> **Important** \
+\
+Some services or VM features are only available in certain regions, such as specific VM sizes or storage types. There are also some global Azure services that don't require you to select a particular region, such as Azure Active Directory, Azure Traffic Manager, and Azure DNS.
 
 ## References
 
