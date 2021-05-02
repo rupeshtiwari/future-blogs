@@ -101,6 +101,9 @@ The Local Network Gateway (LNG) typically refers to your on-premises location. [
 
 Classless Inter-Domain Routing (CIDR).
 
+## FQDN
+
+ fully qualified domain name
  
 
 ## Azure Infrastructure and Management

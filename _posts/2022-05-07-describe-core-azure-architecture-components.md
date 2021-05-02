@@ -256,29 +256,28 @@ Examples of region pairs in Azure are West US paired with East US and SouthEast 
 
 Because the pair of regions is directly connected and far enough apart to be isolated from regional disasters, you can use them to provide reliable services and data redundancy. Some services offer automatic geo-redundant storage by using region pairs.
 
--   If an extensive Azure outage occurs, one region out of every pair is prioritized to make sure at least one is restored as quickly as possible for applications hosted in that region pair.
--   Planned Azure updates are rolled out to paired regions one region at a time to minimize downtime and risk of application outage.
--   Data continues to reside within the same geography as its pair (except for Brazil South) for tax- and law-enforcement jurisdiction purposes.
+- If an extensive Azure outage occurs, one region out of every pair is prioritized to make sure at least one is restored as quickly as possible for applications hosted in that region pair.
+- Planned Azure updates are rolled out to paired regions one region at a time to minimize downtime and risk of application outage.
+- Data continues to reside within the same geography as its pair (except for Brazil South) for tax- and law-enforcement jurisdiction purposes.
 
 {: .notice--success}
 🏆 **ProTip** \
 \
 Having a broadly distributed set of datacenters allows Azure to provide a high guarantee of availability.
 
-
-
 ## What you need to create website hosted in Azure?
+
+You can use Azure market place to create ready made applications like WordPress application etc.
 
 - Create free Azure account
 - Subscription automatically created for you
-- Create a Resource Group 
+- Create a Resource Group
   - services
   - disks
   - network interface
 - Create Resource & choose location
 
-
-
+Follow steps from this site to [create your first App in Azure](https://docs.microsoft.com/en-us/learn/modules/azure-architecture-fundamentals/exercise-create-website) 
 
 ## References
 
