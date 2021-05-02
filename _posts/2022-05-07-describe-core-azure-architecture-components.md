@@ -267,6 +267,18 @@ Having a broadly distributed set of datacenters allows Azure to provide a high g
 
 
 
+## What you need to create website hosted in Azure?
+
+- Create free Azure account
+- Subscription automatically created for you
+- Create a Resource Group 
+  - services
+  - disks
+  - network interface
+- Create Resource & choose location
+
+
+
 
 ## References
 

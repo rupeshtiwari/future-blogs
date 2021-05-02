@@ -196,11 +196,11 @@ The users can make requests using the **Orchestrators Web API**.
 
 The **Web API** can be called using **Azure Portal** and many tools.
 
-![](https://i.imgur.com/tDjFTKJ.png)
+![](https://i.imgur.com/tDjFTKJ.png){: .full}
 
 **For example**, when a user makes a request to create a Virtual Machine (VM) from Azure portal. The Orchestrator packages everything needed and chooses the best server Rack. And then sends the package and request to the Fabric Controller. Once the Fabric Controller has created the Virtual Machine, the user can connect to it.
 
-![](https://i.imgur.com/E80cISJ.gif)
+![](https://i.imgur.com/E80cISJ.gif){: .full}
 
 ## Azure Portal
 
@@ -208,13 +208,15 @@ The Azure portal is a web-based, unified console that provides an alternative to
 
 [Learn More ...](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/what-is-microsoft-azure)
 
-![](https://i.imgur.com/pd9pVmS.png)
+![](https://i.imgur.com/pd9pVmS.png){: .full}
 
 ## What is Azure Marketplace?
 
 [Azure Marketplace](https://azuremarketplace.microsoft.com/) helps connect users with Microsoft partners, independent software vendors, and startups that are offering their solutions and services, which are optimized to run on Azure.
 
-![](https://i.imgur.com/3Vabs2f.png)
+![](https://i.imgur.com/3Vabs2f.png){: .full}
+
+Azure Marketplace is an online store that hosts applications that are certified and optimized to run in Azure. Many types of applications are available, ranging from AI and machine learning to web applications. 
 
 ## Azure Services
 
