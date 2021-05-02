@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/kxKpVTV.png
+image: https://i.imgur.com/HkTjirq.png
 header:
   image: https://i.imgur.com/zipiW93.png
-  teaser: https://i.imgur.com/kxKpVTV.png
-  og_image: https://i.imgur.com/kxKpVTV.png
+  teaser: https://i.imgur.com/HkTjirq.png
+  og_image: https://i.imgur.com/HkTjirq.png
 tags:
   - webdev
   - tutorial
