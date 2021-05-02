@@ -105,6 +105,8 @@ Classless Inter-Domain Routing (CIDR).
 
  fully qualified domain name
  
+ ## DMS
+ Azure Database Migration Service
 
 ## Azure Infrastructure and Management
 

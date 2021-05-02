@@ -9,11 +9,11 @@ share: true
 related: true
 toc: true
 toc_sticky: false
-image: https://i.imgur.com/HkTjirq.png
+image: https://i.imgur.com/qxXxmBa.png
 header:
   image: https://i.imgur.com/FEATUREIMAGE.png
-  teaser: https://i.imgur.com/HkTjirq.png
-  og_image: https://i.imgur.com/HkTjirq.png
+  teaser: https://i.imgur.com/qxXxmBa.png
+  og_image: https://i.imgur.com/qxXxmBa.png
 tags:
   - draft
 ---
