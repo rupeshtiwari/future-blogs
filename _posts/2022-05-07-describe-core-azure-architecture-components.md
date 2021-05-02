@@ -269,6 +269,8 @@ Having a broadly distributed set of datacenters allows Azure to provide a high g
 
 You can use Azure market place to create ready made applications like WordPress application etc.
 
+![](https://imgur.com/jUXOLF1.gif){: .full}
+
 - Create free Azure account
 - Subscription automatically created for you
 - Create a Resource Group
@@ -278,6 +280,10 @@ You can use Azure market place to create ready made applications like WordPress 
 - Create Resource & choose location
 
 Follow steps from this site to [create your first App in Azure](https://docs.microsoft.com/en-us/learn/modules/azure-architecture-fundamentals/exercise-create-website) 
+
+
+
+
 
 ## References
 
