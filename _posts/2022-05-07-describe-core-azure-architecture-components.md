@@ -279,11 +279,18 @@ You can use Azure market place to create ready made applications like WordPress 
   - network interface
 - Create Resource & choose location
 
-Follow steps from this site to [create your first App in Azure](https://docs.microsoft.com/en-us/learn/modules/azure-architecture-fundamentals/exercise-create-website) 
+Follow steps from this site to [create your first App in Azure](https://docs.microsoft.com/en-us/learn/modules/azure-architecture-fundamentals/exercise-create-website)
 
+## Knowledge Check
 
+- **Management groups** can be used to manage governance across multiple Azure subscriptions?
+- **Azure Subscription** is a logical unit of Azure services that links to an Azure account?
+- **Resource groups** can **NOT** be nested.
+- An **Azure subscription** is a logical unit of Azure services.
 
+![](https://imgur.com/gurEhKi.png){: .full}
 
+![](https://imgur.com/eKUkafP.png){: .full}
 
 ## References
 
