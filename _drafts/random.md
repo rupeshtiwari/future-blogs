@@ -101,6 +101,13 @@ The Local Network Gateway (LNG) typically refers to your on-premises location. [
 
 Classless Inter-Domain Routing (CIDR).
 
+
+## NFS
+Network File System (NFS)
+
+## SMB
+Server Message Block (SMB)
+
 ## FQDN
 
  fully qualified domain name
