@@ -217,7 +217,7 @@ $zipFile = "c:\fsms\test.zip"
 $shell.namespace($targetFolderToCopyUnzippedFiles).copyhere($shell.namespace($zipFile).items(),4)
 ```
 
-![](https://imgur.com/undefined.gif){: .full}
+![](https://imgur.com/e904y8V.gif){: .full}
 
 ## References
 
