@@ -129,8 +129,8 @@ For example,
 
 ## References
 
-- [Youtube Video](https://www.youtube.com/watch?v=-yz3FV8WliU){: .btn .btn--info}
-- [Youtube Video](https://www.youtube.com/watch?v=JOomC1wFrbU){: .btn .btn--info}
+- [Subnet Video](https://www.youtube.com/watch?v=-yz3FV8WliU){: .btn .btn--info}
+- [Routers and Default Gateways Video](https://www.youtube.com/watch?v=JOomC1wFrbU){: .btn .btn--info}
 - [Subnet Article](https://dnsmadeeasy.com/support/subnet/){: .btn .btn--info}
 - [Subnet Mask Article](https://avinetworks.com/glossary/subnet-mask/){: .btn .btn--info}
 
