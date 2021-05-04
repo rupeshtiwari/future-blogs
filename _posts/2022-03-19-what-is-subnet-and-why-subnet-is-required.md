@@ -110,7 +110,7 @@ For example,
 ### Subnet Mask Cheat Sheet
 
 |      | Addresses | Hosts | Netmask         | Amount of a Class C |
-| ---- | :--------- | :----- | :--------------- | :------------------- |
+| ---- | :-------- | :---- | :-------------- | :------------------ |
 | / 30 | 4         | 2     | 255.255.255.252 | 1 / 64              |
 | / 29 | 8         | 6     | 255.255.255.248 | 1 / 32              |
 | / 28 | 16        | 14    | 255.255.255.240 | 1 / 16              |
@@ -132,7 +132,7 @@ For example,
 1. https://www.youtube.com/watch?v=-yz3FV8WliU
 2. https://www.youtube.com/watch?v=JOomC1wFrbU
 3. https://dnsmadeeasy.com/support/subnet/
-4. https://avinetworks.com/glossary/subnet-mask/ 
+4. https://avinetworks.com/glossary/subnet-mask/
 
 ---
 
