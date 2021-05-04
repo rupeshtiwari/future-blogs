@@ -89,6 +89,10 @@ Virtual IP address. VIP is an IP address that doesn't correspond to an actual ph
 
 Internet Key Exchange
 
+## IPSec
+
+Internet Protocol Security (IPSec)
+
 ## IPV
 
 Internet Protocol Version (IPV). **IPv6** is more advanced and has better features compared to **IPv4**.
@@ -101,19 +105,29 @@ The Local Network Gateway (LNG) typically refers to your on-premises location. [
 
 Classless Inter-Domain Routing (CIDR).
 
-
 ## NFS
+
 Network File System (NFS)
 
 ## SMB
+
 Server Message Block (SMB)
 
 ## FQDN
 
- fully qualified domain name
- 
- ## DMS
- Azure Database Migration Service
+fully qualified domain name
+
+## DMS
+
+Azure Database Migration Service
+
+## UDR
+
+User Defined Routing (UDR)
+
+## DDoS
+
+Distributed denial of service (DDoS) [Learn More](https://docs.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview)
 
 ## Azure Infrastructure and Management
 
@@ -260,6 +274,6 @@ I have below 1 article on [Discuss Azure fundamentals Concepts](https://www.rupe
 
 After completing this module, you'll be able to describe the benefits and usage of:
 
--   Azure subscriptions and management groups.
--   Azure resources, resource groups, and Azure Resource Manager.
--   Azure regions, region pairs, and availability zones.
+- Azure subscriptions and management groups.
+- Azure resources, resource groups, and Azure Resource Manager.
+- Azure regions, region pairs, and availability zones.
