@@ -131,6 +131,8 @@ For example,
 
 1. https://www.youtube.com/watch?v=-yz3FV8WliU
 2. https://www.youtube.com/watch?v=JOomC1wFrbU
+3. https://dnsmadeeasy.com/support/subnet/
+4. https://avinetworks.com/glossary/subnet-mask/ 
 
 ---
 
