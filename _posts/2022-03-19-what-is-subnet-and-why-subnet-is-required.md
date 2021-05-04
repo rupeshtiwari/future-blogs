@@ -80,6 +80,53 @@ ISP (Internet Service Provider) or Data Center has big router with lots of cable
 
 Host is a device with specified IP address within the network. It could be your smart phone with IP (192.0.2.104). Or your family member's iPad or laptop with unique IP address.
 
+## Subnet Mask
+
+Every device has an IP address with two pieces: the client or host address and the server or network address. IP addresses are either configured by a DHCP server or manually configured (static IP addresses). The subnet mask splits the IP address into the host and network addresses, thereby defining which part of the IP address belongs to the device and which part belongs to the network.
+
+### IP Address and Subnet Mask
+
+A 32-bit IP address uniquely identifies a single device on an IP network. The 32 binary bits are divided into the host and network sections by the subnet mask but they are also broken into four 8-bit octets.
+
+### IP Address Classes and Subnet Mask
+
+Class A, B, and C networks have natural masks, or default subnet masks:
+
+- Class A: 255.0.0.0
+- Class B: 255.255.0.0
+- Class C: 255.255.255.0
+
+You can determine the number and type of IP addresses any given local network requires based on its default subnet mask.
+
+### What is IP Mask?
+
+You might use “IP/Mask” as a shorthand to define both the IP address and sub mask at once. In this situation, the IP address is followed by the number of bits in the mask.
+
+For example,
+
+- **10.0.1.1/24** equivalent to IP address: 10.0.1.1 with subnet mask of 255.255.255.0.
+- **216.202.192.66/22** equivalent to IP address: 216.202.196.66 with a subnet mask of 255.255.252.0
+
+### Subnet Mask Cheat Sheet
+
+|      | Addresses | Hosts | Netmask         | Amount of a Class C |
+| ---- | --------- | ----- | --------------- | ------------------- |
+| / 30 | 4         | 2     | 255.255.255.252 | 1 / 64              |
+| / 29 | 8         | 6     | 255.255.255.248 | 1 / 32              |
+| / 28 | 16        | 14    | 255.255.255.240 | 1 / 16              |
+| / 27 | 32        | 30    | 255.255.255.224 | 1 / 8               |
+| / 26 | 64        | 62    | 255.255.255.192 | 1 / 4               |
+| / 25 | 128       | 126   | 255.255.255.128 | 1 / 2               |
+| / 24 | 256       | 254   | 255.255.255.0   | 1                   |
+| / 23 | 512       | 510   | 255.255.254.0   | 2                   |
+| / 22 | 1024      | 1022  | 255.255.252.0   | 4                   |
+| / 21 | 2048      | 2046  | 255.255.248.0   | 8                   |
+| / 20 | 4096      | 4094  | 255.255.240.0   | 16                  |
+| / 19 | 8192      | 8190  | 255.255.224.0   | 32                  |
+| / 18 | 16384     | 16382 | 255.255.192.0   | 64                  |
+| / 17 | 32768     | 32766 | 255.255.128.0   | 128                 |
+| / 16 | 65536     | 65534 | 255.255.0.0     | 256                 |
+
 ## References
 
 1. https://www.youtube.com/watch?v=-yz3FV8WliU
