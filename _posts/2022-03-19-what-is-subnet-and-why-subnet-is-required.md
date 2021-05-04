@@ -129,10 +129,10 @@ For example,
 
 ## References
 
-1. https://www.youtube.com/watch?v=-yz3FV8WliU
-2. https://www.youtube.com/watch?v=JOomC1wFrbU
-3. https://dnsmadeeasy.com/support/subnet/
-4. https://avinetworks.com/glossary/subnet-mask/
+- [Youtube Video](https://www.youtube.com/watch?v=-yz3FV8WliU){: .btn .btn--info}
+- [Youtube Video](https://www.youtube.com/watch?v=JOomC1wFrbU){: .btn .btn--info}
+- [Subnet Article](https://dnsmadeeasy.com/support/subnet/){: .btn .btn--info}
+- [Subnet Mask Article](https://avinetworks.com/glossary/subnet-mask/){: .btn .btn--info}
 
 ---
 
