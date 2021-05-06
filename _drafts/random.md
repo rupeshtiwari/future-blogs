@@ -215,21 +215,18 @@ graph TD;
 
 Azure Mobile App gives an easy and secure way to manage your Azure resources, even when you are out of the office and not near computer.
 
-//-----
-
 ## Azure Fundamentals Certification (AZ 900)
 
 **Azure Fundamentals** certification needs 6 part to be finished.
 
 1. Part 1: Describe core Azure concepts
-   1. Introduction to Azure fundamentals
-   2. Discuss Azure fundamental concepts
-   3. Describe core Azure architecture components
 2. Part 2: Describe core Azure services
 3. Part 3: Describe core solutions and management tools on Azure
 4. Part 4: Describe general security and network security features
 5. Part 5: Describe identity, governance, privacy, and compliance features
 6. Part 6: Describe Azure cost management and service level agreements
+
+![](https://imgur.com/ulz9JTX.png){: .full}
 
 ## Part 1: Describe core Azure concepts
 
