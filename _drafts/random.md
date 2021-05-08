@@ -228,6 +228,26 @@ Azure Mobile App gives an easy and secure way to manage your Azure resources, ev
 
 ![](https://imgur.com/ulz9JTX.png){: .full}
 
+
+
+
+### Part 3: Describe core solutions and management tools on Azure
+
+- Choose the best AI service for your needs
+- Choose the best tools to help organizations build better solutions
+- Choose the best monitoring service for visibility, insight, and outage mitigation
+- Choose the best tools for managing and configuring your Azure environment
+- Choose the best Azure serverless technology for your business scenario
+- Choose the best Azure IoT service for your application
+
+
+
+
+
+
+
+
+
 ## Part 1: Describe core Azure concepts
 
 You will learn below things:
