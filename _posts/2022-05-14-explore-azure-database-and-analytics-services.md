@@ -239,10 +239,9 @@ The analytics service can handle jobs of any scale instantly by setting the dial
 
 ![](https://imgur.com/**gnJIvtM.png){: .full}
 
+ 
 
-![](https://github.com/rupeshtiwari/coding-examples-angular-monorepo-with-nx/blob/master/enterprise-angular-mono-repo-patterns.pdf) 
-
-<embed src="https://drive.google.com/file/d/1V4JNPKxkJalUMI7dVTxOo3KBxQFI3icR/view?usp=sharing" width="100%" height="850px"/>
+<embed src="https://github.com/rupeshtiwari/coding-examples-angular-monorepo-with-nx/blob/master/enterprise-angular-mono-repo-patterns.pdf" width="100%" height="850px"/>
 
 ## References
 
