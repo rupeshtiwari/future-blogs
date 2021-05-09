@@ -125,6 +125,10 @@ Azure Database Migration Service
 
 User Defined Routing (UDR)
 
+## DNAT
+
+Destination Network Address Translation (DNAT)
+
 ## DDoS
 
 Distributed denial of service (DDoS) [Learn More](https://docs.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview)
@@ -228,9 +232,6 @@ Azure Mobile App gives an easy and secure way to manage your Azure resources, ev
 
 ![](https://imgur.com/ulz9JTX.png){: .full}
 
-
-
-
 ### Part 3: Describe core solutions and management tools on Azure
 
 - Choose the best AI service for your needs
@@ -239,14 +240,6 @@ Azure Mobile App gives an easy and secure way to manage your Azure resources, ev
 - Choose the best tools for managing and configuring your Azure environment
 - Choose the best Azure serverless technology for your business scenario
 - Choose the best Azure IoT service for your application
-
-
-
-
-
-
-
-
 
 ## Part 1: Describe core Azure concepts
 
