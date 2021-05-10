@@ -125,6 +125,18 @@ Azure Database Migration Service
 
 User Defined Routing (UDR)
 
+## NAT
+
+Network Address Translation (NAT)
+
+## WAF
+
+web application firewall (WAF)
+
+## FQDNs
+
+fully qualified domain names (FQDNs)
+
 ## DNAT
 
 Destination Network Address Translation (DNAT)
