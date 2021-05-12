@@ -113,6 +113,8 @@ Network File System (NFS)
 
 Server Message Block (SMB)
 
+![](https://imgur.com/eOrGZls.png){: .full}
+
 ## FQDN
 
 fully qualified domain name
@@ -144,6 +146,14 @@ Destination Network Address Translation (DNAT)
 ## DDoS
 
 Distributed denial of service (DDoS) [Learn More](https://docs.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview)
+
+## Workgroups
+
+A workgroup is a collection of computers that each maintain their own security information. Here the security is distributed, not centralized.
+
+## Domains
+
+A domain is a collection of computers where security is handled centrally.Each domain has one or more domain controllers.
 
 ## Azure Infrastructure and Management
 
