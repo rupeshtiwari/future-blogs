@@ -1,6 +1,6 @@
 ---
 title: Azure Information Protection Strategy
-date: 2022-04-16 00:00 +0000
+date: 2022-04-02 00:00 +0000
 description:
 author_profile: true
 published: true
@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
 image: https://i.imgur.com/zztiaiA.png
 header:
-  image: https://i.imgur.com/KjGKP8X.png
+  image: https://i.imgur.com/TDnKShl.png
   teaser: https://i.imgur.com/zztiaiA.png
   og_image: https://i.imgur.com/zztiaiA.png
 tags:

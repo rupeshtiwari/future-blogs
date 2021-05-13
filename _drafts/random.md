@@ -131,6 +131,14 @@ User Defined Routing (UDR)
 
 Network Address Translation (NAT)
 
+## NVA
+
+network virtual appliances (NVAs)
+
+## HA Ports
+
+High Available Ports
+
 ## WAF
 
 web application firewall (WAF)
@@ -154,6 +162,18 @@ A workgroup is a collection of computers that each maintain their own security i
 ## Domains
 
 A domain is a collection of computers where security is handled centrally.Each domain has one or more domain controllers.
+
+## ICMP
+
+**Internet Control Message Protocol (ICMP)** is a control protocol, meaning that it designed to not carry application data, but rather information about the status of the network itself. The best known example of ICMP in practice is the ping utility, that uses ICMP to probe remote hosts for responsiveness and overall round-trip time of the probe messages.
+
+## UDP
+
+**User Datagram Protocol (UDP)** is a connection-less transportation protocol. UDP is used to pass the actual user data. Communication is datagram oriented, so the integrity is guaranteed only on the single datagram. Datagrams reach destination and can arrive out of order or don't arrive at all. It's generally used for real time communication, where a little percentage of packet loss rate is preferable to the overhead of a TCP connection.
+
+## TCP
+
+**Transmission Control Protocol (TCP)** TCP is a connection oriented transportation protocol. UDP is used to pass the actual user data.It guarantees that all sent packets will reach the destination in the correct order.
 
 ## Azure Infrastructure and Management
 
