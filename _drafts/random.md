@@ -175,6 +175,18 @@ A domain is a collection of computers where security is handled centrally.Each d
 
 **Transmission Control Protocol (TCP)** TCP is a connection oriented transportation protocol. UDP is used to pass the actual user data.It guarantees that all sent packets will reach the destination in the correct order.
 
+## OLTP
+
+OLTP (Online Transactional Processing)
+
+## SMTP
+
+Simple Mail Transfer Protocol (SMTP) to send emails.
+
+## DDL
+
+Data Definition Language (DDL)
+
 ## Azure Infrastructure and Management
 
 1. Azure Data Center
