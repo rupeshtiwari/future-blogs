@@ -192,6 +192,13 @@ Data Definition Language (DDL)
 
 Korea-Information Security Management System (K-ISMS)
 
+## B2C
+
+business-to-consumer (B2C)
+
+## Delta Query
+
+Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request.
 
 ## How many VNets allowed in Azure
 
