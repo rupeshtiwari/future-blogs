@@ -187,7 +187,6 @@ Simple Mail Transfer Protocol (SMTP) to send emails.
 
 Data Definition Language (DDL)
 
-
 ## K-ISMS
 
 Korea-Information Security Management System (K-ISMS)
@@ -196,13 +195,19 @@ Korea-Information Security Management System (K-ISMS)
 
 business-to-consumer (B2C)
 
+## OIDC
+ OpenID Connect (OIDC)  -  authentication and authorization protocol
+
+## MSRP 
+[Managed Identity Resource Provider (MSRP)](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/how-managed-identities-work-vm#how-it-works)     
+
 ## Delta Query
 
 Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request.
 
 ## How many VNets allowed in Azure
 
-500 VNets, You can only have one VPN Gateway with 1 VNet. 
+500 VNets, You can only have one VPN Gateway with 1 VNet.
 
 ## Azure Infrastructure and Management
 
