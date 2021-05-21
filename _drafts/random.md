@@ -193,13 +193,23 @@ Korea-Information Security Management System (K-ISMS)
 
 ## B2C
 
-business-to-consumer (B2C)
+Business-To-Consumer (B2C)
+
+## ISV
+
+Independent Software Vendor (ISV) - also known as a software publisher, is an organization specializing in making and selling software, as opposed to computer hardware, designed for mass or niche markets.
+
+## LOB
+
+line-of-business (LOB)
 
 ## OIDC
- OpenID Connect (OIDC)  -  authentication and authorization protocol
 
-## MSRP 
-[Managed Identity Resource Provider (MSRP)](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/how-managed-identities-work-vm#how-it-works)     
+OpenID Connect (OIDC) - authentication and authorization protocol
+
+## MSRP
+
+[Managed Identity Resource Provider (MSRP)](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/how-managed-identities-work-vm#how-it-works)
 
 ## Delta Query
 
