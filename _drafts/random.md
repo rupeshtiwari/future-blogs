@@ -201,11 +201,30 @@ Independent Software Vendor (ISV) - also known as a software publisher, is an or
 
 ## LOB
 
-line-of-business (LOB) - used only for your company or  your employees.
+line-of-business (LOB) - used only for your company or your employees.
 
 ## SIEM
 
 Security Incident and Event Monitoring (SIEM) - Monitor apps through reports that use Security Incident and Event Monitoring (SIEM) tools in Microsoft Azure.
+
+## UPN
+
+user principal name (UPN)
+
+## SPN
+
+security principal name (SPN)
+
+## MSAL
+
+Microsoft Authentication Library (MSAL)
+
+## ADAL
+
+Active Directory Authentication Library (ADAL) 
+
+Active Directory Authentication Library (ADAL) integrates with the Azure AD for developers (v1.0) endpoint, where MSAL integrates with the Microsoft identity platform. [Learn More...](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-overview#differences-between-adal-and-msal)
+
 
 ## OIDC
 
