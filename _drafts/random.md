@@ -219,6 +219,7 @@ security principal name (SPN)
 
 Microsoft Authentication Library (MSAL)
 
+
 ## ADAL
 
 Active Directory Authentication Library (ADAL) 
