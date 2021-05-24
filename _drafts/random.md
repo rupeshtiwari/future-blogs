@@ -201,7 +201,11 @@ Independent Software Vendor (ISV) - also known as a software publisher, is an or
 
 ## LOB
 
-line-of-business (LOB)
+line-of-business (LOB) - used only for your company or  your employees.
+
+## SIEM
+
+Security Incident and Event Monitoring (SIEM) - Monitor apps through reports that use Security Incident and Event Monitoring (SIEM) tools in Microsoft Azure.
 
 ## OIDC
 
