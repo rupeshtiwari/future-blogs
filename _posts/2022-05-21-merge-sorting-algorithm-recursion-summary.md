@@ -85,19 +85,19 @@ Resume `2nd` recursion method at line `number-7` and call `mergeSort` with right
 
 Pause the function at line `numnber-7` and call `mergeSort` with `[1]` which will exit because of base condition.
 
-![](https://i.imgur.com/crHGUQM.png){: .full}
+![](https://i.imgur.com/IWO421x.png){: .full}
 
 Function resume at line `numnber-7` and execute line `number-8` call `mergeSort` with `[6]`
 
-![](https://i.imgur.com/CqbyltH.png){: .full}
+![](https://i.imgur.com/Et0NceF.png){: .full}
 
-`mergeSort` with `[6]` will exit because of base condition.
+Next `mergeSort` with `[6]` will exit because of base condition. Next function will resume at line `number-9` and `stitch` method will call that will re-order array `[1,6]`. 
 
-![](https://i.imgur.com/gBGkjOw.png){. full}
+![](https://i.imgur.com/IqzLMOY.png){: .full}
 
-Next Resume 1st recursion at line `number-7` and execute `mergeSort` with `[8,5,3,7]`. Next function will pause at line `number-7` and will call `mergeSort` recursively with `[8,5]`.
+Next Resume `1st` recursion at line `number-7` and execute `mergeSort` with `[8,5,3,7]`. Next function will pause at line `number-7` and will call `mergeSort` recursively with `[8,5]`.
 
-![](https://i.imgur.com/C3dDwAe.png){: .full}
+![](https://i.imgur.com/EOQhbyd.png){: .full}
 
 Next first it will make `mergeSort` with [8] and pause at line `number-7`.
 
