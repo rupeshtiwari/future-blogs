@@ -137,7 +137,7 @@ This way you get the sorted array.
 
 Sorting is done! however let me explain you the stitch algorithm which is the core part or merge sort.
 
-## Merge sort Stich algorithm
+## Merge sort Stitch algorithm
 
 You might have noticed that `MergeSort` Method is calling stitch at every recursion method. Now I will explain the `stitch` function to you. This is the algorithm that takes `left`, `right` and original array. Then it will re-order the original array in ascending order.
 
