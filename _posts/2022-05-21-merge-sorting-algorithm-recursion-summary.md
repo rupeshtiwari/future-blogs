@@ -123,13 +123,17 @@ Next, it will call `mergeSort` with `[3]` recursively then pause at line `number
 And then previous function will resume again at `number-8` and execute next line `stitch` function that will sort the array in ascending order to `[3,7]` and exit.
 
 
-![](https://i.imgur.com/iWmCnFD.png){: .full}
+![](https://i.imgur.com/xyLPW86.png){: .full}
+
+Next `1st` iteration function will resume at line `number-9` and `stitch` the array `[5,8]`  and `[3,7]` and reorder the array `A` to `[3,5,7,8]`. 
+
+![](https://i.imgur.com/bZgzA0b.png){: .full}
 
 
 Finally, the `1st` function will resume at line `number-8` and call `stitch` method to re-order the array `[1,2,3,4,5,6,7,8]` and finally exit.
 This way you get the sorted array.
 
-![](https://i.imgur.com/961lEJW.png){: .full}
+![](https://i.imgur.com/xBTClXY.png){: .full}
 
 Sorting is done! however let me explain you the stitch algorithm which is the core part or merge sort.
 
