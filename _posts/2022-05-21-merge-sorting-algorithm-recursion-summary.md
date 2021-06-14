@@ -51,15 +51,15 @@ First `main` function will call the `mergeSort` with entire given array.
 
 ![](https://i.imgur.com/JsR9WiT.png){: .full}
 
-1st Recursion call to `mergeSort` with left part of the array `[2,4,1,6]` and pause the function execution at line `number-7`.
+`1st` Recursion call to `mergeSort` with left part of the array `[2,4,1,6]` and pause the function execution at line `number-7`.
 
 ![](https://i.imgur.com/hHS3xNl.png){: .full}
 
-2nd recursion call with Array `[2, 4]` and pervious function pauses at line `number -7`.
+`2nd` recursion call with Array `[2, 4]` and pervious function pauses at line `number -7`.
 
 ![](https://i.imgur.com/phJfnSY.png){: .full}
 
-3rd recursion call with array `[2]` and previous function pauses at line `number-7`
+`3rd` recursion call with array `[2]` and previous function pauses at line `number-7`
 
 ![](https://i.imgur.com/eIa9tQY.png){: .full}
 
@@ -67,19 +67,19 @@ Resume 2nd recursion call with array `[2,4]` and call merge sort with right part
 
 ![](https://i.imgur.com/E4lHVoS.png){: .full}
 
-3rd recursion call with array `[4]` and previous function pauses at line `number -8`. This function will exit since length is `less than 2`.
+`3rd` recursion call with array `[4]` and previous function pauses at line `number -8`. 
 
 ![](https://i.imgur.com/BPGqO9K.png){: .full}
 
-Therefore, 3rd recursion call resumes and executes at line `number-9`.
+This function will exit since length is `less than 2`. Therefore, 3rd recursion call resumes and executes at line `number-9`.
 
 ![](https://i.imgur.com/qRlvs1g.png){: .full}
 
 Which is a call to `stitch` method which will join both left and right array and `re-order` them in `ascending` order.
 
-![](https://i.imgur.com/cinoEQX.png){: .full}
+![](https://i.imgur.com/Sac57Mq.png){: .full}
 
-Resume 2nd recursion method at line `number-7` and call `mergeSort` with right part of the array `[1,6]`.
+Resume `2nd` recursion method at line `number-7` and call `mergeSort` with right part of the array `[1,6]`.
 
 ![](https://i.imgur.com/EDo7OuL.png){: .full}
 
