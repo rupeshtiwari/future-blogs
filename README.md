@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Merge Sorting Algorithm Recursion Summary" --date 2022-05-21
+bundle exec jekyll compose "Merge Sorting Algorithm Recursion Summary" --date 2022-05-28
 
 ```
 
