@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Merge Sorting Algorithm Recursion Summary" --date 2022-05-28
+bundle exec jekyll compose "Building and Testing Node.js Application using GitHub Actions" --date 2022-06-11
 
 ```
 
@@ -14,7 +14,7 @@ bundle exec jekyll compose "Merge Sorting Algorithm Recursion Summary" --date 20
 
 ### Publishing draft
 
-`bundle exec jekyll publish _drafts/my-new-draft.md --date 2014-01-24`
+`bundle exec jekyll publish _drafts/my-new-draft.md --date 2022-06-04`
 
 
 
