@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Building and Testing Node.js Application using GitHub Actions" --date 2022-06-11
+bundle exec jekyll compose "Connect Azure Resources from  On-Premise Machines" --date 2022-06-25
 
 ```
 
