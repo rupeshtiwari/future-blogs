@@ -51,6 +51,8 @@ In order to configure and allow connection of on-premise VPN to VNet in Azure ( 
 
 In order to create Azure `Virtual Network Gateway`, you have to first create `GatewaySubnet`. Because VPN Gateway needs dedicated subnet.
 
+![](https://i.imgur.com/SHuiEd0.png){: .full}
+
 ![](https://docs.microsoft.com/en-us/azure/vpn-gateway/media/design/point-to-site.png){: .full}
 
 {: .notice--success}
