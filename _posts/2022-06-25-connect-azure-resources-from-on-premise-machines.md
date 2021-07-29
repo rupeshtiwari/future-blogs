@@ -40,7 +40,11 @@ Well you need internet and route your connection to you office machine. For that
 
 If you have on-premise office or home laptop to connect Azure VNet. You need `VPN` setup with physical device in on-premise location. And you need `VPN Gateway` on Azure `VNet`. A `VPN Gateway` is used when creating a VPN connection from your on-premises network.
 
+![](https://i.imgur.com/NMq78SM.png){: .full}
+
 If you want to put your azure resources in private network over cloud. You must create `VNet` and assign all resource to that VNet in a same region. All resources within VNet must be in one region. So you must create VNet in Azure cloud.
+
+![](https://docs.microsoft.com/en-us/azure/vpn-gateway/media/design/point-to-site.png){: .full}
 
 If you have your own on-premise office or home laptop to connect to your Azure resources. Which is in VNet you must use VPN technology to connect to your Azure resources inside VNet.
 You could use other options like Express Route circuit which is costly and fast option. In this article I will discuss VPN option. VPN uses internet to flow your data. However Express Route uses dedicated connection that doesn't uses internet.
@@ -53,14 +57,10 @@ In order to create Azure `Virtual Network Gateway`, you have to first create `Ga
 
 ![](https://i.imgur.com/SHuiEd0.png){: .full}
 
-![](https://docs.microsoft.com/en-us/azure/vpn-gateway/media/design/point-to-site.png){: .full}
-
 {: .notice--success}
 🏆 **ProTip** \
 \
 Only one `VPN Gateway` is allowed in `Azure Virtual Network (VNet)`
-
-![](https://i.imgur.com/NMq78SM.png){: .full}
 
 ## How do I secure my Azure resources within VNet?
 
@@ -68,17 +68,15 @@ Now in order to restrict which traffic can flow to your Azure VNet resources. Yo
 
 If you want to restrict traffic within VNet then you must configure `Network Security Group` in subnet. Suppose within your VNet you created 2 Subnet. One subnet called as `subnet-web` for Web Apps. Which are exposed to public IP address. So that people can access your app. Then in this subnet you need different rule.
 
+![](https://i.imgur.com/hjLbP0i.png){: .full}
+
 You created another `subnet-business` where you deploy resources containing your business rules.
 
 You created another `subnet-data` where you deploy resources containing your databases.
 
 Now you want to restrict that any resources in `subnet-web` can not communicate directly to `subnet-data` resources. You need to create `Network Security Group (NSG)` in order to achieve this security.
 
-![](https://i.imgur.com/hjLbP0i.png){: .full}
-
 However, you want to restrict both `subnet-data` and `subnet-business` resources from outside world even from VPN clients. You have to setup `Azure Firewall` which works at VNet level. There you can create rule that outside traffic can not directly go to `subnet-data` or `subnet-business`.
-
-
 
 ## References
 
