@@ -24,13 +24,13 @@ tags:
 
 > You want to connect your Azure resources from your on-premise office machine or home laptop right? So how would you do that? Read this article. In order to connect machine/servers residing over your on-premise office from home you need internet. You know anything over internet is not secure. So how would you secure your connection?
 
-### How can I connect machine or server residing in my on-premise office?
+## How can I connect machine or server residing in my on-premise office?
 
 Well you need internet and route your connection to you office machine. For that you have to expose your office server or machine IP addresses over internet so that you can connect them. However, this will put your official data at risk. Now anyone over internet can connect your machine and stole data. Or hacker can trap your communication over internet and hack your data or machine.
 
 ![](https://i.imgur.com/QS10v0g.png){: .full}
 
-### How would I secure my data while connecting to on-premise Office servers
+## How would I secure my data while connecting to on-premise Office servers?
 
 **VPN** is the secure way to connect to other machines over internet. If you want to connect machine which is in your office building from your home. You need internet and the data that you will transfer from your office to your home is exposed to internet. Any malicious user can access/read/manipulate that data. In order to secure your traffic data over internet. You must need `VPN` connection. `VPN` creates a encrypted tunnel from your home laptop to the office machine. All data is isolated/encrypted using `different IPSec tunnels` created by VPN. Now your data over internet is secure in-transit.
 
