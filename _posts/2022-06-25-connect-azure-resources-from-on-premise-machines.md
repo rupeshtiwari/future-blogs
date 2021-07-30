@@ -49,6 +49,18 @@ If you want to put your azure resources in private network over cloud. You must 
 If you have your own on-premise office or home laptop to connect to your Azure resources. Which is in VNet you must use VPN technology to connect to your Azure resources inside VNet.
 You could use other options like Express Route circuit which is costly and fast option. In this article I will discuss VPN option. VPN uses internet to flow your data. However Express Route uses dedicated connection that doesn't uses internet.
 
+## Why I need VNet in Azure?
+
+`VNet` is a private network in cloud. Just like on-premise we create network.
+All resources inside Azure VNet can browse internet. (outbound is allowed by default)
+**However, from internet you can not connect to the VM or any resources present within a VNet by default inbound are restricted from any public IP**. In order to perform this activity you must deploy Azure Public IP resource in your VNet. [Read more here.](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview#communicate-with-the-internet). Therefore, VNet provides isolation to your Azure resources over cloud.
+
+{: .notice--success}
+🏆 **ProTip** \
+\
+I was wondering **Why we are able to communicate our web apps in Azure from internet?**
+And I found this answer promising. **By default, apps hosted in App Service are accessible directly through the internet.** [Read more here](https://docs.microsoft.com/en-us/azure/app-service/networking-features).
+
 ## What do I need in Azure Cloud to allow VPN connection?
 
 In order to configure and allow connection of on-premise VPN to VNet in Azure ( also called as site to site or point to site ). In Azure cloud you must create `Virtual Network Gateway` or `VPN Gateway`. This VPN Gateway allows VPN traffic to flow in your Azure VNet.
