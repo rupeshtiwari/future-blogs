@@ -1,5 +1,5 @@
 ---
-title: Connect Azure Resources from  On-Premise Machines
+title: Securing and Connecting Azure Resources from On-Premise Machines
 date: 2022-06-25 00:00 +0000
 description: How to connect Azure resources from on-premise machines
 author_profile: true
@@ -90,17 +90,61 @@ Now you want to restrict that any resources in `subnet-web` can not communicate 
 
 However, you want to restrict both `subnet-data` and `subnet-business` resources from outside world even from VPN clients. You have to setup `Azure Firewall` which works at VNet level. There you can create rule that outside traffic can not directly go to `subnet-data` or `subnet-business`.
 
-## Why do I create Subnets in Azure?
+## Why do I create Subnets in Azure, how it help securing resources?
 
-In order to restrict outside IP addresses to communicate Azure resources, there are only 2 options.
-1- Configure Azure Firewall
-2- Or create Network Security Group. ( this is required when we have multiple subnets this is recommended also)
+I categorize Azure resources in 3 divisions:
+1- Public/Internet exposed resources
+2- Internal business resources
+3- Private resources
+
+In order to secure private resources over azure. We should restrict outside IP addresses to communicate our private Azure resources like Azure storage, DB, Key Vault etc.
+
+To secure resources in Azure we can use below Azure services:
+1- Azure Firewall
+2- Network Security Group
+3- Application Gateway. (2 and 3 are required when we have multiple subnets. Partitioning resources in various subnets are recommended also.)
 
 For robust security, we must deploy both Azure Firewall and Azure Network Security Group or Azure Application Gateway. I personally prefer `Azure Firewall and Application Gateway`. Because Application Gateway provides easy and friendly way to manage resources.
 
-Microsoft suggest we should create 2 subnet minimum. 1 Subnet where we put resources which are open for public like public `web apps`. Another subnet which should contain resources that we should keep private and restricted outside IP to access or connect like `azure storage, cosmos DB, other databases and azure key vaults` etc. Therefore, we should create at-least 2 subnets: (subnet-public, subnet-private). In order to secure `subnet-private` such that outside IP can not connect, we must deploy `NSG or application gateway` in azure to restrict outside public IP to connect.
+In order to separate resources in private and public access category and secure them accordingly we need to create Azure Subnet. We want strong security for our private resources.
 
-If in your Azure, your are putting all resources in single subnet and exposing to internet via filtering selected IP still we are at risk since we expose all resources over internet. You must think to protect Databases, Keyvaluts etc.
+We can create 1 Subnet where we put resources which are open for public like public `web apps`. Like `Sample Test Exams` which is exposed to public over internet. We can call this subnet as `subnet-public`
+
+Create another subnet where deploy resources which are only available to internal business users like `CORE CMS`. We can call this subnet as `subnet-internal`
+
+Create another subnet which should contain resources that we should keep private, secured from any users and restricted outside IP to access or connect. Those resources could be `azure storage, cosmos DB or other databases and azure key vaults etc.`. Therefore, we can create another subnet call it `subnet-private`.
+
+Now, In order to secure `subnet-private` such that outside IP can not connect, we must deploy `NSG or application gateway` in `subnet-private` and configure such that only our `subnet-public` and `subnet-internal` resources can communicate to `subnet-private`.
+
+## Securing Azure resources using 3 Tier Architecture
+
+We can also create classic 3-tier architecture in Azure where we create 3 subnets as listed below:
+1- **subnet-web** ( private exposed to some public IP or internet)
+2- **subnet-business** ( private )
+3- **subnet-data** ( private )
+
+- `Subnet-Web` can only communicate with `Subnet-Business`.
+- `Subnet-Business` can only communicate with `Subnet-Data`.
+- `Subnet-Business` and S`ubnet-Data` are _never_ exposed to any _public access_.
+
+![](https://i.imgur.com/DMpA0o3.png){: .full}
+
+In `subnet-web` we deploy resources that can be exposed to internet. Such as `web apps`.
+In `subnet-business`, we deploy resources where only `subnet-web` can connect to. Example: Function apps, where we write business logic and handlers.
+In `subnet-data`, we deploy private resources such as `azure storage, cosmos DB or other databases and azure key vaults etc.` And only `subnet-business` can connect to these resources.
+
+This way we can secure our private resources.
+
+If in your Azure, your are putting all resources in single subnet or no subnet just VNet. And exposing to internet via filtering selected IP addresses. Still we are at risk since we exposed all resources over the internet via selected IP. You must think to protect Databases, Keyvaluts etc. and do not allow any public connection by any means.
+
+## Securing Azure resources using Azure Firewall
+
+`Azure Firewall` can filter all perimeter network. You can also put filter such that all the traffic towards your VNet should go through Firewall. If you have hybrid connection then on-premise traffic can also be diverted to go through Azure Firewall. 
+
+![](https://i.imgur.com/pcZVspH.png)
+
+Your subnets within the Spoke VNet can be configured to use UDR (user defined routes). Where you can put the routing rules. Like `subnet-web` can not talk to `subnet-data` etc. Also we need to setup rules that traffic on subnets within spoke VNet should go out through `Azure Firewall` only. 
+
 
 ## References
 
