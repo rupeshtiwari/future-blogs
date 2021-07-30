@@ -1,6 +1,5 @@
 ---
-layout: post
-title: Senior Developer Coding Guideline
+title: Guideline to Become Senior Developer
 date: 2022-06-18 00:00 +0000
 description: Senior Developer Coding Guideline
 author_profile: true
