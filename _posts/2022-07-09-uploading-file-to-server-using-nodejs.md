@@ -1,5 +1,5 @@
 ---
-title: Uploading file to server using NodeJs
+title: Uploading file to the server using Node and HTML5
 date: 2022-07-09 00:00 +0000
 description:
 author_profile: true
@@ -26,7 +26,7 @@ tags:
 
 ## Client side file upload
 
-On the client side we need to create a `file` type input that can hold the file data from the client machine. Remember file type input element will parse the data and put it in the form.
+On the client side we need to use a `file` type `<input>` html element that can hold the file content from the client machine/device. Remember file type input element will parse the data and put it in the form.
 
 ```html
 <input type="file" name="filetoupload" /><br />
@@ -43,7 +43,7 @@ Using the File API, which was added to the DOM in HTML5, it's now possible for w
 
 Suppose you have large or small unstructured data. Suppose you want to upload an image file or excel file. At that time you must consider uploading the file to the server as binary data. It's just an array of integers with 0 and 1.
 
-Therefore, you should instruct your html form to not encode the form file input value and just send it to the server as raw binary data format. In order to achieve this you must set `enctype="multipart/form-data"` in your form tag.
+Therefore, you should instruct your html form to **not encode** the form file input value and just send it to the server as raw binary data format. In order to achieve this you must set `enctype="multipart/form-data"` in your form tag.
 
 Example:
 
@@ -82,7 +82,20 @@ app.post('/fileupload', (req, res) => {
 
 ## Testing file upload
 
-Now if you upload the file from the client side you can inspect the fiddler and check how the client can send the entire content in binary data format.
+### Run the server `npm run server`
+
+![](https://i.imgur.com/qCbTbnB.png){: .full}
+
+### Navigate to the upload page http://localhost:3000/
+
+![](https://i.imgur.com/ZS6l9fw.png){: .full}
+
+### Select file and submit
+
+![](https://i.imgur.com/r1Iz2mM.png){: .full}
+
+## Inspecting multipart form data
+I told you that client browser can submit the file content in binary data. If you want to visualize the form data. Then upload any file and use [`fiddler`](https://www.telerik.com/fiddler) and check how content in binary data format looks like.
 
 ![](https://i.imgur.com/NlnKSAp.png){: .full}
 
@@ -90,15 +103,14 @@ Finally, I can see my file got saved in my desired disk.
 
 ![](https://i.imgur.com/pOVx2DS.png){: .full}
 
-
 ## Learning materials
 
-- Here is the [complete source code](https://github.com/rupeshtiwari/coding-example-upload-file) 
+- Here is the [complete source code](https://github.com/rupeshtiwari/coding-example-upload-file)
 
 ## References
-- [DOM File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications) 
-- [Formidable Node Package](https://www.npmjs.com/package/formidable)
 
+- [DOM File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications)
+- [Formidable Node Package](https://www.npmjs.com/package/formidable)
 
 ---
 
