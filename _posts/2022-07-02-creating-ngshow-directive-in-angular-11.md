@@ -22,7 +22,7 @@ tags:
   - angular
 ---
 
-> Are you wondering how to use ngShow in Angular 11? There is a way to achieve it by using `[hidden]= “false”`. However, if you are migrating large `angularjs` projects into `angular 11` then it is really tedious and error prone work to convert them into `hidden` and negate all existing logic to show the element. In this article I will explain how you can create your own `ngShow` directive in Angular 11.
+> Are you wondering how to use `ng-show` in Angular 11? There is a way to achieve it by using `[hidden]= “false”`. However, if you are migrating large `angularjs` projects into `angular 11` then it is really tedious and error prone work to convert them into `[hidden]=""` expression format. Also you have to negate all existing logic to show the element while using `hidden`. In this article I will explain how you can create your own `ngShow` directive in Angular 11.
 
 So basically we are saying we want to replace below angular js code
 
