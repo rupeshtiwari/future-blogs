@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Connect Azure Resources from  On-Premise Machines" --date 2022-06-25
+bundle exec jekyll compose "Creating ngShow directive in Angular 11" --date 2022-07-02
 
 ```
 
