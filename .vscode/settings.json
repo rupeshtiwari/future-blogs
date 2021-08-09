@@ -4,6 +4,8 @@
     "spellchecker.ignoreWordsList": [
         "mins",
         "RBAC",
-        "Hamet"
+        "Hamet",
+        "Blog",
+        "Runbook"
     ]
 }

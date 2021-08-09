@@ -1,10 +1,10 @@
-# Rupesh Blogs
+# Rupesh Blog
 
 ## Writing New Blog command
 
 ```ruby
 
-bundle exec jekyll compose "How to manage DEV and QA environments in Azure Cloud" --date 2022-07-23
+bundle exec jekyll compose "You Dont Know How to Use Azure Tags Effectively" --date 2022-07-30
 
 ```
 
