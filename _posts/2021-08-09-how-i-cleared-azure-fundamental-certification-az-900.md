@@ -26,7 +26,6 @@ tags:
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3c6d3cd0-842d-4b00-bc7c-8ff9c9f6a17c" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
-
 ## How to Motivate yourself?
 
 Very important thing is to keep yourself motivated to prepare and give exams. Specially when you are a working professional and having married with family and kids. You will be almost busy with work and family and seldom get chance to carve out time to learn new things.
@@ -111,3 +110,8 @@ The good part is you will get you score after completing exam. My score is 950.
 Next you can go to [Microsoft Certificate Dashboard](https://www.microsoft.com/en-us/learning/dashboard.aspx) and download your certificate.
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3c6d3cd0-842d-4b00-bc7c-8ff9c9f6a17c" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+
+## Thanks
+
+_Good luck to your next exam. I hope I could inspire you also to attempt your first Azure Fundamental Exam._ When you are planning to give your exam write in the comment box!
