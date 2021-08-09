@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Uploading file to server using NodeJs" --date 2022-07-09
+bundle exec jekyll compose "Understanding Azure Core Services Questions Flash Cards" --date 2022-07-16
 
 ```
 
