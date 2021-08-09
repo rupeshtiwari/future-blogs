@@ -114,4 +114,4 @@ Next you can go to [Microsoft Certificate Dashboard](https://www.microsoft.com/e
 
 ## Thanks
 
-_Good luck to your next exam. I hope I could inspire you also to attempt your first Azure Fundamental Exam._ When you are planning to give your exam write in the comment box!
+_Good luck to your next exam. I hope I could inspire you also to attempt your first Azure Fundamental Exam._ When you are planning to give your exam? write in the comment box!
