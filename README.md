@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Understanding Azure Core Services Questions Flash Cards" --date 2022-07-16
+bundle exec jekyll compose "How to manage DEV and QA environments in Azure Cloud" --date 2022-07-23
 
 ```
 

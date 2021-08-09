@@ -2,6 +2,8 @@
     "restructuredtext.languageServer.disabled": true,
     "jupyter.jupyterServerType": "local",
     "spellchecker.ignoreWordsList": [
-        "mins"
+        "mins",
+        "RBAC",
+        "Hamet"
     ]
 }
