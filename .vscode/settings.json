@@ -6,6 +6,9 @@
         "RBAC",
         "Hamet",
         "Blog",
-        "Runbook"
+        "Runbook",
+        "VNet",
+        "GatewaySubnet",
+        "internet"
     ]
 }
