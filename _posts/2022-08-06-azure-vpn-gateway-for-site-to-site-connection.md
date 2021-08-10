@@ -179,6 +179,8 @@ We will create:
 - Public IP Address
 - Create connection
 
+![](https://i.imgur.com/lKamVzY.png){: .full}
+
 Here is the [hands on lab link](https://docs.microsoft.com/en-us/learn/modules/connect-on-premises-network-with-vpn-gateway/3-exercise-prepare-azure-and-on-premises-vnets-using-azure-cli-commands)
 
 ---
