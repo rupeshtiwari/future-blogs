@@ -141,7 +141,7 @@ Network Virtual Appliances (NVAs)
 
 ## HA Ports
 
-High Available Ports:  [High availability (HA) ports](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-ha-ports-overview) is a type of load balancing rule that provides an easy way to load-balance all flows that arrive on all ports of an internal Standard Load Balancer. 
+High Available Ports: [High availability (HA) ports](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-ha-ports-overview) is a type of load balancing rule that provides an easy way to load-balance all flows that arrive on all ports of an internal Standard Load Balancer.
 
 ## WAF
 
@@ -303,7 +303,7 @@ Notebook: Azure Notebooks is an implementation of the widely used open-source `J
 [Planned Maintenance](#planned-maintenance), [Health Advisories](#health-advisories), [Security Advisories](#security-advisories), [Service Issues](#service-issues). Azure Health also allows you to configure health alerts based on above categories events. You can also add action groups to either email or SMS or phone call on desired health events.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Azure Service Health is: **Planned, Health & Security, Service**.
 

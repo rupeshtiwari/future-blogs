@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "You Dont Know How to Use Azure Tags Effectively" --date 2022-07-30
+bundle exec jekyll compose "Azure VPN Gateway for Site to Site Connection" --date 2022-08-06
 
 ```
 
