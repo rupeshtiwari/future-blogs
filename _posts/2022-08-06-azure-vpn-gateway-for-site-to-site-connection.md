@@ -69,12 +69,36 @@ Both types of VPN gateways (route-based and policy-based) in Azure use pre-share
 
 ## Components of VPN Gateway in Azure
 
-You need below 6 resources to deploy VPN Gateway:
+You need below 6 resources to be created and configured in order to setup site-to-site connection with VPN Gateway:
 ![](https://i.imgur.com/40PIjPB.png){: .full}
 
 - **VNet**: Only one VPN Gateway can be deployed in a Single VNet. While creating VNet give enough address space to accommodate future subnets.
 - **GatewaySubnet**: You need a dedicated subnet for VPN Gateway. You have to call this as `GatewaySubnet`. You can not use this subnet for other service. Make sure you give `/27` address mask to make sure you have enough IP addresses for future growth. Also remember sometime you want to put 2 VPN Gateways in `Active/Standby` or `Active/Active` mode within this subnet in order for redundancy.
-- **Virtual Network Gateway**: Create Virtual Network Gateway of VPN type. This will route the traffic from on-premise to Azure VNet and vice-versa.
-- **Public IP address**: Create Dynamic Public IP Address resource. This address will only change if you delete and recreate the VPN. This IP will be internet facing and your on-premise VPN Device can point to this IP Address.
+- **Virtual Network Gateway**: Create Virtual Network Gateway of `VPN` type. This will route the traffic from on-premise to Azure VNet and vice-versa.
+- **Public IP address**: Create `Dynamic Public IP Address` resource. This address will only change if you delete and recreate the VPN. This IP will be internet facing and your on-premise VPN Device can point to this IP Address.
+- **Local Network Gateway**: This is created to represent on-premise network's configurations. This configuration includes the on-premises VPN device's public `IPv4` address and the on-premises routable networks. This information is used by the VPN gateway to route packets that are destined for on-premises networks through the `IPSec` tunnel.
+- **Connection**: Create a `connection` resource. Connect VPN Gateway with on-premise VPN Device IPv4 address. Connect VPN Gateway with it's Public IP Address.
 
 ![](https://i.imgur.com/mV537mU.png){: .full}
+
+## On-Premise resources
+
+You need Physical VPN Device and a Public-Facing IPv4 address in your data center to connect to Azure resources.
+
+## High Availability
+
+Since all traffic has to go from VPN Gateway. You must think of what will happen in case of any issues. We have to work on fault tolerance.
+
+You can use 2 VPN Gateways one in `Active/Standby` and other is in `Active/Active` mode.
+
+### Active / Standby
+
+On any planned maintenance or un-planned interruption affects active instance then within `90` seconds the standby gateway will become active `automatically` without any human involvement. This is excellent feature.
+
+![](https://i.imgur.com/fYtUs8W.png){: .full}
+
+### Active/ Active
+
+In this mode you have to deploy `2 VPN gateways` with 2 `distinct IP Addresses`. Then on-premise will have `2 VPN devices` to connect with them. With this you see how much traffic can be distributed among these 2 gateways.
+
+![](https://i.imgur.com/Uc42Bje.png){: .full}

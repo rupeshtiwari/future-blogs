@@ -9,6 +9,9 @@
         "Runbook",
         "VNet",
         "GatewaySubnet",
-        "internet"
+        "internet",
+        "routable",
+        "IPSec",
+        "IPv4"
     ]
 }
