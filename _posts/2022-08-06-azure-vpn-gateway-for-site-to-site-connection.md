@@ -9,7 +9,7 @@ comments: true
 share: true
 related: true
 toc: true
-toc_sticky: true
+toc_sticky: false
 image: https://i.imgur.com/qxXxmBa.png
 header:
   image: https://i.imgur.com/zipiW93.png
@@ -26,7 +26,7 @@ tags:
 
 ## Azure VPN gateways
 
-A VPN gateway is a type of Virtual Network Gateway. `ExpressRoute` is another gateway type which is most efficient and costly. I will focus more on VPN gateway.
+A VPN gateway is a type of Virtual Network Gateway. `ExpressRoute` is another gateway type which is most efficient and costly. I will focus more on VPN gateway. If your organization uses Office 365. It wants to reduce traffic over the internet and send this traffic over a dedicated connection to Azure. Then ExpressRoute is the best choice.
 
 ![](https://i.imgur.com/LXoNdle.png){: .full}
 
@@ -77,6 +77,7 @@ You need below 6 resources to be created and configured in order to setup site-t
 - **Virtual Network Gateway**: Create Virtual Network Gateway of `VPN` type. This will route the traffic from on-premise to Azure VNet and vice-versa.
 - **Public IP address**: Create `Dynamic Public IP Address` resource. This address will only change if you delete and recreate the VPN. This IP will be internet facing and your on-premise VPN Device can point to this IP Address.
 - **Local Network Gateway**: This is created to represent on-premise network's configurations. This configuration includes the on-premises VPN device's public `IPv4` address and the on-premises routable networks. This information is used by the VPN gateway to route packets that are destined for on-premises networks through the `IPSec` tunnel.
+  ![](https://i.imgur.com/6oqv3B7.png){: .full}
 - **Connection**: Create a `connection` resource. Connect VPN Gateway with on-premise VPN Device IPv4 address. Connect VPN Gateway with it's Public IP Address.
 
 ![](https://i.imgur.com/mV537mU.png){: .full}
@@ -102,3 +103,87 @@ On any planned maintenance or un-planned interruption affects active instance th
 In this mode you have to deploy `2 VPN gateways` with 2 `distinct IP Addresses`. Then on-premise will have `2 VPN devices` to connect with them. With this you see how much traffic can be distributed among these 2 gateways.
 
 ![](https://i.imgur.com/Uc42Bje.png){: .full}
+
+## Site to Site VPN Gateway Deployment
+
+Our goal is to create these 2 sites and connect them using vpn.
+
+![](https://i.imgur.com/ygx7RHO.png){: .full}
+
+### The first step is to create both sites in Azure.
+
+Let's create HQ-Network and Azure-VNet1 sites in Azure.
+
+#### Create Azure VNet
+
+While create `VNet`, we also create a `services` subnet. You need `Address-Prefixes` and `Subnet-Prefixes`.
+
+```powershell
+az network vnet create \
+    --resource-group learn-a6e8a4cb-44d7-4c35-b40c-9a61faff22e0 \
+    --name Azure-VNet-1 \
+    --address-prefixes 10.0.0.0/16 \
+    --subnet-name Services \
+    --subnet-prefixes 10.0.0.0/24
+```
+
+![](https://i.imgur.com/4umnnbA.png){: .full}
+
+#### Create GatewaySubnet
+
+We need Gateway subnet to be created and for that we need `address-prefixes`. `GatewaySubnet` will remain under `Azure-VNet1`.
+
+```powershell
+az network vnet subnet create \
+    --resource-group learn-a6e8a4cb-44d7-4c35-b40c-9a61faff22e0 \
+    --vnet-name Azure-VNet-1 \
+    --address-prefixes 10.0.255.0/27 \
+    --name GatewaySubnet
+```
+
+![](https://i.imgur.com/MeuR0jg.png){: .full}
+
+#### Local Network Gateway representing Head Quarter VNet
+
+Local Network Gateway will point to gateway ip address which is the Public IP(PIP) Address of the Head Quarter Network. I will assign this ip address later once I create PIP of HQ-Network.
+
+```powershell
+az network local-gateway create \
+    --resource-group learn-a6e8a4cb-44d7-4c35-b40c-9a61faff22e0 \
+    --gateway-ip-address 94.0.252.160 \
+    --name LNG-HQ-Network \
+    --local-address-prefixes 172.16.0.0/16
+
+```
+
+![](https://i.imgur.com/YDeLkLE.png){: .full}
+
+Similarly, you go ahead and create Site for Head Quarter Network also.
+
+#### Verify Network Topology
+
+![](https://i.imgur.com/huDWqOx.png){: .full}
+
+### 2nd Step Create a site-to-site VPN gateway by using Azure CLI commands
+
+We will create:
+
+- VNet for gateway
+- VPN gateways
+- Public IP Address
+- Create connection
+
+Here is the [hands on lab link](https://docs.microsoft.com/en-us/learn/modules/connect-on-premises-network-with-vpn-gateway/3-exercise-prepare-azure-and-on-premises-vnets-using-azure-cli-commands)
+
+---
+
+_Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
+
+<div class="notice--success">
+<strong>💖 Say 👋 to me!</strong>
+<br>Rupesh Tiwari
+<br>Founder of <a href="https://www.fullstackmaster.net">Fullstack Master </a>
+<br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
+<br>Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
+</div>
+![](https://imgur.com/a32nUcu.png)

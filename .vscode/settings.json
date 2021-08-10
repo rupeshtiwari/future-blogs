@@ -12,6 +12,7 @@
         "internet",
         "routable",
         "IPSec",
-        "IPv4"
+        "IPv4",
+        "VNet1"
     ]
 }
