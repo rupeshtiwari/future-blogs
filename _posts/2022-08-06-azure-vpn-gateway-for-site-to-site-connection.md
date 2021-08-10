@@ -26,7 +26,13 @@ tags:
 
 ## Azure VPN gateways
 
-A VPN gateway is a type of Virtual Network Gateway. `ExpressRoute` is another gateway type which is most efficient and costly. I will focus more on VPN gateway. If your organization uses Office 365. It wants to reduce traffic over the internet and send this traffic over a dedicated connection to Azure. Then ExpressRoute is the best choice.
+A VPN gateway is a type of Virtual Network Gateway.
+
+`ExpressRoute` is another gateway type which is most efficient and costly.If your organization uses Office 365. It wants to reduce traffic over the internet and send this traffic over a dedicated connection to Azure. Then ExpressRoute is the best choice. It's a service that provides a direct connection from your on-premises datacenter to the Microsoft cloud. One disadvantage is it has no encrypted network communication.
+
+![](https://i.imgur.com/17uFd0u.png){: .full}
+
+I will focus VPN gateway only in this article.
 
 ![](https://i.imgur.com/LXoNdle.png){: .full}
 
