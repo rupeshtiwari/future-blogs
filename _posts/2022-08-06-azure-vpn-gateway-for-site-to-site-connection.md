@@ -154,6 +154,8 @@ az network vnet subnet create \
 
 #### Local Network Gateway representing Head Quarter VNet
 
+The Local Network Gateway(LNG) is a specific object that represents your on-premises location (the site) for routing purposes. You give the site a name by which Azure can refer to it, then specify the IP address of the on-premises VPN device to which you will create a connection.
+
 Local Network Gateway will point to gateway ip address which is the Public IP(PIP) Address of the Head Quarter Network. I will assign this ip address later once I create PIP of HQ-Network.
 
 ```powershell

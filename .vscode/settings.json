@@ -13,6 +13,10 @@
         "routable",
         "IPSec",
         "IPv4",
-        "VNet1"
+        "VNet1",
+        "usethem",
+        "phonebook",
+        "datacenter",
+        "ExpressRoute"
     ]
 }

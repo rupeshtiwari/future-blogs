@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Azure VPN Gateway for Site to Site Connection" --date 2022-08-06
+bundle exec jekyll compose "Azure SubNet Basics" --date 2022-08-27
 
 ```
 
