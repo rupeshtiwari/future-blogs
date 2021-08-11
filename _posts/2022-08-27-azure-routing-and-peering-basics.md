@@ -113,3 +113,16 @@ Azure supports the following types of peering:
 ## NIC
 
 A [Network Interface (NIC)](httpss://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface) enables an Azure Virtual Machine to communicate with internet, Azure, and on-premises resources. When creating a virtual machine using the Azure portal, the portal creates one network interface with default settings for you.
+
+---
+
+_Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
+
+<div class="notice--success">
+<strong>💖 Say 👋 to me!</strong>
+<br>Rupesh Tiwari
+<br>Founder of <a href="https://www.fullstackmaster.net">Fullstack Master </a>
+<br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
+<br>Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
+</div>
+![](https://imgur.com/a32nUcu.png)
