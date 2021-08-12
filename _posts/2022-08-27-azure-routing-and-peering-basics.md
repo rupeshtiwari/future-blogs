@@ -94,9 +94,9 @@ Whenever a virtual network is created, Azure automatically creates the following
 
 Possible Next hop from subnets are:
 
-- Virtual Network
-- Internet
-- None : Traffic routed to the None next hop type is dropped, rather than routed outside the subnet.
+- **Virtual Network**: routes traffic between address ranges within the address space of a virtual network. Azure does not create default routes for subnet address ranges. You don't need to define gateways for Azure to route traffic between subnets. Azure automatically routes traffic between subnets using the routes created for each address range.
+- **Internet**: Routes traffic specified by the address prefix to the Internet. The system default route specifies the 0.0.0.0/0 address prefix.
+- **None** : Traffic routed to the None next hop type is dropped, rather than routed outside the subnet.
 
 ## VNet Peering
 
@@ -106,13 +106,27 @@ Azure supports the following types of peering:
 - **Virtual network peering**: Connect virtual networks within the same Azure region.
 - **Global virtual network peering**: Connecting virtual networks across Azure regions.
 
-**Below is the example for [Gateways and on-premises connectivity](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview#gateways-and-on-premises-connectivity)**
+### Gateways and on-premises connectivity
+
+Peer Virtual Network can communicate to on-premise either by using its own gateway or it can use [hub and spoke network topology](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli) where one VNet called `Hub` will have VPN Gateway that will be connected to on-premise. Rest of the VNet will use `Allow Gateway Transit` and that way they will use the `Hub` VNet gateway. This kind of peer VNet is called as Spoke they use remote gateway to talk to on-premise.
 
 ![](https://i.imgur.com/Aru17rt.png){: .full}
+
+You can create peering between VNets from same/different subscriptions.
+
+[Learn in detail](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview#gateways-and-on-premises-connectivity)
 
 ## NIC
 
 A [Network Interface (NIC)](httpss://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface) enables an Azure Virtual Machine to communicate with internet, Azure, and on-premises resources. When creating a virtual machine using the Azure portal, the portal creates one network interface with default settings for you.
+
+## References
+
+- [Virtual network traffic routing](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview)
+- [Virtual network peering](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview#gateways-and-on-premises-connectivity)
+- [Azure network security overview](https://docs.microsoft.com/en-us/azure/security/fundamentals/network-overview)
+- [About BGP with Azure VPN Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-bgp-overview)
+- [Hub-spoke network topology in Azure](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli)
 
 ---
 

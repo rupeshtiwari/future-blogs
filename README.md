@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Azure SubNet Basics" --date 2022-08-27
+bundle exec jekyll compose "Azure Monitoring Basics" --date 2022-09-03
 
 ```
 
