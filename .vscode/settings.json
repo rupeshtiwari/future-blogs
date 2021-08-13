@@ -35,7 +35,9 @@
         "PaaS",
         "GPv2",
         "offline",
-        "Jumpbox"
+        "Jumpbox",
+        "rupeshtiwari",
+        "webserver"
     ],
     "cSpell.words": [
         "Cherwell",
@@ -49,6 +51,7 @@
         "Tiwari",
         "datacenter",
         "httpss",
+        "rupeshtiwari",
         "webdev"
     ]
 }

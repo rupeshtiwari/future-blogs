@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Azure Storage Account Basics" --date 2022-09-10
+bundle exec jekyll compose "Azure Service Endpoint and Private Endpoint Overview and Configuration" --date 2022-09-17
 
 ```
 
