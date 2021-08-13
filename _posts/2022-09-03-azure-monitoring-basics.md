@@ -109,4 +109,17 @@ Security Incident and Event Monitoring (SIEM) - Microsoft Azure Sentinel is a sc
 
 - https://docs.microsoft.com/en-us/azure/azure-monitor/overview
 - https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards
-- https://docs.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-overview
+- https://docs.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-overview\
+
+---
+
+_Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
+
+<div class="notice--success">
+<strong>💖 Say 👋 to me!</strong>
+<br>Rupesh Tiwari
+<br>Founder of <a href="https://www.fullstackmaster.net">Fullstack Master </a>
+<br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
+<br>Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
+</div>
+![](https://imgur.com/a32nUcu.png)

@@ -31,11 +31,16 @@
         "itsm",
         "ServiceNow",
         "Provance",
-        "Cherwell"
+        "Cherwell",
+        "PaaS",
+        "GPv2",
+        "offline",
+        "Jumpbox"
     ],
     "cSpell.words": [
         "Cherwell",
         "ITSM",
+        "Jumpbox",
         "NICs",
         "Provance",
         "Rupesh",
