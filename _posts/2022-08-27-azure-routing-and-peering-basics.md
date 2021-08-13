@@ -36,6 +36,11 @@ A subnet is **a range of IP addresses in the VNet.** You can divide a VNet into 
 
 By default resources among subnets can communicate without any extra configuration for a given VNet. If you want to restrict some traffic to a specific subnet within VNet then you can add NSG.
 
+{: .notice--success}
+🏆 **Pro Tip** \
+\
+Since subnet size can't be changed after assignment, use a subnet that's large enough to accommodate whatever scale your app might reach. To avoid any issues with subnet capacity, you should use a /26 with 64 addresses.
+
 ## How VMs in subnet communicate with other Subnet VMs?
 
 Each NIC in a VM is connected to one subnet in one VNet. `NICs` connected to subnets (same or different) within a VNet can communicate with each other without any extra configuration.
