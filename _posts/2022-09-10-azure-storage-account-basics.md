@@ -9,7 +9,7 @@ comments: true
 share: true
 related: true
 toc: true
-toc_sticky: true
+toc_sticky: false
 image: https://i.imgur.com/qxXxmBa.png
 header:
   image: https://i.imgur.com/zipiW93.png
@@ -21,6 +21,8 @@ tags:
   - beginners
   - azure
 ---
+
+> When you want to move your business to cloud the major thing to consider is storage. What kind of data you can store? What is the pricing? How can you optimize cost and performance? As a cloud architect its your responsibility to get this answers and propose a design. I will try to help to get the basics of Azure storage account in this article.
 
 ## What kind of data you want to store in Cloud?
 
