@@ -174,7 +174,7 @@ jekyll_compose:
   auto_open: true
   default_front_matter:
     posts:
-      description:
+      description: 'IMPORTANT: REMOVE LAYOUT: POST'
       author_profile: true
       published: true
       read_time: true
