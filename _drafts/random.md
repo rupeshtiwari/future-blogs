@@ -1,34 +1,15 @@
 ---
-title: Configuring Azure Storage Account
-description: Big picture of Azure storage
+title: Full Forms
+description:
 ---
 
-# In Azure Storage Account
+## ROI
 
-## What is Azure Service
+Return on Investment
 
-File, Blob, Queues, Azure Monitor, Cognitive search
+## ISV
 
-## What is Feature in Azure Service
-
-Feature is capability of a service in Azure. Like **Metrics Explorer** is a feature of **Azure Monitor** Service.
-
-## Resource in Azure
-
-Any service instance in Azure is called as resource. VM, VNet, Subnet, Function App, Public IP Address, NIC all are resources.
-
-## Log Analytics Workspace in Azure
-
-Log Analytics Workspace is actually a **Azure Data Lake**.
-
-## VM Scale Set
-
-![](httpss://imgur.com/uGhua33.png)
-
-- VM scale set is an Azure service allows you to run
-- It contains multiple VMs with the same image and contents.
-- It has instances, which are the VMs.
-- You can create more VMs by scaling it up from Azure Portal or Enable auto scale.
+independent software vendor
 
 ## SAN
 
@@ -70,6 +51,29 @@ A Rack has servers (Virtual Machines) in a data-center.
 ## SKU
 
 Stock Keeping Unit (SKU) Learn more about [SKU types in Azure](httpss://docs.microsoft.com/en-us/rest/api/compute/resourceskus/list)
+
+## HPC
+
+[High performance Computing](https://docs.microsoft.com/en-us/azure/architecture/topics/high-performance-computing)
+
+## BeeGFS
+
+(formerly FhGFS) is a parallel file system, developed and optimized for [high-performance computing](https://en.wikipedia.org/wiki/BeeGFS).
+![](https://en.wikipedia.org/wiki/File:Beegfs-architecture-overview.png){: .full}
+
+## PBS
+
+[Portable Batch System ](https://en.wikipedia.org/wiki/Portable_Batch_System) (or simply PBS) is the name of computer software that performs job scheduling.
+
+## SPARK
+
+[Apache Spark is a fast and general](https://rcc.uchicago.edu/docs/software/environments/spark/index.html) engine for large-scale data processing. It has a Scala, Java, and Python API and can be run either on either a single node or multi-node configuration. For both cases, it is recommended to have exclusive access of the node in Slurm.
+
+## SLURM
+
+Simple Linux Utility for Resource Management ([SLURM](https://en.wikipedia.org/wiki/Slurm_Workload_Manager)) is a free and open-source job scheduler for Linux and Unix-like kernels, used by many of the world's supercomputers and computer clusters.
+
+In order to run an application using a spark context it is first necessary to run a Slurm job which starts a master and some workers.
 
 ## VPN
 
@@ -114,6 +118,23 @@ Internet Protocol Security (IPSec)
 
 Internet Protocol Version (IPV). **IPv6** is more advanced and has better features compared to **IPv4**.
 
+## OSI Layers
+
+Open System Interconnection (OSI)
+
+- **Software Layer**
+  - Application Layer
+  - Presentation Layer
+  - Session Layer
+- **Heart of OSI**
+  - Transport Layer
+- **Hardware Layer**
+  - Network Layer
+  - Data Link Layer
+  - Physical Layer
+
+Note: **All People Seems To Need Data Processing**.
+
 ## LNG
 
 The Local Network Gateway (LNG) typically refers to your on-premises location. [Learn...](httpss://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-create-site-to-site-rm-powershell)
@@ -125,6 +146,10 @@ Classless Inter-Domain Routing (CIDR).
 ## NFS
 
 Network File System (NFS)
+
+## VMFS
+
+Virtual Machine File System (VMFS)
 
 ## SMB
 
@@ -174,14 +199,13 @@ Internal Load Balancer(ILB) is a security enhancement over the current public lo
 
 High Available Ports: [High availability (HA) ports](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-ha-ports-overview) is a type of load balancing rule that provides an easy way to load-balance all flows that arrive on all ports of an internal Standard Load Balancer.
 
-
 ## NAS
+
 Network Attached Storage (NAS)
 
 ## RAID
 
 Redundant Array of Inexpensive/independent Disks(RAID). [It was created in 1988 as a means](https://www.imore.com/whats-raid-array-and-why-should-i-get-one) to combat the rising cost of disk drives. You'll often hear RAID as it relates to network attached storage or "NAS". You know in movies when you see the "mainframe" and it's rows and rows of hard drives backing up all of the evil corporation's information? That's NAS, and that's RAID in action. [RAID Wikipedia](https://en.wikipedia.org/wiki/RAID)
-
 
 ## WAF
 
@@ -219,15 +243,13 @@ A domain is a collection of computers where security is handled centrally.Each d
 
 **Transmission Control Protocol (TCP)** TCP is a connection oriented transportation protocol. TCP is used to pass the actual user data. It guarantees that all sent packets will reach the destination in the correct order.
 
-
 ## SSL
 
-Secure Sockets Layer (SSL) now it is deprecated. 
+Secure Sockets Layer (SSL) now it is deprecated.
 
 ## TLS
 
-Transport Layer Security (TLS) provides communications security over a computer network. 
-
+Transport Layer Security (TLS) provides communications security over a computer network.
 
 ## OLTP
 
@@ -260,9 +282,22 @@ line-of-business (LOB) - used only for your company or your employees.
 ## ITSM
 
 IT Service Management (ITSM) Few ITSM tools are ServiceNow, System Center Service Manager, Provance, Cherwell. You can use [IT Service Management Connector](https://docs.microsoft.com/en-us/azure/azure-monitor/alerts/itsmc-overview) in Azure to connect your own ITSM tools.
+
 ## SIEM
 
-Security Incident and Event Monitoring (SIEM) - Microsoft Azure Sentinel is a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution. 
+Security Incident and Event Monitoring (SIEM) - Microsoft Azure Sentinel is a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution.
+
+## VNet
+
+Virtual Network: This is Private network on Azure Cloud.
+
+## VPC
+
+Virtual Private Cloud (VPC) this is similar to VNet in Azure.
+
+## EC2
+
+Elastic Compute Cloud (EC2) Instance: This is a Virtual Machine on Amazon.
 
 ## UPN
 
@@ -298,6 +333,8 @@ Azure Advanced Threat Protection ( ATP ) - Now it is known as "Microsoft Defende
 
 Self-Service Password Reset
 
+##
+
 ## DHCP
 
 Dynamic Host Configuration Protocol (DHCP) : related to IP Addressing.
@@ -326,88 +363,4 @@ Delta query enables applications to discover newly created, updated, or deleted 
 
 500 VNets, You can only have one VPN Gateway with 1 VNet.
 
-## Azure Infrastructure and Management
-
-1. Azure Data Center
-2. Azure Regions and Availability Zones
-3. Azure Resource Group
-4. Azure Resource Manager (ARM)
-5. Infrastructure as Code Using ARM Templates
-6. Azure Service Health & Azure Monitor
-7. Azure Mobile App
-8. Azure Advisory for optimizing your Azure resources.
-
-## Azure Core Products
-
-1. Virtual Machines
-2. Containers
-3. Azure App Service
-4. Serverless Compute in Azure
-5. Core Networking Products in Azure
-6. Windows Virtual Desktop
-7. Azure Content Delivery Network (CDN)
-
-## Azure Data Storage
-
-1. Managed Databases
-2. Azure Cosmos DB
-3. Azure Storage Accounts
-4. Azure Blob Storage
-5. Data Migration Options
-
-## DevOps Solutions in Azure
-
-1. Pipelines
-2. Azure DevTest Labs
-
-### Azure Service Health
-
-![](https://imgur.com/Nc5EvmZ.png){: .align--left}
-
-[Azure Status](https://status.azure.com/en-us/status) generates all global Azure service status. Azure Service Health broadly check 4 different kind of health categories like:
-[Planned Maintenance](#planned-maintenance), [Health Advisories](#health-advisories), [Security Advisories](#security-advisories), [Service Issues](#service-issues). Azure Health also allows you to configure health alerts based on above categories events. You can also add action groups to either email or SMS or phone call on desired health events.
-
-{: .notice--success}
-🏆 **Pro Tip** \
-\
-Azure Service Health is: **Planned, Health & Security, Service**.
-
-<div class="mermaid">
-graph TD;
-    A(Azure Service Health)-->P(Planned Maintenance);
-    A-->H(Health Advisories);
-    A-->S2(Security Advisories);
-    A-->S(Service Issues);
-</div>
-
-#### Planned Maintenance
-
-You can find planned maintenance in Azure and notify your clients of an up coming events or reschedule an up coming release.
-
-#### Health Advisories
-
-Changes in Azure Service that require your attention. For example, if features in a service that you use are being deprecated or you need to upgrade your web application because a framework version in Azure App Service is updated.
-
-#### Security Advisories
-
-Notifications or violations that may affect availability of your Azure services.
-
-#### Service Issues
-
-In the Azure portal Azure Service Health list down all the service issues that may impact you based on your resources in use.
-
-### Azure Monitor
-
-Azure Monitor is a solution within Azure for collecting and analyzing telemetry from your Azure or on-premises resources.
-
-<div class="mermaid">
-graph TD;
-    A(Azure Monitor)-->M(Metrics);
-    A-->L(Logs);
-    A-->W(Workbooks);
-    A-->I(Insights);
-</div>
-
-### Azure Mobile App
-
-Azure Mobile App gives an easy and secure way to manage your Azure resources, even when you are out of the office and not near computer.
+---
