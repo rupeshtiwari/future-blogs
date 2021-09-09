@@ -157,6 +157,10 @@ Server Message Block (SMB)
 
 ![](https://imgur.com/eOrGZls.png){: .full}
 
+## SFTP
+
+Secure File Transfer Protocol
+
 ## FQDN
 
 Fully Qualified Domain Name (FQDN)
@@ -164,6 +168,14 @@ Fully Qualified Domain Name (FQDN)
 ## DMS
 
 Azure Database Migration Service
+
+## CSR
+
+Certificate Signing Request
+
+## CA
+
+Certificate Authority (CA) like Entrust, Thwate, Verisign
 
 ## DNS
 
@@ -237,7 +249,7 @@ A domain is a collection of computers where security is handled centrally.Each d
 
 ## UDP
 
-**User Datagram Protocol (UDP)** is a connection-less transportation protocol. UDP is used to pass the actual user data. Communication is datagram oriented, so the integrity is guaranteed only on the single datagram. Datagrams reach destination and can arrive out of order or don't arrive at all. It's generally used for real time communication, where a little percentage of packet loss rate is preferable to the overhead of a TCP connection.
+**User Datagram Protocol (UDP)** is a connection-less transportation protocol. UDP is used to pass the actual user data. Communication is datagram oriented, so the integrity is guaranteed only on the single datagram. Datagrams reach destination and can arrive out of order or don't arrive at all. It's generally used for real time communication, where a little percentage of packet loss rate is preferable to the overhead of a TCP connection. It is an Transport layer (layer-4) protocol.
 
 ## TCP
 
