@@ -189,6 +189,13 @@ User Defined Routing (UDR)
 
 Network Address Translation (NAT)
 
+## SSH
+Secure Shell (SSH) protocol used to communicate machines. It encrypts the data while sending data to other machine. It works on applciation layer (layer-7) of OSI model.
+
+## Telnet
+
+Teletype Network (Telnet) developed in 1969. Plain text communication between machines. Good for LAN since data in not encrypted. Not good for sensitive data. It works on applciation layer (layer-7) of OSI model.
+
 ## SNAT
 
 Source Network Address Translation (SNAT) allows traffic from a private network to go out to the internet. Virtual machines launched on a private network can get to the internet by going through a gateway capable of performing SNAT. The device performing NAT changes the private IP address of the source host to public IP address.
@@ -246,6 +253,10 @@ A domain is a collection of computers where security is handled centrally.Each d
 ## ICMP
 
 **Internet Control Message Protocol (ICMP)** is a control protocol, meaning that it designed to not carry application data, but rather information about the status of the network itself. The best known example of ICMP in practice is the ping utility, that uses ICMP to probe remote hosts for responsiveness and overall round-trip time of the probe messages.
+
+## URL
+
+Universal Resource Locator (URL)
 
 ## UDP
 
