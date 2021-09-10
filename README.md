@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "What is Hyper-V" --date 2022-09-24
+bundle exec jekyll compose "Full forms that you should know" --date 2022-10-01
 
 ```
 
