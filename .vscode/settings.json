@@ -42,18 +42,20 @@
         "Wikipedia"
     ],
     "cSpell.words": [
+        "Bluejacking",
         "Cherwell",
+        "datacenter",
+        "httpss",
         "ITSM",
         "Jumpbox",
         "NICs",
         "Provance",
         "Rupesh",
-        "SIEM",
-        "TSDB",
-        "Tiwari",
-        "datacenter",
-        "httpss",
         "rupeshtiwari",
-        "webdev"
+        "SIEM",
+        "Tiwari",
+        "TSDB",
+        "webdev",
+        "XSRF"
     ]
 }

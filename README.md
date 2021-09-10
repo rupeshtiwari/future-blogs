@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Full forms that you should know" --date 2022-10-01
+bundle exec jekyll compose "Security Threats and Vulnerabilities" --date 2022-10-08
 
 ```
 

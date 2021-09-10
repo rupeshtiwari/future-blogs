@@ -226,6 +226,14 @@ Redundant Array of Inexpensive/independent Disks(RAID). [It was created in 1988 
 
 web application firewall (WAF)
 
+## LDAP
+
+Lightweight Directory Access Protocol "Address Book" of user accounts used to authenticate users. Identifies level of acess, group membership etc.
+
+## SQL
+
+Structured Query Language(SQL)
+
 ## FQDNs
 
 fully qualified domain names (FQDNs)
@@ -234,31 +242,13 @@ fully qualified domain names (FQDNs)
 
 Destination Network Address Translation (DNAT)
 
-## Malware
+## WAP
 
-Reference: https://www.youtube.com/playlist?list=PL0bbor_qrUHjy81QzEs0n63duuhQUdr8W
+Wireless Access Point (WAP)
 
-### Adware
+## ICMP
 
-Malware that is installed on an infected machine to `deliver ads`. Use Malwarebytes Anti-Malware software to prevent Adware.
-
-### Virus
-
-Malicious code that `require user interaction` to install and replicate.
-
-### Spyware
-
-Malicious software that capture `user activity` and reports back. ( keystorkes, web browsing activity etc.)
-
-### Trojan
-
-Seemingly friendly software that contains `hidden` malicious software.
-
-## Botnet
-
-A botnet refers to a group of computers which have been infected by malware and have come under the control of a malicious actor.
-
-Reference: https://www.cloudflare.com/learning/ddos/what-is-a-ddos-botnet/
+Internet Control Message Protocol (ICMP) is one of the protocols of the TCP/IP suite. The ICMP echo request and the ICMP echo reply messages are commonly known as ping messages.
 
 ## DDoS
 
