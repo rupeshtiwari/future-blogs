@@ -130,31 +130,6 @@ Local Site Network (LSN)
 
 Internet Key Exchange
 
-## IPSec
-
-Internet Protocol Security (IPSec)
-
-## IPV
-
-Internet Protocol Version (IPV). **IPv6** is more advanced and has better features compared to **IPv4**.
-
-## OSI Layers
-
-Open System Interconnection (OSI)
-
-- **Software Layer**
-  - Application Layer
-  - Presentation Layer
-  - Session Layer
-- **Heart of OSI**
-  - Transport Layer
-- **Hardware Layer**
-  - Network Layer
-  - Data Link Layer
-  - Physical Layer
-
-Note: **All People Seems To Need Data Processing**.
-
 ## LNG
 
 The Local Network Gateway (LNG) typically refers to your on-premises location. [Learn...](httpss://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-create-site-to-site-rm-powershell)
@@ -259,9 +234,19 @@ fully qualified domain names (FQDNs)
 
 Destination Network Address Translation (DNAT)
 
+## Adware
+
+Malware that is installed on an infected machine to deliver ads. 
+
+## Botnet
+
+A botnet refers to a group of computers which have been infected by malware and have come under the control of a malicious actor.
+
+Reference: https://www.cloudflare.com/learning/ddos/what-is-a-ddos-botnet/
+
 ## DDoS
 
-Distributed denial of service (DDoS) [Learn More](https://docs.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview)
+Distributed denial of service (DDoS) [Learn More](https://docs.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview). In a distributed denial-of-service (DDoS) attack, an attacker attempts to overwhelm a targeted server or network with junk network traffic — somewhat like bombarding a restaurant with fake delivery orders until it cannot provide service to legitimate customers.
 
 ## Workgroups
 
@@ -279,13 +264,38 @@ A domain is a collection of computers where security is handled centrally.Each d
 
 Universal Resource Locator (URL)
 
+## OSI Layers
+
+Open System Interconnection (OSI)
+
+- **Software Layer**
+  - Application Layer
+  - Presentation Layer
+  - Session Layer
+- **Heart of OSI**
+  - Transport Layer
+- **Hardware Layer**
+  - Network Layer
+  - Data Link Layer
+  - Physical Layer
+
+{: .notice--success}
+🏆 **Pro Tip** \
+\
+Top Down: **All People Seems To Need Data Processing**. \
+Bottom Up: **Please Do Not Through Sausage Pizza Away**.
+
+## Protocol
+
+In networking, a **protocol** is a specified way of formatting data so that any networked computer can interpret the data.
+
 ## UDP
 
-**User Datagram Protocol (UDP)** is a connection-less transportation protocol. UDP is used to pass the actual user data. Communication is datagram oriented, so the integrity is guaranteed only on the single datagram. Datagrams reach destination and can arrive out of order or don't arrive at all. It's generally used for real time communication, where a little percentage of packet loss rate is preferable to the overhead of a TCP connection. It is an Transport layer (layer-4) protocol.
+**User Datagram Protocol (UDP)** is a connection-less transportation protocol. UDP is used to pass the actual user data. Communication is datagram oriented, so the integrity is guaranteed only on the single datagram. Datagrams reach destination and can arrive out of order or don't arrive at all. It's generally used for real time communication, where a little percentage of packet loss rate is preferable to the overhead of a TCP connection. It is an Transport layer (layer-4) protocol. UDP, the User Datagram Protocol, does not set up these dedicated connections.
 
 ## TCP
 
-**Transmission Control Protocol (TCP)** TCP is a connection oriented transportation protocol. TCP is used to pass the actual user data. It guarantees that all sent packets will reach the destination in the correct order.
+**Transmission Control Protocol (TCP)** TCP is a connection oriented transportation protocol. TCP is used to pass the actual user data. It guarantees that all sent packets will reach the destination in the correct order. TCP, the Transmission Control Protocol, sets up dedicated connections between devices and ensures that all packets arrive.
 
 ## SSL
 
@@ -298,6 +308,50 @@ Secure Sockets Layer (SSL) now it is deprecated. It is session layer protocol. I
 Transport Layer Security (TLS) provides communications security over a computer network. It is presentation and session layer protocol. It lies between Transport and application layer.
 
 ![](https://i.imgur.com/hlsEVeJ.png){: .full}
+
+## IP
+
+Internet Protocol (IP)
+
+## IPSec
+
+Internet Protocol Security (IPSec): IPsec is a group of protocols that are used together to set up encrypted connections between devices. IPsec is often used to set up VPNs, and it works by encrypting IP packets, along with authenticating the source where the packets come from. IPsec uses UDP because this allows IPsec packets to get through firewalls.
+
+IPsec is not one protocol, but a suite of protocols. Internet Protocol (IP) is not part of the IPsec suite, IPsec runs directly on top of IP. The following protocols make up the IPsec suite:
+
+**Authentication Header (AH):** The AH protocol ensures that data packets are from a trusted source and that the data has not been tampered with, like a tamper-proof seal on a consumer product. These headers do not provide any encryption; they do not help conceal the data from attackers.
+
+**Encapsulating Security Protocol (ESP):** ESP encrypts the IP header and the payload for each packet — unless transport mode is used, in which case it only encrypts the payload. ESP adds its own header and a trailer to each data packet.
+
+**Security Association (SA):** SA refers to a number of protocols used for negotiating encryption keys and algorithms. One of the most common SA protocols is Internet Key Exchange (IKE).
+
+Reference: https://www.cloudflare.com/learning/network-layer/what-is-ipsec/
+
+## Packet
+
+All data sent over a network is broken up into smaller pieces called [packets](https://www.cloudflare.com/learning/network-layer/what-is-gre-tunneling/), and all packets have two parts: the payload and the header. The payload is the packet’s actual contents, the data being sent. The header has information about where the packet comes from and what group of packets it belongs to. Each network protocol attaches a header to each packet.
+
+## Tunelling
+
+Encapsulating packets within other packets is called "[tunneling](https://www.cloudflare.com/learning/network-layer/what-is-gre-tunneling/)".
+
+To understand why this is called "tunneling," we can change the analogy slightly. If a car needs to pass from Point A on one side of a mountain to Point B on the other side, the most efficient way is to simply go through the mountain. However, ordinary cars are not capable of going straight through solid rock. As a result, the car has to drive all the way around the mountain to get from Point A to Point B.
+
+But imagine that a tunnel was created through the mountain. Now, the car can drive straight from Point A to Point B, which is much faster, and which it could not do without the tunnel.
+
+## GRE
+
+Generic Routing Encapsulation, or GRE, is a protocol for encapsulating data packets that use one routing protocol inside the packets of another protocol. "Encapsulating" means wrapping one data packet within another data packet, like putting a box inside another box. To understand how this works, think about the difference between a car and a ferry. A car travels over roads on land, while a ferry travels over water. A car cannot normally travel on water — however, a car can be loaded onto a ferry in order to do so.
+
+Reference: https://www.cloudflare.com/learning/network-layer/what-is-gre-tunneling/
+
+## IPV
+
+Internet Protocol Version (IPV). **IPv6** is more advanced and has better features compared to **IPv4**.
+
+## NTP
+
+Network Time Protocol (NTP) is a networking protocol for clock synchronization between computer systems over packet-switched, variable-latency data networks.
 
 ## TDS
 
@@ -387,7 +441,9 @@ Azure Advanced Threat Protection ( ATP ) - Now it is known as "Microsoft Defende
 
 Self-Service Password Reset
 
-##
+## SSPI
+
+Security Support Provider Interface (SSPI) is a component of Windows API that performs a security-related operations such as authentication.
 
 ## DHCP
 
