@@ -384,7 +384,7 @@ Reporting is required to avoid the false alarms.
 - Assessment Types
 - Assessment Techniques
 
-## Security Assessment Tools
+### Security Assessment Tools
 
 All of the tools produce lot of results. How to interpreted the data produced by these tools.
 
@@ -396,7 +396,7 @@ All of the tools produce lot of results. How to interpreted the data produced by
 - Passive vs. Active Tools
 - Banner Grabbing
 
-### Protocol Analyzer
+#### Protocol Analyzer
 
 It is known as packet sniffer. It can get layer-2,3 information. Capture package you can save it or analyze it.
 
@@ -406,7 +406,7 @@ It is known as packet sniffer. It can get layer-2,3 information. Capture package
 
 ![](https://i.imgur.com/Igxxezh.png){: .full}
 
-### Vulnerability Scanner
+#### Vulnerability Scanner
 
 Scan entire network, segment of network or specific host.
 
@@ -419,13 +419,13 @@ Scan entire network, segment of network or specific host.
 
 ![](https://i.imgur.com/vbNzwMA.png){: .full}
 
-### Honeypots & Honeynets
+#### Honeypots & Honeynets
 
 You create a trap for hacker and let them do their business. Meanwhile you can identify them learn hacker's techniques, tools etc.
 
 ![](https://i.imgur.com/QxhNDxR.png){: .full}
 
-### Port Scanner
+#### Port Scanner
 
 **NMap** is a port scanner tool, it can search for open ports. There are `65,536` ports available.
 Common ports are:
@@ -437,18 +437,18 @@ Common ports are:
 - DNS = 53
 - SSL = 443
 
-### Banner Grabbing
+#### Banner Grabbing
 
 **Telnet** and **Netcat** are used to know what services are running on the specific ports. Hacker can crack that specific service or application.
 
-### Passive vs. Active Tools
+#### Passive vs. Active Tools
 
 Passive Tools: Don't interact directly with host, just monitor traffic and see what host is doing.
 Active Tools: It is visible to the host and admin. Here you interact with host and get info out of the host. ( Honeypots/honeynets, Port scanner, banner grabbing, penetration testing)
 
 ![](https://i.imgur.com/QPvmzx7.png){: .full}
 
-## Risk Assessment Tools
+### Risk Assessment Tools
 
 Threat vs Likelihood. Business owner has to find out the risk of tolerance.
 
@@ -459,6 +459,84 @@ Threat vs Likelihood. Business owner has to find out the risk of tolerance.
 - ARO ( Annualized Rate of Occurrence ) : Probability of the server failure during the year.
 
 Example:
-If your business Annual Loss = 121K , Fixing cost = 500K Would you do fix or bear loss? For Amazon they will fix it because they are obessed of customer and you care for them and don't let your business down that will impact your customer.
+If your business Annual Loss = 121K , Fixing cost = 500K Would you do fix or bear loss? For Amazon they will fix it because they are obsessed of customer and you care for them and don't let your business down that will impact your customer.
 
 ![](https://i.imgur.com/e8MqUdP.png){: .full}
+
+### Assessment Types
+
+- Risk
+- Threat
+- Vulnerability
+
+![](https://i.imgur.com/Z7VRT4G.png){: .full}
+
+### Assessment Technique
+
+- Baseline reporting
+- Code review
+- Determine attack surface
+- Review Architecture
+- Review Design
+
+### Determine attack surface
+
+Attack Surface Reduction (ASR) has the goal of mitigating risk.
+
+![](https://i.imgur.com/tfTHaGs.png){: .full}
+
+## Penetration testing vs Vulnerability Scanning
+
+**Penetration Testing** (Pen Testing): Attacking a computer system with the intention of finding it's weaknesses and security vulnerability. This is a intrusive test. **So business has to sign off** for penetration testing. It could bring servers down and business may be impacted.
+
+### Penetration testing
+
+- Bypass security control
+  - XSS attacks
+  - IP or MAC Spoofing : Check switch are only allowing few IP's.
+  - MiTM attacks
+  - Protocol Analyzer or Packet Sniffers
+- Actively Test security controls
+  - This is a intrusive test. So business has to sign off for this test. It could bring servers down and business may be impacted.
+- Exploiting Vulnerabilities
+  - **Nessus** and **Metasploit** tool can be used to find missing patches and security misconfigurations.
+
+### Vulnerability Scanning
+
+It is a non-intrusive testing and it does not impact business.
+
+## Intrusive vs Non-intrusive Security Testing
+
+![](https://i.imgur.com/gwLSgfC.png){: .full}
+
+## Different Types of Testing
+
+- False Positive
+- Black Box
+  - tester has no prior knowledge of network or environment.
+    - use fuzzing technique
+    - use injection attack
+- White Box
+  - full knowledge of network or environment
+  - done by internal employee
+- Grey Box
+  - some knowledge, no access of documents, but they know where to go and test
+
+## Things to Remember
+
+- Take Business consent for Vulnerability or Penetrating Testing
+- Review company `guidelines and rules of engagement`
+- Make sure You have skills and background to do Pen testing. This is very expensive test. If you make mistake and did detail testing or deep scan it will shut down network and environment.
+
+---
+
+_Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
+
+<div class="notice--success">
+<strong>💖 Say 👋 to me!</strong>
+<br>Rupesh Tiwari
+<br>Founder of <a href="https://www.fullstackmaster.net">Fullstack Master </a>
+<br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
+<br>Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
+</div>
+![](https://imgur.com/a32nUcu.png)
