@@ -69,3 +69,7 @@ tags:
 - Symmetric vs. Asymmetric
 - LAN, WAN, Wireless considerations
 - Steganography and other methods to hide/steal data
+
+## Reference
+
+https://www.youtube.com/playlist?list=PL0bbor_qrUHgHF6cKAI8QNgkk4owMY7SF
