@@ -8,7 +8,7 @@ comments: true
 share: true
 related: true
 toc: true
-toc_sticky: true
+toc_sticky: false
 image: https://i.imgur.com/qxXxmBa.png
 header:
   image: https://i.imgur.com/zipiW93.png
