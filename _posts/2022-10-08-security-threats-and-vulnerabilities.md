@@ -245,7 +245,7 @@ DDoS attack from China to USA
 
 - Cross-site Request Forgery (XSRF)
 
-Here server will run the malicious code because it trust the client.
+Hacker can manipulate the header of the packet. Here server will run the malicious code because it trust the client. You can use VPN or SSL/TLS to prevent XSRF attack.
 
 ![](https://i.imgur.com/ynY2Xgu.png){: .full}
 
@@ -304,3 +304,65 @@ Flash Cookies don't delete ever and they track user's browsing habits.
 - Header manipulation
 
 - Arbitrary code execution/remote code execution
+
+## Monitoring and Hardening servers and applications
+
+You want to maintain CIA Triad. Your system is secure, users can access to the data they need and make sure that access is secure.
+
+- Monitoring System Logs
+
+  - Event Logs
+  - Audit Logs
+  - Security Logs
+  - Access Logs
+
+- Hardening servers and applications
+
+  - Disabling unnecessary services
+  - Protecting management interfaces and applications
+  - Password protection
+  - Disabling unnecessary accounts
+
+- Network Security
+
+  - MAC limiting and filtering
+  - 802.1x
+  - Disabling unused interfaces and unused application service ports
+  - Rogue machine detection
+
+- Security Posture
+
+  - Initial baseline configuration
+  - Continuos security monitoring
+  - Remediation
+
+- Reporting
+
+  - Alarms
+  - Alerts
+  - Trends
+
+- Detection controls vs Permission controls
+  - IDS ( Intrusion Detection Systems ) vs IPS (Intrusion Prevention Systems)
+  - Camera vs. guard
+
+## Tools
+
+### Port Scanner
+
+**NMap** is a port scanner tool, it can search for open ports. There are `65,536` ports available.
+Common ports are:
+
+- HTTP = 80
+- FTP = 21 and 22
+- SMTP = 58
+- SMTP = 25
+- DNS = 53
+
+### Banner Grabbing
+
+**Telnet** and **Netcat** are used to know what services are running on the specific ports. Hacker can crack that specific service or application.
+
+### Passive vs. Active Tools
+
+![](https://i.imgur.com/QPvmzx7.png){: .full}

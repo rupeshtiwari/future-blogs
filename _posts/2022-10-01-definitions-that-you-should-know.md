@@ -222,6 +222,32 @@ Network Attached Storage (NAS)
 
 Redundant Array of Inexpensive/independent Disks(RAID). [It was created in 1988 as a means](https://www.imore.com/whats-raid-array-and-why-should-i-get-one) to combat the rising cost of disk drives. You'll often hear RAID as it relates to network attached storage or "NAS". You know in movies when you see the "mainframe" and it's rows and rows of hard drives backing up all of the evil corporation's information? That's NAS, and that's RAID in action. [RAID Wikipedia](https://en.wikipedia.org/wiki/RAID)
 
+## ALE
+
+Annual Loss Expectancy
+
+ALE = SLE x ARO
+
+## SLE
+
+Single Loss Expectancy
+
+## ARO
+
+Annualized Rate of Occurrence
+
+## CIA
+
+CIA - Confidentiality, Integrity and Availability. The CIA Triad is actually a security model that has been developed to help people think about various parts of IT security.
+
+## IPS
+
+Intrusion Prevention System
+
+## IDS
+
+Intrusion Detection System
+
 ## WAF
 
 web application firewall (WAF)
