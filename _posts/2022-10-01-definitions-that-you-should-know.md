@@ -1,7 +1,6 @@
 ---
 title: Definitions that you should know
 date: 2022-10-01 00:00 +0000
-description: 'IMPORTANT: REMOVE LAYOUT: POST'
 author_profile: true
 published: true
 read_time: true
@@ -21,6 +20,8 @@ tags:
   - beginners
   - azure
 ---
+
+> When I started learning Azure being a webdev and software architect background. I came across many IT lingo, jargons, abbrebiations that I did know about them. In this post I am putting all those in one place. I hope this will help you as well on your Azure Solution Architect joureny!
 
 ## ROI
 
