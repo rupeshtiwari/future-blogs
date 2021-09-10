@@ -342,11 +342,88 @@ You want to maintain CIA Triad. Your system is secure, users can access to the d
   - Alerts
   - Trends
 
-- Detection controls vs Permission controls
+- Detection controls vs Prevention controls
   - IDS ( Intrusion Detection Systems ) vs IPS (Intrusion Prevention Systems)
   - Camera vs. guard
 
-## Tools
+### Network Security
+
+Defending the perimeter of our network!
+
+![](https://i.imgur.com/g3B21Vh.png){: .full}
+
+![](https://i.imgur.com/aXO2tyI.png){: .full}
+
+![](https://i.imgur.com/ibZp3tn.png){: .full}
+
+![](https://i.imgur.com/ZMT7qDZ.png){: .full}
+
+### Security Posture
+
+![](https://i.imgur.com/JJRnoNK.png){: .full}
+
+![](https://i.imgur.com/K6RT0pY.png){: .full}
+
+![](https://i.imgur.com/2OacIs7.png){: .full}
+
+### Reporting
+
+Reporting is required to avoid the false alarms.
+
+![](https://i.imgur.com/UIOPWmf.png){: .full}
+
+### Detection controls vs Prevention controls
+
+- IDS: Log alerts, events, analyze it is reactive.
+- IPS: New platform, enable prevention, automatically shut down the port.
+
+## Discovering Security Threats and Vulnerabilities
+
+- Security Assessment Tools
+- Risk Assessment Tools
+- Assessment Types
+- Assessment Techniques
+
+## Security Assessment Tools
+
+All of the tools produce lot of results. How to interpreted the data produced by these tools.
+
+- Protocol Analyzer
+- Vulnerability Scanner
+- Honeypots
+- Honeynets
+- Port Scanner
+- Passive vs. Active Tools
+- Banner Grabbing
+
+### Protocol Analyzer
+
+It is known as packet sniffer. It can get layer-2,3 information. Capture package you can save it or analyze it.
+
+- Wireshark
+- Netmon (Microsoft)
+- Retina
+
+![](https://i.imgur.com/Igxxezh.png){: .full}
+
+### Vulnerability Scanner
+
+Scan entire network, segment of network or specific host.
+
+- Nmap
+- Nessus
+- Retina
+- SAINT
+
+![](https://i.imgur.com/oI7lc47.png){: .full}
+
+![](https://i.imgur.com/vbNzwMA.png){: .full}
+
+### Honeypots & Honeynets
+
+You create a trap for hacker and let them do their business. Meanwhile you can identify them learn hacker's techniques, tools etc.
+
+![](https://i.imgur.com/QxhNDxR.png){: .full}
 
 ### Port Scanner
 
@@ -358,6 +435,7 @@ Common ports are:
 - SMTP = 58
 - SMTP = 25
 - DNS = 53
+- SSL = 443
 
 ### Banner Grabbing
 
@@ -365,4 +443,22 @@ Common ports are:
 
 ### Passive vs. Active Tools
 
+Passive Tools: Don't interact directly with host, just monitor traffic and see what host is doing.
+Active Tools: It is visible to the host and admin. Here you interact with host and get info out of the host. ( Honeypots/honeynets, Port scanner, banner grabbing, penetration testing)
+
 ![](https://i.imgur.com/QPvmzx7.png){: .full}
+
+## Risk Assessment Tools
+
+Threat vs Likelihood. Business owner has to find out the risk of tolerance.
+
+- AV = Asset Value
+- EF = Exposure Factor
+- ALE ( Annual Loss Expectancy ) : How much monitory loss u can expect in a year. `ALE = SLE x ARO`
+- SLE ( Single Loss Expectancy ) : How much monitory loss u can expect at anytime. `SLE = AV x EF`
+- ARO ( Annualized Rate of Occurrence ) : Probability of the server failure during the year.
+
+Example:
+If your business Annual Loss = 121K , Fixing cost = 500K Would you do fix or bear loss? For Amazon they will fix it because they are obessed of customer and you care for them and don't let your business down that will impact your customer.
+
+![](https://i.imgur.com/e8MqUdP.png){: .full}

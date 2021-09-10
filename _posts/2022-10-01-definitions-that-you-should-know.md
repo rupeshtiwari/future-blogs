@@ -21,7 +21,19 @@ tags:
   - azure
 ---
 
-> When I started learning Azure being a webdev and software architect background. I came across many IT lingo, jargons, abbrebiations that I did know about them. In this post I am putting all those in one place. I hope this will help you as well on your Azure Solution Architect joureny!
+> When I started learning Azure being a webdev and software architect background. I came across many IT lingo, jargons, abbrebiations that I did know about them. In this post I am putting all those in one place. I hope this will help you as well on your Azure Solution Architect journey!
+
+## RADIUS
+
+Remote Authentication Dial-In User Service (RADIUS) is a networking protocol that provides centralized authentication, authorization, and accounting management for users who connect and use a network service. RADIUS was developed by Livingston Enterprises in 1991 as an access server authentication and accounting protocol.
+
+## EAPOL
+
+Extensible Authentication Access Protocol over LAN
+
+## MAC
+
+Media Access Control Address: It uniquely identifies the device in the network. 48-bit hexadecimal number that is hard-coded on a NIC.
 
 ## ROI
 
@@ -320,6 +332,15 @@ Bottom Up: **Please Do Not Through Sausage Pizza Away**.
 ## Protocol
 
 In networking, a **protocol** is a specified way of formatting data so that any networked computer can interpret the data.
+
+Protocols and their ports:
+
+- HTTP = 80
+- FTP = 21 and 22
+- SMTP = 58
+- SMTP = 25
+- DNS = 53
+- SSL = 443
 
 ## UDP
 
