@@ -234,9 +234,25 @@ fully qualified domain names (FQDNs)
 
 Destination Network Address Translation (DNAT)
 
-## Adware
+## Malware
 
-Malware that is installed on an infected machine to deliver ads. 
+Reference: https://www.youtube.com/playlist?list=PL0bbor_qrUHjy81QzEs0n63duuhQUdr8W
+
+### Adware
+
+Malware that is installed on an infected machine to `deliver ads`. Use Malwarebytes Anti-Malware software to prevent Adware.
+
+### Virus
+
+Malicious code that `require user interaction` to install and replicate.
+
+### Spyware
+
+Malicious software that capture `user activity` and reports back. ( keystorkes, web browsing activity etc.)
+
+### Trojan
+
+Seemingly friendly software that contains `hidden` malicious software.
 
 ## Botnet
 
