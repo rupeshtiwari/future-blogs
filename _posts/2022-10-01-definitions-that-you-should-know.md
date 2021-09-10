@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Definitions that you should know
 date: 2022-10-01 00:00 +0000
 description: 'IMPORTANT: REMOVE LAYOUT: POST'
