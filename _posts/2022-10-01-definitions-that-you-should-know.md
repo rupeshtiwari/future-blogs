@@ -148,7 +148,7 @@ The Local Network Gateway (LNG) typically refers to your on-premises location. [
 
 ## CIDR
 
-Classless Inter-Domain Routing (CIDR). It is an IP address assigning method that improves the efficiency of address distribution. It is also known as supernetting that replaces the older system based on classes A, B, and C networks. By using a single CIDR IP address many unique IP addresses can be designated.
+Classless Inter-Domain Routing (CIDR). It is an IP address assigning method that improves the efficiency of address distribution. It is also known as `supernetting` that replaces the older system based on classes A, B, and C networks. By using a single `CIDR IP` address many unique IP addresses can be designated.
 
 ## NFS
 
