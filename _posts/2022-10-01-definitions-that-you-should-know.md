@@ -182,7 +182,7 @@ Certificate Signing Request
 
 ## CA
 
-Certificate Authority (CA) like Entrust, Thwate, Verisign
+Certificate Authority (CA) like `Entrust`, `Thwate`, `Verisign`
 
 ## DNS
 
