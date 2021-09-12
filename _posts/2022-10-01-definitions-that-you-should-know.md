@@ -176,9 +176,53 @@ Fully Qualified Domain Name (FQDN)
 
 Azure Database Migration Service
 
+## Cassandra
+
+Apache Cassandra is a free and open-source, distributed, wide-column store, NoSQL database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure.
+
+## Gremlin
+
+Gremlin is a graph traversal language and virtual machine developed by Apache TinkerPop of the Apache Software Foundation. Gremlin works for both OLTP-based graph databases as well as OLAP-based graph processors.
+
+## CSP
+
+Cloud Service Provider (CSP)
+
+## CSO
+
+Cloud Service Offering (CSO)
+
 ## CSR
 
 Certificate Signing Request
+
+## DISA
+
+Defense Information Systems Agency (DISA) is a U.S combat support agency that connects the U.S military and government though IT and communications support. Originally known as the defense communications industry (DCA), the agency was created in 1960, partially in response to communication issues during WWII.
+
+## CC SRG
+
+Cloud Computing Security [Requirement Guide](https://rmf.org/wp-content/uploads/2018/05/Cloud_Computing_SRG_v1r3.pdf)
+
+## FedRAMP
+
+The Federal Risk and Authorization Management Program (FedRAMP) provides a standardized approach to security authorizations for Cloud Service Offerings. The Federal Risk and Authorization Management Program (FedRAMP) was established in 2011 to provide a cost-effective, risk-based approach for the adoption and use of cloud services by the federal government. FedRAMP empowers agencies to use modern cloud technologies, with an emphasis on security and protection of federal information.
+
+https://www.fedramp.gov/program-basics/
+
+## FedRAMP Plus
+
+FedRAMP+ is the concept of leveraging the work done as part of the FedRAMP assessment, and
+adding specific security controls and requirements necessary to meet and assure DoD’s critical
+mission requirements. A CSP’s CSO can be assessed in accordance with the criteria outlined in
+this SRG, with the results used as the basis for awarding a DoD provisional authorization.
+## DoD
+
+The Department of Defense (DoD) is responsible for providing the military forces needed to deter war and protect the security of our country. The major elements of these forces are the Army, Navy, Marine Corps, and Air Force, consisting of about 1.3 million men and women on active duty.
+
+## NIST
+
+The National Institute of Standards and Technology (NIST) is a non-regulatory government agency that develops technology, metrics, and standards to drive innovation and economic competitiveness at U.S.-based organizations in the science and technology industry.
 
 ## CA
 
