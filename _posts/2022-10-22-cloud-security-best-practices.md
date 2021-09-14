@@ -1,8 +1,7 @@
 ---
-layout: post
-title: Cloud Security Best Practices
+title: Cloud Security Best Practices for application, servers and network
 date: 2022-10-22 00:00 +0000
-description: 'IMPORTANT: REMOVE LAYOUT: POST'
+description: Are you familiar with cloud layered security approach? Do you trust your on-premise users & systems more than outside then you are still exposed to vulnerabilities and cyber attack's. Let's learn what can we do to protect our applications, servers and networks over cloud?
 author_profile: true
 published: true
 read_time: true
@@ -14,8 +13,8 @@ toc_sticky: true
 image: https://i.imgur.com/nU9cLAy.png
 header:
   image: https://i.imgur.com/zipiW93.png
-  teaser: https://i.imgur.com/qxXxmBa.png
-  og_image: https://i.imgur.com/qxXxmBa.png
+  teaser: https://i.imgur.com/nU9cLAy.png
+  og_image: https://i.imgur.com/nU9cLAy.png
 tags:
   - azure
   - tutorial

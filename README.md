@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Cloud Security Best Practices" --date 2022-10-22
+bundle exec jekyll compose "Azure solution for big-data transfer" --date 2022-10-29
 
 ```
 
