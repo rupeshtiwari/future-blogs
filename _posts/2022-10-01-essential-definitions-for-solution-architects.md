@@ -1,5 +1,5 @@
 ---
-title: Definitions that you should know
+title: Essential Definitions for Solution Architects
 date: 2022-10-01 00:00 +0000
 author_profile: true
 published: true
@@ -21,7 +21,7 @@ tags:
   - azure
 ---
 
-> When I started learning Azure being a webdev and software architect background. I came across many IT lingo, jargons, abbrebiations that I did know about them. In this post I am putting all those in one place. I hope this will help you as well on your Azure Solution Architect journey!
+> When I started learning Cloud being a webdev and software architect background. I came across many IT lingo, jargons, abbreviations that I did know about them. In this post, I am writing all those in one place. I hope this will help you as well on your cloud Azure/AWS/GCP Solution Architect journey!
 
 ## RADIUS
 
@@ -150,9 +150,48 @@ The Local Network Gateway (LNG) typically refers to your on-premises location. [
 
 Classless Inter-Domain Routing (CIDR). It is an IP address assigning method that improves the efficiency of address distribution. It is also known as `supernetting` that replaces the older system based on classes A, B, and C networks. By using a single `CIDR IP` address many unique IP addresses can be designated.
 
+## Apache
+
+[The Apache HTTP Server](https://en.wikipedia.org/wiki/Apache_HTTP_Server), colloquially called Apache (ə-PATCH-ee) is a free and open-source cross-platform web server software, released under the terms of Apache License 2.0. Apache is developed and maintained by an open community of developers under the auspices of the Apache Software Foundation.
+
+## Hadoop
+
+Apache Hadoop is a collection of open-source software utilities that facilitates using a network of many computers to solve problems involving massive amounts of data and computation. It provides a software framework for distributed storage and processing of big data using the [MapReduce programming model](https://en.wikipedia.org/wiki/Apache_Hadoop).
+
+All the modules in Hadoop are designed with a fundamental assumption that hardware failures are common occurrences and should be automatically handled by the framework.
+
+A small Hadoop cluster includes a single master and multiple worker nodes. The master node consists of a Job Tracker. A slave or worker node acts as both a DataNode and Task Tracker. All machines are connected by SSH.
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Hadoop_1.png/390px-Hadoop_1.png){: .full}
+
+## HDFS
+
+Hadoop distributed file system (HDFS) The Hadoop distributed file system (HDFS) is a distributed, scalable, and portable file system written in Java for the Hadoop framework. Hadoop splits files into large blocks and distributes them across nodes in a cluster.
+
+## chkdsk
+
+Checks the file system and file system metadata of a volume for logical and physical errors. If used without parameters, `chkdsk` displays only the status of the volume and does not fix any errors. If used with the `/f, /r, /x, or /b` parameters, it fixes errors on the volume.
+
+- Open Command prompt in windows and run `chkdsk`
+
+  ![](https://i.imgur.com/wIIwaUU.png){: .full}
+
+- If you want to run chkdsk on D drive and fix issues then run `chkdsk d: /f`
+
 ## NFS
 
 Network File System (NFS)
+
+## NTFS
+
+New Technology File System or simply NTFS is a proprietary journaling file system developed by Microsoft in 1993. Starting with Windows NT 3.1, it is the default file system of the Windows NT family.
+
+## HFS
+
+Hierarchical File System (HFS) developed by Apple for MAC OS in 1998. One file size up to 2GB only.
+
+## EXT
+
+Extended File System (EXT). The extended file system, or ext, was implemented in April 1992 as the first file system created specifically for the Linux kernel.
 
 ## VMFS
 
@@ -175,6 +214,10 @@ Fully Qualified Domain Name (FQDN)
 ## DMS
 
 Azure Database Migration Service
+
+## NoSQL
+
+NoSQL databases (aka "not only SQL") are non tabular, and store data differently than relational tables. NoSQL databases come in a variety of types based on their data model. The main types are document, key-value, wide-column, and graph. They provide flexible schemas and scale easily with large amounts of data and high user loads.
 
 ## Cassandra
 
@@ -216,6 +259,7 @@ FedRAMP+ is the concept of leveraging the work done as part of the FedRAMP asses
 adding specific security controls and requirements necessary to meet and assure DoD’s critical
 mission requirements. A CSP’s CSO can be assessed in accordance with the criteria outlined in
 this SRG, with the results used as the basis for awarding a DoD provisional authorization.
+
 ## DoD
 
 The Department of Defense (DoD) is responsible for providing the military forces needed to deter war and protect the security of our country. The major elements of these forces are the Army, Navy, Marine Corps, and Air Force, consisting of about 1.3 million men and women on active duty.
@@ -223,6 +267,10 @@ The Department of Defense (DoD) is responsible for providing the military forces
 ## NIST
 
 The National Institute of Standards and Technology (NIST) is a non-regulatory government agency that develops technology, metrics, and standards to drive innovation and economic competitiveness at U.S.-based organizations in the science and technology industry.
+
+## IWA
+
+Integrated Windows Authentication (IWA)
 
 ## CA
 
@@ -458,7 +506,11 @@ The Tabular Data Stream (TDS) Protocol is an application-level protocol used for
 
 ## OLTP
 
-OLTP (Online Transactional Processing)
+Online Transactional Processing (OLTP)
+
+## OLAP
+
+Online Analytical Processing (OLTP)
 
 ## SMTP
 
