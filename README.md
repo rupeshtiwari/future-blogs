@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Azure solution for big-data transfer" --date 2022-10-29
+bundle exec jekyll compose "Roadmap for mastering competitive programming for beginners" --date 2022-11-12
 
 ```
 
