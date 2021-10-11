@@ -780,6 +780,8 @@ Network load balancer:
 - High performance
 - Load balance backend servers
 
+I will publish one more article where I will explain what are the soft skills you need to be successful in your next cloud architect interview so stay tuned.
+
 ## References
 
 - [Go Cloud Videos](https://www.youtube.com/playlist?list=PL0azhNeBK66KfW04TZBQWkX62hhnFcb9E)
