@@ -187,8 +187,8 @@ You want your Virtual Machine to keep running regardless of the situation occurr
 Therefore companies create Service Level Agreement (SLA) with customers to provide guaranteed service.
 
 | Level of Agreement | Down Time Per Hours |
-| ------------------ | ------------------- | --- |
-| 99%                | 87 hours            |     |
+| ------------------ | ------------------- |
+| 99%                | 87 hours            |
 | 99.9%              | 8.76 hours          |
 | 99.99%             | 52 mins             |
 | 99.999%            | 5 mins              |
