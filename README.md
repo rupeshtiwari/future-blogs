@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Roadmap for mastering competitive programming for beginners" --date 2022-11-12
+bundle exec jekyll compose "Symmetric and Asymmetric Encryption Basics" --date 2022-11-19
 
 ```
 
