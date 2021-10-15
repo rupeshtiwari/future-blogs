@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Symmetric and Asymmetric Encryption Basics" --date 2022-11-19
+bundle exec jekyll compose "Azure Active Directory Basics" --date 2022-12-10
 
 ```
 
