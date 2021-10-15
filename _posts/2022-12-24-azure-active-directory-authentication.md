@@ -42,7 +42,7 @@ There are 3 types of [Security tokens:](https://docs.microsoft.com/en-us/azure/a
 2.  Access tokens
 3.  Refresh tokens
 
-![](https://i.imgur.com/2BLbcE1.png)
+![](https://i.imgur.com/2BLbcE1.png){: .full}
 
 **Id token**: is issued to the client during open id connect flow. ID token is used to authenticate users. It is provided by the authorized endpoint of the authorization server. It contains claims pertaining to the authentication of the end-user resource owner.
 
@@ -54,7 +54,7 @@ There are 3 types of [Security tokens:](https://docs.microsoft.com/en-us/azure/a
 
 Authorization server signs the security token with a private key; it also publishes a public key. Web api verifies the signature of the token using public key. Client passess access token to the web api as bearer token in the authorization header.
 
-![](https://i.imgur.com/PCRgN6Y.png)
+![](https://i.imgur.com/PCRgN6Y.png){: .full}
 
 ## Security Principal 
 
@@ -77,6 +77,57 @@ A claim provides assertions about one entity (client application) to another ent
 ## What is an Application Model?
 
 Azure AD has identity service and for identity provider to know which user has access to application you must register both user and application in the identity provider. This is the application model.
+
+## Microsoft Authentication Protocols
+
+The Microsoft Identity platform uses the OPENID connect protocol for handling authentication and OAuth2.0 protocol for authorization. 
+![](https://i.imgur.com/jQBYg3z.png){: .full}
+
+Application Registration gives application Id and redirect URI.
+
+## What is Bearer Token?
+
+Bearer token is a lightweight security token that gives bearer access to protected resources.
+
+![](https://i.imgur.com/AbJl7rL.png){: .full}
+
+## Security Tokens
+
+There are 3 types of security tokens:
+
+1.  Access tokens
+2.  ID Token
+3.  Refresh Tokens
+
+![](https://i.imgur.com/0Da1wDj.png){: .full}
+
+![](https://i.imgur.com/81Mps2M.png){: .full}
+![](https://i.imgur.com/LDRXLUo.png){: .full}
+
+## What is OpenId Connect Protocol? 
+
+OpenId Connect authentication protocol built on OAuth. You add authentication to your web app so that it can sign in users. Adding authentication enables your web app to access limited profile information in order to customize the experience for users.
+
+Web apps authenticate a user in a web browser. In this scenario, the web app directs the user's browser to sign them in to Azure Active Directory (Azure AD). Azure AD returns a sign-in response through the user's browser, which contains claims about the user in a security token. 
+![](https://i.imgur.com/RbLR6P2.png){: .full}
+
+### Retrieve Access Token 
+
+![](https://i.imgur.com/cquFCVf.png){: .full}
+
+First, the application needs to obtain an authorization code from Azure AD /authorize endpoint. The authorization code can then be used to acquire a new access and refresh token. If the user is not already authenticated, Azure AD /authorize endpoint prompts the user to sign in.
+
+![](https://i.imgur.com/7zQ9Q1Y.png){: .full}
+
+whether the user (or their organization’s administrator) has already granted the application consent. If consent has not already been granted, Azure AD prompts the user for consent
+
+![](https://i.imgur.com/jMNYK8q.png){: .full}
+
+After the user grants consent, an authorization code is returned to your application, which is redeemed to acquire an access token and refresh token.
+
+As an administrator, you can also consent to an application's delegated permissions on behalf of all the users in your tenant.
+
+![](https://i.imgur.com/dRWMdL4.png){: .full}
 
 ## Azure Active Directory Authentication
 
@@ -101,7 +152,7 @@ All of the above activities can be done on cloud Azure AD & these are written ba
 ## Azure AD Multi-Factor Authentication
 
 During authentication it will prompt additional information. 
-![](https://i.imgur.com/L6gNomV.png)
+![](https://i.imgur.com/L6gNomV.png){: .full}
 
 Multi-factor authentication needs 2 or more information from below list:
 
@@ -109,13 +160,13 @@ Multi-factor authentication needs 2 or more information from below list:
 2.  Something you have :- Mobile or hardware key
 3.  Something you are :- biometric (fingerprint, face scan )
 
-![](https://i.imgur.com/1W7asfs.png)
+![](https://i.imgur.com/1W7asfs.png){: .full}
 
 ## Password Protection by Azure AD
 
 To enforce the use of strong passwords. Azure AD blocks weak passwords like (password123) etc. You can define a custom password policy for your organization. With hybrid integration you can even synchronize policies and weak/banned password list on-premise & enforce them.
 
-![](https://i.imgur.com/oN6DpHN.png)
+![](https://i.imgur.com/oN6DpHN.png){: .full}
 
 ## Passwordless Authentication by Azure AD
 
@@ -137,4 +188,4 @@ _Thanks for reading my article till end. I hope you learned something special to
 <br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
 <br>Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
 </div>
-![](https://imgur.com/a32nUcu.png){: .full}
+![](https://imgur.com/a32nUcu.png){: .full}{: .full}
