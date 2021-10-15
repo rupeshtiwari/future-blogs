@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "What is MSAL" --date 2022-12-17
+bundle exec jekyll compose "Authentication Basics" --date 2022-12-31
 
 ```
 

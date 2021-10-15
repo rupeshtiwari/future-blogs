@@ -33,7 +33,7 @@ MSAL specifies which audience can sign in to your application.
 
 ## What is the audience?
 
-Audience is the actor or client who interact with the system to whom your application authenticate. Audience could be:
+Audience is the actor or client who interact with the system to whom your application authenticate. Sometimes audience can be used for the target application for which security principal is generated. Audience could be:
 
 1.  Your organization
 2.  Several Organization
