@@ -26,9 +26,9 @@ tags:
 
 Microsoft provides Azure AD for developers and Microsoft Identity platform to help both programmatic and operational support for single-sign on, Identity and access management.
 
-## What is Azure Active Directory?
+## What is Azure Active Directory (AD)?
 
-[Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-application-management) is an Identity and Access Management (IAM) system for the Microsoft cloud. A centralized identity system provides a single place to store user information that can then be used by all applications. These systems have come to be known as Identity and Access Management (IAM) systems. Azure AD performs the authentication using the tenant directory stored in the cloud. Making Azure AD aware of these apps, and how it should handle them, is known as application management. You manage applications on the Enterprise applications page located in the Manage section of the Azure Active Directory portal.
+[Microsoft Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-application-management) is an Identity and Access Management (IAM) system for the Microsoft cloud. A centralized identity system provides a single place to store user information that can then be used by all applications. These systems have come to be known as Identity and Access Management (IAM) systems. Azure AD performs the authentication using the tenant directory stored in the cloud. Making Azure AD aware of these apps, and how it should handle them, is known as application management. You manage applications on the Enterprise applications page located in the Manage section of the Azure Active Directory portal.
 
 ## How does Azure AD work with apps?
 
