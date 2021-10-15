@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Azure Active Directory Basics" --date 2022-12-10
+bundle exec jekyll compose "What is MSAL" --date 2022-12-17
 
 ```
 
