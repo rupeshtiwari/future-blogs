@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Application and Service Principal Objects in Azure" --date 2023-01-07
+bundle exec jekyll compose "Azure Fundamental Questions" --date 2023-01-14
 
 ```
 
