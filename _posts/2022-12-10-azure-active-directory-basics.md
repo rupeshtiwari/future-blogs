@@ -72,6 +72,25 @@ So basically every subscription trust on azure active directory. The users and g
 
 ![](https://i.imgur.com/BzP0hcx.png){: .full}
 
+
+## What is Azure AD Tenant?
+
+A tenant represents an organization. A tenant is used by an organization. Example: the tenant used by the Adatum organization who developed HR application.
+
+Azure AD gets created automatically when you create a Microsoft account from Microsoft 365 or Microsoft Intune.
+
+![](https://i.imgur.com/WajqfHv.png)
+
+## Azure AD Environments
+
+A dedicated instance of Azure AD is called “Azure AD Tenant”. You can create a maximum of 20 Azure AD Tenants per Azure subscription. Each Azure AD Tenant is separate from others. Azure AD Tenant has its users or consumes identities. Azure AD Tenant can have resources and they  are secured.
+
+Based on the users your application is authenticating you can create 2 types of environments.
+
+1.  Work and school or Personal ( outlook.com, live.com )
+2.  Social  & local (Azure AD B2C )
+
+
 ## References
 
 - [Go Cloud Videos](https://www.youtube.com/playlist?list=PL0azhNeBK66KfW04TZBQWkX62hhnFcb9E)

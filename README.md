@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Authentication Basics" --date 2022-12-31
+bundle exec jekyll compose "Application and Service Principal Objects in Azure" --date 2023-01-07
 
 ```
 
