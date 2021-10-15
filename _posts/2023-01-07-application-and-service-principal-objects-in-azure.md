@@ -102,9 +102,40 @@ The following diagram illustrates the relationship between an application's appl
 
 ![](https://i.imgur.com/zpgHTR8.png){: .full}
 
+## How to create a Service Principal?
+
+You can not create service principal from Azure portal as of November, 2021. Check Microsoft document for latest update.
+
+Service principal is an identity created for use in application, hosted service and automated tools to access Azure resources. You should always use service principal for automated tools rather than login with user identity.
+
+![](https://i.imgur.com/7uSpO0r.png){: .full}
+
+When you create service principal it gives you credentials that you need while in use of service principal. If you don't want to manage credentials try creating managed identity. If you don't have a password for the service principal then you can use the reset service principal credential option.
+
+By default when we create a service principal it assigns a contributor role on subscription scope. You can use \`New-AzADServicePrincipal\` powershell cmdlet to create a new service principal.
+
+## Service Principal Authentication Types
+
+There are 2 types of authentications for service principal:
+
+1.  Password-based (application secret)
+2.  Certificate-based (Recommended)
+
+### Password-Based Authentication
+
+When you create a service principal for password-based. It will return an auto generated password. You need that password to authenticate. By default service principal gets read and write access at subscription scope. For sign In using service principal you need tenant Id. Use `New-AZADServicePrincipal -DisplayName Web` to create a new one.
+
+![](https://i.imgur.com/iJ8nGgm.png){: .full}
+
+### Certificate-based Authentication
+
+In order to create a certificate-based service principal you need to pass a base-64 encoded ASCII string of public certificates. Once it is created it will return Id and displayname.
+
 ## References
 
 1.  [https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#application-object](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#application-objec)
+2.  [https://docs.microsoft.com/en-us/powershell/azure/create-azure-service-principal-azureps?view=azps-5.9.0](https://docs.microsoft.com/en-us/powershell/azure/create-azure-service-principal-azureps?view=azps-5.9.0)
+3.  [https://docs.microsoft.com/en-us/powershell/azure/create-azure-service-principal-azureps?view=azps-5.9.0#manage-service-principal-roles](https://docs.microsoft.com/en-us/powershell/azure/create-azure-service-principal-azureps?view=azps-5.9.0#manage-service-principal-roles)
 
 ---
 
