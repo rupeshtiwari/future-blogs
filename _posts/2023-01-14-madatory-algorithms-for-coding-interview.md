@@ -21,8 +21,7 @@ tags:
   - beginners
 ---
 
-> Basic algorithms that you must know if you want to crack your coding interview.
-> Get the [source code for basic algorithms in JavaScript here](https://codepen.io/collection/BNaddx)
+> Basic algorithms that you must know if you want to crack your coding interview. In case you are starting to prepare for coding practice then make sure you learn all of these important algorightms. Get the [source code for basic algorithms in JavaScript here](https://codepen.io/collection/BNaddx)
 
 ## Binary Search in Sorted Array
 
@@ -148,7 +147,6 @@ tags:
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-
 ## Binary Search Tree (BST)
 
 <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="rNmBqWQ" data-user="rupeshtiwari" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -185,7 +183,7 @@ For n insert operations, avg case is O(nlgn) and worst case is O(n^2)
 
 ## Heap implementation
 
-In the interview no one will ask you to implement heap. This excercise is for your coding skills imporvement. In the interview, you can use array instead of heap and explain the concept. 
+In the interview no one will ask you to implement heap. This excercise is for your coding skills imporvement. In the interview, you can use array instead of heap and explain the concept.
 
 <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="OJmVjgB" data-user="rupeshtiwari" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/rupeshtiwari/pen/OJmVjgB">
