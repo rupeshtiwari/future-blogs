@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Azure Fundamental Questions" --date 2023-01-14
+bundle exec jekyll compose "Madatory Algorithms for Coding Interview" --date 2023-01-14
 
 ```
 
