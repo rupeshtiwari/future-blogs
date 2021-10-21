@@ -148,24 +148,6 @@ tags:
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-## Heap implementation
-
-<p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="OJmVjgB" data-user="rupeshtiwari" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/rupeshtiwari/pen/OJmVjgB">
-  Heaps: Implement Heap </a> by Rupesh Tiwari (<a href="https://codepen.io/rupeshtiwari">@rupeshtiwari</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-### Insert node in the Heap
-
-**O(log(n) time | O(1) space**
-
-![](https://i.imgur.com/H1Hm4Pe.png){: .full}
-
-### Revove root node from the Heap
-
-**O(log(n) time | O(1) space**
-
-![](https://i.imgur.com/5gmtiBx.png){: .full}
 
 ## Binary Search Tree (BST)
 
@@ -200,3 +182,24 @@ For n insert operations, avg case is O(nlgn) and worst case is O(n^2)
 ![](https://i.imgur.com/3VEHOE1.png){: .full}
 
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+## Heap implementation
+
+In the interview no one will ask you to implement heap. This excercise is for your coding skills imporvement. In the interview, you can use array instead of heap and explain the concept. 
+
+<p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="OJmVjgB" data-user="rupeshtiwari" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/rupeshtiwari/pen/OJmVjgB">
+  Heaps: Implement Heap </a> by Rupesh Tiwari (<a href="https://codepen.io/rupeshtiwari">@rupeshtiwari</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+### Insert node in the Heap
+
+**O(log(n) time | O(1) space**
+
+![](https://i.imgur.com/H1Hm4Pe.png){: .full}
+
+### Revove root node from the Heap
+
+**O(log(n) time | O(1) space**
+
+![](https://i.imgur.com/5gmtiBx.png){: .full}
