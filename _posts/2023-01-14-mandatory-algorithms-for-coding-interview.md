@@ -1,5 +1,5 @@
 ---
-title: Madatory Algorithms for Coding Interview
+title: Mandatory Algorithms for Coding Interview
 date: 2023-01-14 00:00 +0000
 description: 'Basic algorithms that you must know if you want to crack your coding interview'
 author_profile: true
@@ -19,6 +19,7 @@ tags:
   - webdev
   - tutorial
   - beginners
+  - coding
 ---
 
 > Basic algorithms that you must know if you want to crack your coding interview. In case you are starting to prepare for coding practice then make sure you learn all of these important algorightms. Get the [source code for basic algorithms in JavaScript here](https://codepen.io/collection/BNaddx)
