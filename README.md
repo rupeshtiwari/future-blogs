@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Introduction to Point of Presence and Network Access Point" --date 2023-01-28
+bundle exec jekyll compose "What is EBIT and EBITDA" --date 2023-02-04
 
 ```
 
