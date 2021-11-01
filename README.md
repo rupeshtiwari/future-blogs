@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Madatory JavaScript Knowledge for Coding Interview" --date 2023-01-21
+bundle exec jekyll compose "Introduction to Point of Presence and Network Access Point" --date 2023-01-28
 
 ```
 
