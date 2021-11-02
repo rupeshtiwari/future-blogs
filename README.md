@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "What is EBIT and EBITDA" --date 2023-02-04
+bundle exec jekyll compose "Introduction to CAP Theorem" --date 2023-02-11
 
 ```
 
