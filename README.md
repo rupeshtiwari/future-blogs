@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Introduction to CAP Theorem" --date 2023-02-11
+bundle exec jekyll compose "How to Maintain Well-Architected-Framework on Cloud" --date 2023-02-18
 
 ```
 
