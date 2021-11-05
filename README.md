@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "How to Maintain Well-Architected-Framework on Cloud" --date 2023-02-18
+bundle exec jekyll compose "Cloud Security Defense In-Depth Azure Approach" --date 2023-02-25
 
 ```
 
