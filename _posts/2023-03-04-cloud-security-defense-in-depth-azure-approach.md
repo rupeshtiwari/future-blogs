@@ -9,7 +9,7 @@ comments: true
 share: true
 related: true
 toc: true
-toc_sticky: false
+toc_sticky: true
 image: https://i.imgur.com/NEvhyqm.png
 header:
   image: https://i.imgur.com/NEvhyqm.png
