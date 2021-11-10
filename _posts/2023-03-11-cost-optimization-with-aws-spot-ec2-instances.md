@@ -43,7 +43,7 @@ Pay for compute capacity by the second or hour with no long-term commitments. Mo
 
 ![](https://i.imgur.com/BAd22sC.png){: .full}
 
-## Reserved Instances
+### Reserved Instances
 
 Significant discount (up to 70%) compared to on-demand instance pricing. You should use these types of instances for steady state applications or predictable usages, databases. ![](https://lh6.googleusercontent.com/IYJsC3v5updKOqxDw2n2EdrOW6aG6tAU_D4iS0E-WgwCe0zsOK98aar8fYibwrKCu4CYfszSTxQyhqdjksyYIr14hq4Xgb1fJhXTpVk8IzHRu69ok4uJ19xNh86dWPZ1oAOegL9V)
 
