@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Cloud Security Defense In-Depth Azure Approach" --date 2023-02-25
+bundle exec jekyll compose "Cost Optimization with AWS Spot EC2 Instances" --date 2023-03-11
 
 ```
 
