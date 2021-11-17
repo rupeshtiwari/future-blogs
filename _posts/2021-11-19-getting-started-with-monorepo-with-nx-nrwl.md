@@ -136,7 +136,7 @@ Check all todo comments `CTRL + SHIFT + P`
 
 ### Vscode Settings
 
-If you want to get the custom icons for your files then make sure you have installed VSCode Materials and copy below settings and paste in your local VSCode settings.json file located at `%appdata%\Roaming\Code\User\settings.json`
+If you want to get the custom icons for your files then make sure you have installed VSCode Materials and copy below settings and paste in your local VSCode settings.json file located at `%appdata%\Code\User\settings.json`
 
 {% gist a4190a29aac0132082430cdb8a2e85ad %}
 
