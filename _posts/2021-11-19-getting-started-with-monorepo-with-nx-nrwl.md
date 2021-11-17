@@ -9,7 +9,7 @@ comments: true
 share: true
 related: true
 toc: true
-toc_sticky: true
+toc_sticky: false
 image: https://i.imgur.com/qxXxmBa.png
 header:
   image: https://i.imgur.com/zipiW93.png
@@ -22,14 +22,44 @@ tags:
   - javascript
 ---
 
+> If you want to manage a large set of projects in your organization in a single GitHub repository called monorepo. There are many challenges with GitHub monorepo. I will explain all of the challenges and show you how you can solve them. Also I will create monorepo from scratch in this article using angular projects as samples.
+
+## What is Monorepo?
+
+Single Git Repository holds source code of multiple applications and libraries.
+
+## Why to use Monorepo?
+
+Monorepo in organization helps you to get below benefits:
+
+- **Shared Code**: Reuse code validation, tooling code, and libraries code in applications in a single repository.
+- **Atomic Changes**: Change the button component in the shared library and update the application that uses that button in the same commit.
+- **Developer Mobility**: Developers can easily contribute to any applications or libraries by just going to one source code repository.
+
+## What should I know before using Monorepo?
+
+If you have already developed couple of JavaScript projects then you are good to go and learn Monorepo. For this article if you have basic knowledge of Angular then it will be good since I will create angular projects in example monorepo.
+
+## Where is source code for Nx Monorepo?
+
+Here is the [Nx npm package](https://www.npmjs.com/package/nx) that you can use from npm. For this article I will demonstrate code that is hosted in github at below location:
+
+- [Angular Monorepo Nrwl.NX sample](https://github.com/rupeshtiwari/coding-examples-angular-monorepo-with-nx)
+- [Angular Monorepo Nrwl.NX sample with advance Microsoft Azure CI/CD Pipeline](https://github.com/rupeshtiwari/coding-examples-angular-monorepo-nx-azure-ci-cd)
+
+## Challenges with Monorepo?
+
+Challenges are how to identify which application depends on how many projects? How to constrain dependency so that it reduces cyclic dependency issues and organizes code structure? How to only compile the project which has only changed? How to only run tests for the changed projects? How to increase tooling speed for a large set of projects in a single monorepo? How to manage versions? All of these are very important requirements. Nx.Nrwl monorepo framework is an excellent framework to manage any number of JavaScript projects in just one GitHub Repo. With Nx.Nrwl Monorepo you get facility to visualize which project depends on others. All of the challenges that I mentioned could be resolved by Nx Monorepo. Stay tuned and read this article till the end to create your angular monorepo from scratch using the Nx Monorepo framework.
+
+## Agenda 
 In this article, I will walk you through the steps to create one [nx monorepo](https://nx.dev/) workspace with Angular application and libraries from empty preset.
 
-1. We will use pipeline caching to improve build speed.
-2. We will publish our application to npm.
+1. We will use Azure Pipeline Caching to improve build speed by caching npm packages.
+2. We will publish our application to npm from pipeline in automated fashion.
 
 ## Requirements for my monorepo
 
-1. I need **Karma** test runner
+1. I need **Karma** as test runner
 2. I **don't need e2e test** for applications
 3. I want my **applications to be publishable**
 4. I want my **libraries to be not publishable**
@@ -1357,12 +1387,7 @@ Therefore, if you want to stop this behavior then you need to go to `karma.conf.
     failOnEmptyTestSuite: false
 ```
 
-## References
-- Source Code : https://github.com/rupeshtiwari/coding-examples-angular-monorepo-with-nx
-- https://github.com/rupeshtiwari/coding-examples-angular-monorepo-nx-azure-ci-cd 
-- [An A-Z Index of the Windows CMD command line](https://ss64.com/nt/)
-
-## Questions
+## Nx Related Questions
 
 - **Does the lib projects have npm versions?**
   **Answer:** No, because they are not buildable and publishable.
@@ -1372,6 +1397,13 @@ Therefore, if you want to stop this behavior then you need to go to `karma.conf.
 
 - **When do we create branches ?**
   **Answer:** As you move your code to a new environment it is recommended to create a separate branch in monorepo.
+
+## References
+
+- **Source Code**: https://github.com/rupeshtiwari/coding-examples-angular-monorepo-with-nx
+- **Source Code**: https://github.com/rupeshtiwari/coding-examples-angular-monorepo-nx-azure-ci-cd
+- [An A-Z Index of the Windows CMD command line](https://ss64.com/nt/)
+- https://nx.dev/latest/react/getting-started/getting-started
 
 ---
 
