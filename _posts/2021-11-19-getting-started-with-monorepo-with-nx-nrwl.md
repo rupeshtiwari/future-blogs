@@ -51,14 +51,35 @@ Here is the [Nx npm package](https://www.npmjs.com/package/nx) that you can use 
 
 Challenges are how to identify which application depends on how many projects? How to constrain dependency so that it reduces cyclic dependency issues and organizes code structure? How to only compile the project which has only changed? How to only run tests for the changed projects? How to increase tooling speed for a large set of projects in a single monorepo? How to manage versions? All of these are very important requirements. Nx.Nrwl monorepo framework is an excellent framework to manage any number of JavaScript projects in just one GitHub Repo. With Nx.Nrwl Monorepo you get facility to visualize which project depends on others. All of the challenges that I mentioned could be resolved by Nx Monorepo. Stay tuned and read this article till the end to create your angular monorepo from scratch using the Nx Monorepo framework.
 
-## Agenda
+## How to manage versions and parallel development?
+
+You could have your own policy as per your organization's need to manage parallel development, release, fix, development, merging, major release, maintenance related work. However, I am suggesting one option. Let's see if that makes sense to you.
+
+### Managing Releases with Monorepo
+
+Create a branch for release number. Example `releases/11.0` treat this branch as active working branch. You can treat this as your `dev` branch.
+
+![](https://i.imgur.com/SQUdxd4.png){: .full}
+
+### Working on Feature Branch with Monorepo
+
+For adding new feature or working on some new PBI or usecase. Create a features folder and put PBI number as new branch in features folder work on development and merge them in to release branch.
+Example: `features/PBI123/appendOrder`
+
+### Managing Major Releases with Monorepo
+
+In order to do major release create a new branch `11.1` as major release branch. And if you want to apply fix on `11.1` then create another branch `11.1.1` work on fixes and merge them back to release branch `11.0` for future release.
+
+![](https://i.imgur.com/F4rqVdP.png){: .full}
+
+## What Developer will learn in this article?
 
 In this article, I will walk you through the steps to create one [nx monorepo](https://nx.dev/) workspace with Angular application and libraries from empty preset.
 
 1. We will use Azure Pipeline Caching to improve build speed by caching npm packages.
 2. We will publish our application to npm from pipeline in automated fashion.
 
-## Requirements for my monorepo
+### In the Monorepo we will do below work
 
 1. I need **Karma** as test runner
 2. I **don't need e2e test** for applications
@@ -67,16 +88,51 @@ In this article, I will walk you through the steps to create one [nx monorepo](h
 5. Create **Azure CI/CD pipelines**
 6. Deploy **Application to NPM registry**
 
-## Environment Requirement
+## Development Environment Setup
 
-Make sure you have node.js installed which is greater than V10. I have installed node.js v14.
+Hey developer, make sure you have `node.js` installed which is greater than `V10`. I have installed `node.js v14`.
 
-I am using Vs Code and installed nx console vs extension to get inbuilt way of creating apps/libs from nx console only.
+### Visual Studio Code (VsCode)
 
-Make sure you have installed [Nx Console](https://nx.dev/latest/angular/getting-started/console) in your vs code.
-![](https://i.imgur.com/gWKa76u.png =250x200)
+I am using Vs Code and installed nx console extension to get inbuilt way of creating apps/libs from nx console only.
 
+### Visual Studio Code Extensions
 
+Install below VsCode extensions for better development experience:
+
+- [Nx Console](https://nx.dev/latest/angular/getting-started/console) in your vs code to create components without writing code.
+  ![](https://i.imgur.com/gWKa76u.png =250x200)
+- [Angular Essentials Extensions by John Papa](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials)
+  ![](https://i.imgur.com/bUO042c.png){: .full}
+- [Material Theme VS Code Extension](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme): In order to see the icons for each file you must update the vscode settings. Take the custom Vs Code Settings of VsCode from [this article](#vscode-settings).
+- [Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines) for validations of yml file
+  ![](https://i.imgur.com/kZIWqaY.png){: .full}
+
+- Install [yaml visual studio extension](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+  ![](https://i.imgur.com/Sqsa8gx.png){: .full}
+
+**Below are optional but recommended extensions**
+
+- [TODO Highlighter](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight) : Optional it helps to highlight todo and fixme comments.
+  ![](https://i.imgur.com/JT28IhH.png){: .full}
+
+**FixMe Comments**
+FIXME: Comments are some things that you are planning to fix within the current sprint.  
+Example: Fixing Api Service to call Server Web API within this sprint only.
+Stories having FIXME are alarming for you. Make sure all FIXME’s are addressed before marking stories are done. 📓 Notice: Once you fix the code then remove the comment 😄
+![](https://i.imgur.com/Zgbdf9N.png){: .full}
+
+**Todo Comments**
+TODO: comments are something that you are planning to work on future sprints.
+Example: Working on MCQ API Service to call server side API that has to be done on future sprint.
+![](https://i.imgur.com/i48KY0n.png){: .full}
+
+Check all todo comments `CTRL + SHIFT + P`
+![](https://i.imgur.com/KUq3DFR.png){: .full}
+
+- [Conventional Commit Comments](https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-commitizen)
+  ![](https://i.imgur.com/uDw6zDP.png){: .full}
+  [Check out some examples of conentional commit comments](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13#examples)
 
 ### Vscode Settings
 
@@ -137,27 +193,22 @@ You will get below icons once updating settings file.
 
 ![](https://i.imgur.com/P2D9gy6.png){: .full}
 
-## Nx Monorepo Default Test Runner is JEST
+## Enable Karma Test Runner in Nx Monorepo
 
-When you create nx monorepo with `Angular` or `React` or `Next.js` or `Gatsby` or `next.js` or `Web Components` then it will give you `JEST` as unit test runner. In case you want to get `karma` test runner then you have to create Empty workspace and then add `@nrwl/angular` latter then add new application or lib with karma unit test runner.
+When you create nx monorepo with `Angular` or `React` or `Next.js` or `Gatsby` or `next.js` or `Web Components` then it will give you `JEST` as unit test runner. In case you want to get `karma` test runner then you have to create Empty workspace and then add `@nrwl/angular` then add new application or lib with karma unit test runner.
 
-## Default Monorepo Workspace structure
+## Creating First Nx Monorepo using CLI
 
-In order to create workspace We run below script
+In order to create your first Nx Monorepo workspace run below script:
 
 `npx create-nx-workspace@latest`
 
-Give workspace name: myorg
-
-Select Layout: I select Angular Application (A workspace with a single Angular Application)
-
-Application Name: cutepuppies-admin
-
-Stylesheet Format: SASS
-
-Linter: TSLINT
-
-Nx Cloud: No ( this is default )
+- Give workspace name: `myorg`
+- Select Layout: I select Angular Application (A workspace with a single Angular Application)
+- Application Name: cutepuppies-admin
+- Stylesheet Format: SASS
+- Linter: TSLINT
+- Nx Cloud: No ( this is default )
 
 ![](https://i.imgur.com/iMK98Jr.png){: .full}
 
@@ -169,9 +220,9 @@ When you will use their template they will add end to end test for application. 
 
 ![](https://i.imgur.com/GLOkklz.png){: .full}
 
-In my workspace I do not want Jest and I do not want e2e tests. So I am deciding to again create my workspace with empty preset.
+In my workspace, I do not want Jest and I do not want e2e tests. So I am creating my workspace with empty preset next.
 
-## Creating new NX Monorepo workspace
+## Creating Nx Monorepo with Custom Settings
 
 1.  Run `npx create-nx-workspace@latest`
 
@@ -196,7 +247,7 @@ This will install `@nrwl/angular` plugin to give you tools to create angular lib
 Run the script:
 ![](https://i.imgur.com/roU0Y90.png){: .full}
 
-## Understanding NX Monorepo Workspace
+## Understanding Nx Monorepo Workspace
 
 ![](https://i.imgur.com/bNRYcQI.png){: .full}
 
@@ -209,7 +260,7 @@ Run the script:
 6. **angular.json**
    It create angular.json file to manage your workspace. However, if you want to create empty monorepo project then it creates **workspace.json** file.
 
-## Building Project
+## Creating Projects in Nx Monorepo
 
 Run `nx build`
 
@@ -236,7 +287,7 @@ Regardless of empty or pre-populated workspace you must create your own `CI/CD` 
 
 ## Creating new Empty Nx Monorepo workspace
 
-Create desired working folder and from that location open `powershell` on windows machine I found working on `git bash commands` were not working nicely.
+Creating empty Nx Monorepo workspace is our final option for this example. So let's create desired working folder and from that location open `powershell` on windows machine I found working on `git bash commands` were not working nicely.
 
 Run below script to create empty workspace
 
@@ -285,9 +336,11 @@ However, in case you want to opt out of `NX CLI` then follow below steps:
 2.  Remove the script from your postinstall script in your package.json
 3.  Delete and reinstall your node_modules
 
+We are not doing this though.
+
 ## Understanding NX Workspace Scripts
 
-```json=
+```json
 "scripts": {
     "nx": "nx",
     "start": "nx serve",
@@ -577,7 +630,7 @@ Add route in client app: add below route to navigate to puppies module's default
 
 Lets add scripts to serve both admin and client app
 
-```json=
+```json
 "start-admin":"nx serve cutepuppies-admin --port=4210 -o",
 "start-client":"nx serve cutepuppies-client --port=4211 -o",
 ```
@@ -1094,8 +1147,12 @@ function commands(target) {
 
 If you run this script, after changing logger project. It will generate the commands for the affected projects. Like below
 
-```json=
-{"lint":["cutepuppies-admin","branding-logger"],"test":["cutepuppies-admin","branding-logger"],"build":["cutepuppies-admin"]}
+```json
+{
+  "lint": ["cutepuppies-admin", "branding-logger"],
+  "test": ["cutepuppies-admin", "branding-logger"],
+  "build": ["cutepuppies-admin"]
+}
 ```
 
 ![](https://i.imgur.com/IiVl5jO.png){: .full}
@@ -1196,14 +1253,24 @@ Lets update the commands to also give a list of apps to publish in npm repositor
 
 When We change logger we want to also see publish array with affected app.
 
-```json=
-{"lint":["branding-logger","cutepuppies-admin"],"test":["branding-logger","cutepuppies-admin"],"build":["cutepuppies-admin"],"publish":["cutepuppies-admin"]}
+```json
+{
+  "lint": ["branding-logger", "cutepuppies-admin"],
+  "test": ["branding-logger", "cutepuppies-admin"],
+  "build": ["cutepuppies-admin"],
+  "publish": ["cutepuppies-admin"]
+}
 ```
 
 If I change the client app as well then I should see both apps in publish array.
 
-```json=
-{"lint":["cutepuppies-client","branding-logger","cutepuppies-admin"],"test":["cutepuppies-client","branding-logger","cutepuppies-admin"],"build":["cutepuppies-client","cutepuppies-admin"],"publish":["cutepuppies-client","cutepuppies-admin"]}
+```json
+{
+  "lint": ["cutepuppies-client", "branding-logger", "cutepuppies-admin"],
+  "test": ["cutepuppies-client", "branding-logger", "cutepuppies-admin"],
+  "build": ["cutepuppies-client", "cutepuppies-admin"],
+  "publish": ["cutepuppies-client", "cutepuppies-admin"]
+}
 ```
 
 I will add below method for getting publish apps
@@ -1427,8 +1494,6 @@ function publishNpmPackage() {
 }
 ```
 
-### Step : Update Azure Pipelines to add publish Task
-
 ### Step : Push you changes and Trigger Build
 
 See both admin and client is published.
@@ -1447,6 +1512,78 @@ Therefore, if you want to stop this behavior then you need to go to `karma.conf.
 
 ```json
     failOnEmptyTestSuite: false
+```
+
+## Monorepo Architecture Guideline for developers
+
+### What do smart components do? 
+
+- It can do dependency injection and have service stores  injected.
+- It can only send command
+- It can only call query methods to store to get some result/data
+- It can not write any filter,sort kind of logic move them in store
+- It can not publish event
+- It can not have business query logic or model update logic
+- It can pass some data structure to nested dumb/presentation components
+
+### What is dumb / presentation componetn can do?
+
+- No dependency injection for service and store
+- Only input and output
+- Responsible for rendering data
+- No message publishing/sending
+- No store query no model state mutation
+
+### What is a service?
+
+1.  It has business logic and
+2.  It can take advantage of API service.
+3.  Most of the services are message handlers.
+
+Quiz: Where should I write the code to create a mcq widget?
+
+### What is a Model?
+
+- It is a data structure which has state.
+
+- It must not have business logic.
+- It can have getters and setters.
+
+### What is a Store? 
+
+Is a collection of models.  If you have multiple models of the same type, create store to retrieve them and put them in the collection.
+
+1.  Don’t write business logic to mutate the model state in store
+2.  Business logic to mutate model state goes in SERVICES only.
+3.  All Model related queries (filter, sort etc ) must be written in the Store that component can call upon.
+4.  Store we can write code that does not go in one model and you want span over the multiple instances of the model.
+
+5.  Example: Sorting models inside store, Asserting before inserting model in collection.
+
+### What is an API service?
+
+1.  Makes http network calls and returns promises.
+2.  It has httpClient dependency and extends Base API Service.
+3.  API service mostly returns the client side Model object and Server is supposed to return the same Model Data Structure to the client. However, in case there is a mismatch between the result comes from Server vs client. Then Use DTO for server side data structure. DTO should remain under the DATA folder of the project.
+
+### Who depends on whom within a library ? 
+
+We have component layer, message handlers and api service layers.
+
+- Component can depend on Model and Message service
+- Message Handler can depend on model and api
+- API service can depend on httpclient and dto
+
+## Before Push to Git Guidelines
+
+✅ RUN TEST: npm run affected:test
+✅ RUN LINT: npm run affected:lint
+
+You can always run affected projects on your feature branch by giving its name.
+
+```
+npm run affected:test --base=origin/features/PBI23/MessageHandlers
+npm run affected:lint --base=origin/features/PBI23/MessageHandlers
 ```
 
 ## Nx Related Questions
