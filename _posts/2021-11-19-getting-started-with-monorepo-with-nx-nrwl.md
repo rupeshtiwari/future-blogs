@@ -51,7 +51,8 @@ Here is the [Nx npm package](https://www.npmjs.com/package/nx) that you can use 
 
 Challenges are how to identify which application depends on how many projects? How to constrain dependency so that it reduces cyclic dependency issues and organizes code structure? How to only compile the project which has only changed? How to only run tests for the changed projects? How to increase tooling speed for a large set of projects in a single monorepo? How to manage versions? All of these are very important requirements. Nx.Nrwl monorepo framework is an excellent framework to manage any number of JavaScript projects in just one GitHub Repo. With Nx.Nrwl Monorepo you get facility to visualize which project depends on others. All of the challenges that I mentioned could be resolved by Nx Monorepo. Stay tuned and read this article till the end to create your angular monorepo from scratch using the Nx Monorepo framework.
 
-## Agenda 
+## Agenda
+
 In this article, I will walk you through the steps to create one [nx monorepo](https://nx.dev/) workspace with Angular application and libraries from empty preset.
 
 1. We will use Azure Pipeline Caching to improve build speed by caching npm packages.
@@ -75,11 +76,72 @@ I am using Vs Code and installed nx console vs extension to get inbuilt way of c
 Make sure you have installed [Nx Console](https://nx.dev/latest/angular/getting-started/console) in your vs code.
 ![](https://i.imgur.com/gWKa76u.png =250x200)
 
+
+
+### Vscode Settings
+
+If you want to get the custom icons for your files then make sure you have installed VSCode Materials and copy below settings and paste in your local VSCode settings.json file located at `%appdata%\Roaming\Code\User\settings.json`
+
+{% gist a4190a29aac0132082430cdb8a2e85ad %}
+
+```json
+    "material-icon-theme.folders.associations": {
+		"Presentation":"Views",
+		"aggregate-score":"Sublime",
+        "aspects": "Apollo",
+        "contracts": "Scala",
+        "message-handlers": "Serverless",
+        "base": "core",
+        "branding": "Shared",
+        "main": "Stack",
+        "composition": "include",
+        "modules": "Cluster",
+        "partials": "Mock",
+        "filters": "Terraform",
+        "sharedviews": "Svelte",
+        "dashboard": "Gulp",
+        "ui-core": "Review",
+        "dev": "Intellij",
+        "ngmaterial": "Theme",
+        "ckeditor5": "Mobile",
+        "launch": "Docker",
+        "editor": "Custom",
+        "toolbar": "Tools",
+        "pubsub": "Event",
+        "message-handler": "Delta",
+        "api-composition": "Mock",
+        "dto": "Gradle",
+        "interfaces": "Animation",
+		"global-error-handler":"Error",
+		"root":"Svg"
+    },
+    "material-icon-theme.files.associations": {
+        "*.state.ts": "Silverstripe",
+        "*.dto.ts": "Gradle",
+        "*.module.ts": "Racket",
+        "*.routing.module.ts": "R",
+        "*.store.ts": "Storybook",
+        "*.tests.ts": "Test-ts",
+        "*.controller.ts": "Angular-component",
+        "*.enum.ts": "Jinja",
+        "*.service.ts": "Quasar",
+        "*.model.ts": "Shaderlab",
+        "*.viewmodel.ts": "Pug",
+        "*.command.ts": "Email",
+        "*.event.ts": "Stencil",
+        "*.ts":"Idris"
+    },
+```
+
+You will get below icons once updating settings file.
+
+![](https://i.imgur.com/P2D9gy6.png){: .full}
+
 ## Nx Monorepo Default Test Runner is JEST
 
 When you create nx monorepo with `Angular` or `React` or `Next.js` or `Gatsby` or `next.js` or `Web Components` then it will give you `JEST` as unit test runner. In case you want to get `karma` test runner then you have to create Empty workspace and then add `@nrwl/angular` latter then add new application or lib with karma unit test runner.
 
-## Default Workspace structure
+## Default Monorepo Workspace structure
 
 In order to create workspace We run below script
 
