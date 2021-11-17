@@ -4,7 +4,7 @@
 
 ```ruby
 
-bundle exec jekyll compose "Cost Optimization with AWS Spot EC2 Instances" --date 2023-03-11
+bundle exec jekyll compose "Getting Started with Monorepo with Nx Nrwl" --date 2021-11-19
 
 ```
 
