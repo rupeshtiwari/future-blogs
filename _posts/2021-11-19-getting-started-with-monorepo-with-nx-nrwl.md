@@ -22,7 +22,7 @@ tags:
   - javascript
 ---
 
-> If you want to manage a large set of projects in your organization in a single GitHub repository called monorepo. There are many challenges with GitHub monorepo. I will explain all of the challenges and show you how you can solve them. Also I will create monorepo from scratch in this article using angular projects as samples.
+> Do you have a lot of JavaScript projects using GitHub repositories? How are you managing dependencies among those projects? Developers might be struggling to manage a large set of GitHub repositories and Business might be spending a lot of money to manage them. The potential solution to this problem is Monorepo. You can put all of your JavaScript projects regardless of framework (angular, vue.js, react.js) in a single GitHub repository called monorepo. This will solve the problem and you will not have many Git projects. However, nothing is free! So there are many challenges with monorepo that developers are facing. I will explain all of the challenges and show you how you can solve them. Also I will create monorepo from scratch in this article using angular projects as samples.
 
 ## What is Monorepo?
 
