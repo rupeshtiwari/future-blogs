@@ -1358,8 +1358,9 @@ Therefore, if you want to stop this behavior then you need to go to `karma.conf.
 ```
 
 ## References
-
-[An A-Z Index of the Windows CMD command line](https://ss64.com/nt/)
+- Source Code : https://github.com/rupeshtiwari/coding-examples-angular-monorepo-with-nx
+- https://github.com/rupeshtiwari/coding-examples-angular-monorepo-nx-azure-ci-cd 
+- [An A-Z Index of the Windows CMD command line](https://ss64.com/nt/)
 
 ## Questions
 
