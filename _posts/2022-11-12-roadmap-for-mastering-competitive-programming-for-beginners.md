@@ -60,14 +60,14 @@ Every day you do **2 basic, 2 medium and 1 hard** problems for each data structu
 
 Do 50 questions on below data structures. Do 70 questions on Array and Linked List. First solve the problems which are described in the [data structure in hindi videos](https://www.youtube.com/watch?v=t5JfBFfi2sU&list=PLg6p_zdrEgHEqaRQbZADU6suNgh28JiKb&index=1). Then solve others on your own. If you don't watch videos and try to solve your own in Geek of Geeks you will solve 5 problems. However, if you watch videos and solve them then you should be able to solve 15 problems on your own. Do below Data Structures:
 
-- Array
-- Link List
-- Stack
-- Queue
-- Tree
-- Graph
+- [Array](https://practice.geeksforgeeks.org/explore/?category%5B%5D=Arrays&page=1&category%5B%5D=Arrays)
+- [Linked List](https://practice.geeksforgeeks.org/explore/?category%5B%5D=Linked%20List&page=1&category%5B%5D=Linked%20List)
+- [Stack](https://practice.geeksforgeeks.org/explore/?category%5B%5D=Stack&page=1&category%5B%5D=Stack)
+- [Queue](https://practice.geeksforgeeks.org/explore/?category%5B%5D=Queue&page=1&category%5B%5D=Queue)
+- [Tree](https://practice.geeksforgeeks.org/explore/?category%5B%5D=Tree&page=1&category%5B%5D=Tree)
+- [Graph](https://practice.geeksforgeeks.org/explore/?category%5B%5D=Graph&page=1&category%5B%5D=Graph)
 
-I have gone through his videos and created my own [GitHub repository](https://github.com/rupeshtiwari/coding-examples-datastructures). There I added his questions in JavaScript and put his solutions also. This will help you to get started. I have not finished all of his questions. If you are able to finish the playlist and want to contribute to this playlist then please create pull request. I will be happy to integrate. 
+I have gone through [Academic Booster](https://www.youtube.com/channel/UCnlgufTxMEoeSEubfxOPfMA) channels [videos from data structure in hindi videos](https://www.youtube.com/watch?v=t5JfBFfi2sU&list=PLg6p_zdrEgHEqaRQbZADU6suNgh28JiKb&index=1) and created my own [GitHub repository](https://github.com/rupeshtiwari/coding-examples-datastructures). There I added his questions in JavaScript and put his solutions also. This will help you to get started. I have not finished all of his questions. If you are able to finish the playlist and want to contribute to this playlist then please create pull request. I will be happy to integrate. 
 ## Which Algorithm Problem Should I Do? 
 
 Most of the companies ask DP problems, they are very important.
