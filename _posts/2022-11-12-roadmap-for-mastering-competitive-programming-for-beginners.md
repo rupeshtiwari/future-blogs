@@ -24,7 +24,7 @@ tags:
 
 > Are you non-computer background student? I am a Electronics Engineering student and have been in software company and worked more than 16 years from junior developer to as full stack developer with angular and c# asp.net and various web development technologies. How should I plan to learn competitive programming in order to crack Big 4 (Google, Facebook, Amazon & Microsoft) companies coding-interviews?
 
-Nowadays, even consulting companies like Infosys, TCS etc, are asking some coding problems in their interview. Therefore, if you are not preparing for FAANGM ( facebook, apple, amazon, netflix, google, microsoft) still you must learn how to code and practice coding. Solve easy problems from each Data Structure and sharpen your Logic skills.
+Nowadays, even consulting companies like Infosys, TCS etc., are asking some coding problems in their interview. Therefore, if you are not preparing for FAANGM ( facebook, apple, amazon, netflix, google, microsoft) still you must learn how to code and practice coding. Solve easy problems from each Data Structure and sharpen your Logic skills.
 
 If you are a beginner like me, never start directly solving competitive programming problems. First solve Data Structure and Algorithm problems. [Read this to know what is the difference between Data Structure and Algorithm problems and Competitive Programming problems](https://rupeshtiwari.com/how-to-start-preparing-for-coding-interview/). So basically, you have start learning coding from basic.
 
