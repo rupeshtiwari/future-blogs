@@ -126,7 +126,9 @@ There are some rules that I used to follow to keep myself updated with the probl
 
 ### Before solving problem
 
-Create one Excel sheet or Google Sheet called “Coding Problems”. Add columns like Problem Statement, Logic, Algorithm Name, Need more practice, category and difficulty level.
+Create one Excel sheet or Google Sheet called `“Coding Problems”`. Add columns like Problem Statement, Logic, Algorithm Name, Need more practice, category and difficulty level.
+
+#### Coding Problem Cheat Sheet
 
 | Problem Statement          | Logic                       | Algorithm Name | Need more practice? | Category | Difficulty Level |
 | -------------------------- | --------------------------- | -------------- | ------------------- | -------- | ---------------- |
