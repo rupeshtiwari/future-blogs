@@ -31,6 +31,11 @@ Start solving problems in below sequence to practice:
 - Solve Data Structure and Algorithm problems
 - Solve Competitive Programming problems.
 
+I myself did very hard work and trying to solve problems given by Love Babbar 450 questions and from many other places. 
+- You can view my solutions in JavaScript [in this codepen link](https://codepen.io/your-work/?item_type=collection&grid_type=list). 
+- I also solved couple of problems related to basic [data structure and algorithm here](https://github.com/rupeshtiwari/coding-examples-interview-coding-datastructure-algorithm-in-javascript).
+
+
 ## Which Language should I use in a coding interview? 
 
 Many companies don’t prefer Python in coding interviews. Because, it has an in-built library for stack or so on. If you are doing Python then learn one more language in backup ( C#, C, C++ or Java ). Python is mostly used in Data Science and Machine Learning since these topics are very complex and you must write less code to solve these big problems. I personally use **JavaScript** language.
