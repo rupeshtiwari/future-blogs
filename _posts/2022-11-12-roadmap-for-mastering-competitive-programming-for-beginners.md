@@ -1,7 +1,7 @@
 ---
-title: Roadmap for mastering competitive programming for beginners
+title: Roadmap for mastering coding & competitive programming interview
 date: 2022-11-12 00:00 +0000
-description: If you are a beginner like me, never start directly solving competitive programming problems. First solve Data Structure and Algorithm problems.
+description: If you are a beginner like me, never start directly solving competitive programming problems. First solve Data Structure and Algorithm problems. Learn how to start coding and become master.
 author_profile: true
 published: true
 read_time: true
@@ -22,9 +22,9 @@ tags:
   - interview
 ---
 
-> Are you non-computer background student? I am a electronics engineering student and have been in software company and worked more than 16 years from junior developer to as full stack developer with angular and c# asp.net and various web development technologies. How should I plan to learn competitive programming in order to crack Big 4 (Google, Facebook, Amazon & Microsoft) companies coding-interviews?
+> Are you non-computer background student? I am a Electronics Engineering student and have been in software company and worked more than 16 years from junior developer to as full stack developer with angular and c# asp.net and various web development technologies. How should I plan to learn competitive programming in order to crack Big 4 (Google, Facebook, Amazon & Microsoft) companies coding-interviews?
 
-If you are a beginner like me, never start directly solving competitive programming problems. First solve Data Structure and Algorithm problems. [Read this to know what is the difference between Data Structure and Algorithm problems and Competitive Programming problems](https://rupeshtiwari.com/how-to-start-preparing-for-coding-interview/).
+If you are a beginner like me, never start directly solving competitive programming problems. First solve Data Structure and Algorithm problems. [Read this to know what is the difference between Data Structure and Algorithm problems and Competitive Programming problems](https://rupeshtiwari.com/how-to-start-preparing-for-coding-interview/). So basically, you have start learning coding from basic.
 
 Start solving problems in below sequence to practice:
 
