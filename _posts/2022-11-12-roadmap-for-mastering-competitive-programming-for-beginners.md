@@ -40,6 +40,8 @@ You can always fork my codepen and do the changes. I have added Jasmine Test in 
 
 ![](https://i.imgur.com/SdGQz8M.png){: .full}
 
+Here is one example how you can solve problems all related to binary search and run specs to proove that they all work. 
+
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="NWjGPxL" data-user="rupeshtiwari" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/rupeshtiwari/pen/NWjGPxL">
   Finding first or last occurrence of a number</a> by Rupesh Tiwari (<a href="https://codepen.io/rupeshtiwari">@rupeshtiwari</a>)
