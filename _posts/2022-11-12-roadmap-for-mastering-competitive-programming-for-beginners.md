@@ -31,10 +31,21 @@ Start solving problems in below sequence to practice:
 - Solve Data Structure and Algorithm problems
 - Solve Competitive Programming problems.
 
-I myself did very hard work and trying to solve problems given by Love Babbar 450 questions and from many other places. 
-- You can view my solutions in JavaScript [in this codepen link](https://codepen.io/your-work/?item_type=collection&grid_type=list). 
+I myself did very hard work and trying to solve problems given by Love Babbar 450 questions and from many other places.
+
+- You can view my solutions in JavaScript [in this codepen link](https://codepen.io/your-work/?item_type=collection&grid_type=list).
 - I also solved couple of problems related to basic [data structure and algorithm here](https://github.com/rupeshtiwari/coding-examples-interview-coding-datastructure-algorithm-in-javascript).
 
+You can always fork my codepen and do the changes. I have added Jasmine Test in my code pen so that you can write function and run your specs.
+
+![](https://i.imgur.com/SdGQz8M.png){: .full}
+
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="NWjGPxL" data-user="rupeshtiwari" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/rupeshtiwari/pen/NWjGPxL">
+  Finding first or last occurrence of a number</a> by Rupesh Tiwari (<a href="https://codepen.io/rupeshtiwari">@rupeshtiwari</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## Which Language should I use in a coding interview? 
 
@@ -72,7 +83,8 @@ Do 50 questions on below data structures. Do 70 questions on Array and Linked Li
 - [Tree](https://practice.geeksforgeeks.org/explore/?category%5B%5D=Tree&page=1&category%5B%5D=Tree)
 - [Graph](https://practice.geeksforgeeks.org/explore/?category%5B%5D=Graph&page=1&category%5B%5D=Graph)
 
-I have gone through [Academic Booster](https://www.youtube.com/channel/UCnlgufTxMEoeSEubfxOPfMA) channels [videos from data structure in hindi videos](https://www.youtube.com/watch?v=t5JfBFfi2sU&list=PLg6p_zdrEgHEqaRQbZADU6suNgh28JiKb&index=1) and created my own [GitHub repository](https://github.com/rupeshtiwari/coding-examples-datastructures). There I added his questions in JavaScript and put his solutions also. This will help you to get started. I have not finished all of his questions. If you are able to finish the playlist and want to contribute to this playlist then please create pull request. I will be happy to integrate. 
+I have gone through [Academic Booster](https://www.youtube.com/channel/UCnlgufTxMEoeSEubfxOPfMA) channels [videos from data structure in hindi videos](https://www.youtube.com/watch?v=t5JfBFfi2sU&list=PLg6p_zdrEgHEqaRQbZADU6suNgh28JiKb&index=1) and created my own [GitHub repository](https://github.com/rupeshtiwari/coding-examples-datastructures). There I added his questions in JavaScript and put his solutions also. This will help you to get started. I have not finished all of his questions. If you are able to finish the playlist and want to contribute to this playlist then please create pull request. I will be happy to integrate.
+
 ## Which Algorithm Problem Should I Do? 
 
 Most of the companies ask DP problems, they are very important.
