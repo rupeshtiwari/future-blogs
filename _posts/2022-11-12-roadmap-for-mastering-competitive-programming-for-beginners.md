@@ -73,8 +73,6 @@ Here is the steps to start coding practice.
 - For each Data Structure target yourself to solve 50 questions
 - Do more than 50 questions for Array and String related problems especially
 
-![https://i.imgur.com/t1YSbs8.png](https://i.imgur.com/t1YSbs8.png){: .full}
-
 In Geek of Geeks you can filter difficulty level and you can also check which problem is asked in which company. Select Array then filter by Basic, Medium or Hard then work on them.
 
 ![](https://i.imgur.com/CFduree.png){: .full}
