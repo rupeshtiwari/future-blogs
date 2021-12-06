@@ -35,10 +35,10 @@ Start solving problems in below sequence to practice:
 
 I myself did very hard work and trying to solve problems given by Love Babbar 450 questions and from many other places.
 
-- You can view my solutions in JavaScript [in this codepen link](https://codepen.io/your-work/?item_type=collection&grid_type=list).
+- You can view my solutions in JavaScript [in this codepen link](https://codepen.io/rupeshtiwari/collections/).
 - I also solved couple of problems related to basic [data structure and algorithm here](https://github.com/rupeshtiwari/coding-examples-interview-coding-datastructure-algorithm-in-javascript).
 
-You can always fork my codepen and do the changes. I have added Jasmine Test in my code pen so that you can write function and run your specs.
+You can always fork [my codepen](https://codepen.io/rupeshtiwari/collections/) and do the changes. I have added Jasmine Test in my code pen so that you can write function and run your specs.
 
 ![](https://i.imgur.com/SdGQz8M.png){: .full}
 
